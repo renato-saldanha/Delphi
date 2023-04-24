@@ -1,0 +1,20 @@
+unit Model.Celular;
+
+interface
+
+type
+  TCelular = class
+    function CriarCelular: TCelular;
+
+
+    procedure Ligar(FNumero: string);
+
+    private
+      FNumero:  Integer;
+    public
+
+  end;
+
+implementation
+
+end.

@@ -1,0 +1,25 @@
+unit Conexao.Postgre;
+
+interface
+
+uses
+  Conexao, Vcl.Dialogs;
+type
+  TConexaoPostgre = class(TConexao) abstract
+
+
+  public
+    procedure CriarConexao(NomeBanco: String); override;
+  end;
+
+implementation
+
+
+{ TConexaoPostgre }
+
+procedure TConexaoPostgre.CriarConexao(NomeBanco: String);
+begin
+  ShowMessage(Nomebanco + ' conectado com sucesso!');
+end;
+
+end.

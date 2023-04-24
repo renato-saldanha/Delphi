@@ -1,0 +1,22 @@
+unit Regra.LucroPresumido;
+
+interface
+type
+  TRegraLucroPresumido = class
+  private
+  public
+    function Name(): string;
+
+
+  end;
+
+implementation
+
+{ TRegraSimplesNacional }
+
+function TRegraLucroPresumido.Name(): string;
+begin
+  Result:= 'Lucro Presumido';
+end;
+
+end.

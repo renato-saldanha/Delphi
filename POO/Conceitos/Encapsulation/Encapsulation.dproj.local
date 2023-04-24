@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/04/19 14:00:06.000.326,=D:\Renato\Abstraction\Unit2.pas</Transaction>
+    <Transaction>2023/04/19 14:02:06.000.481,D:\Renato\Abstraction\Project1.dproj=D:\Renato\Abstraction\Abstraction.dproj</Transaction>
+    <Transaction>2023/04/19 14:10:49.000.116,D:\Renato\Abstraction\Unit1.pas=D:\Renato\Encapsulation\Unit1.pas</Transaction>
+    <Transaction>2023/04/19 14:10:49.000.116,D:\Renato\Abstraction\Unit1.dfm=D:\Renato\Encapsulation\Unit1.dfm</Transaction>
+    <Transaction>2023/04/19 14:11:00.000.732,D:\Renato\Abstraction\Abstraction.dproj=D:\Renato\Encapsulation\Encapsulation.dproj</Transaction>
+    <Transaction>2023/04/19 14:13:47.000.513,=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/04/19 14:14:05.000.224,D:\Renato\Abstraction\Unit1.dfm=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2023/04/19 14:14:05.000.224,D:\Renato\Abstraction\Unit1.pas=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/04/19 14:14:06.000.810,D:\Renato\Abstraction\Project1.dproj=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2023/04/19 14:16:13.000.632,=D:\Renato\Abstraction\Unit2.pas</Transaction>
+    <Transaction>2023/04/19 14:17:01.000.904,D:\Renato\Abstraction\Model.Cliente.pas=D:\Renato\Abstraction\Unit2.pas</Transaction>
+  </Transactions>
+</BorlandProject>

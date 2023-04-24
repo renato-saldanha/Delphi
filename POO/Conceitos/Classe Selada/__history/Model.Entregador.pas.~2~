@@ -1,0 +1,24 @@
+unit Model.Entregador;
+
+interface
+
+uses
+  Model.Pessoa;
+
+type
+  TEntregador = class sealed(TPessoa)
+    private
+    public
+    procedure Cadastrar();
+  end;
+
+implementation
+
+{ TEntregador }
+
+procedure TEntregador.Cadastrar;
+begin
+//
+end;
+
+end.

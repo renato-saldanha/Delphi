@@ -1,0 +1,44 @@
+unit Model.Cliente;
+
+interface
+
+type
+  TCliente = class
+
+  private
+    FNome: String;
+    FEndereco: String;
+    FTelefone: String;
+    procedure SetEndereco(const Value: String);
+    procedure SetNome(const Value: String);
+    procedure SetTelefone(const Value: String);
+
+  public
+    property Nome: String read FNome write SetNome;
+    property Endereco: String read FEndereco write SetEndereco;
+    property Telefone: String read FTelefone write SetTelefone;
+
+  published
+
+  end;
+
+implementation
+
+{ TCliente }
+
+procedure TCliente.SetEndereco(const Value: String);
+begin
+  FEndereco := Value;
+end;
+
+procedure TCliente.SetNome(const Value: String);
+begin
+  FNome := Value;
+end;
+
+procedure TCliente.SetTelefone(const Value: String);
+begin
+  FTelefone := Value;
+end;
+
+end.

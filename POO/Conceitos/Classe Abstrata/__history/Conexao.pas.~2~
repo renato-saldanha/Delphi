@@ -1,0 +1,13 @@
+unit Conexao;
+
+interface
+type
+  TConexao= class abstract
+    public
+      procedure CriarConexao(); virtual; abstract;
+  end;
+
+
+implementation
+
+end.

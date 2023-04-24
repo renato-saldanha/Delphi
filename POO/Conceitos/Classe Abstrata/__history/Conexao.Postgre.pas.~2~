@@ -1,0 +1,9 @@
+unit Conexao.Postgre;
+
+interface
+type
+  TConexaoPostgress
+
+implementation
+
+end.

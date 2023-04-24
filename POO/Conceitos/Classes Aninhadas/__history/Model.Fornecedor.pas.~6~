@@ -1,0 +1,42 @@
+unit Model.Fornecedor;
+
+interface
+
+uses
+  Model.Pessoa, Vcl.Dialogs, System.SysUtils;
+
+type
+  TFornecedor = class(TPessoa)
+
+  private
+    procedure Cadastrar(Pessoa: TPessoa); override;
+  public
+      class var IDCliente: Integer;
+      class procedure MostrarID();
+  end;
+
+implementation
+
+procedure TFornecedor.Cadastrar(Pessoa: TPessoa);
+begin
+  inherited;
+  Pessoa.Nome        := 'Renato';
+  Pessoa.Endereco.
+  Pessoa.Bairro      := 'Duque de Caxias 2';
+  Pessoa.Telefone    := '(65) 99271-2774';
+
+  ShowMessage('---Fornecedor---' + #13 +
+              'Nome: ' + Pessoa.Nome + #13 +
+              'Endereço: ' + Pessoa.Endereco + #13 +
+              'Bairro: ' + Pessoa.Bairro + #13 +
+              'Cidade: ' + Pessoa.Cidade + #13 +
+              'Telefone: ' + Pessoa.Telefone);
+end;
+
+
+class procedure TFornecedor.MostrarID;
+begin
+  ShowMessage('ID:' + IntToStr(IDCliente))
+end;
+
+end.

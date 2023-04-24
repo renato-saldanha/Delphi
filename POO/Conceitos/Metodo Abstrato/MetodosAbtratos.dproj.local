@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/04/19 14:00:06.000.326,=D:\Renato\Abstraction\Unit2.pas</Transaction>
+    <Transaction>2023/04/19 14:02:06.000.481,D:\Renato\Abstraction\Project1.dproj=D:\Renato\Abstraction\Abstraction.dproj</Transaction>
+    <Transaction>2023/04/19 14:10:49.000.116,D:\Renato\Abstraction\Unit1.dfm=D:\Renato\Encapsulation\Unit1.dfm</Transaction>
+    <Transaction>2023/04/19 14:10:49.000.116,D:\Renato\Abstraction\Unit1.pas=D:\Renato\Encapsulation\Unit1.pas</Transaction>
+    <Transaction>2023/04/19 14:11:00.000.732,D:\Renato\Abstraction\Abstraction.dproj=D:\Renato\Encapsulation\Encapsulation.dproj</Transaction>
+    <Transaction>2023/04/19 14:13:47.000.513,=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/04/19 14:14:05.000.224,D:\Renato\Abstraction\Unit1.dfm=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2023/04/19 14:14:05.000.224,D:\Renato\Abstraction\Unit1.pas=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/04/19 14:14:06.000.810,D:\Renato\Abstraction\Project1.dproj=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2023/04/19 14:16:13.000.632,=D:\Renato\Abstraction\Unit2.pas</Transaction>
+    <Transaction>2023/04/19 14:17:01.000.904,D:\Renato\Abstraction\Model.Cliente.pas=D:\Renato\Abstraction\Unit2.pas</Transaction>
+    <Transaction>2023/04/19 14:24:57.000.910,D:\Renato\Metodo e Sobrecarga\Model.Cliente.pas=D:\Renato\Abstraction\Model.Cliente.pas</Transaction>
+    <Transaction>2023/04/19 14:25:22.000.829,D:\Renato\Metodo e Sobrecarga\MetodoeSobrecarga.dproj=D:\Renato\Metodo e Sobrecarga\Encapsulation.dproj</Transaction>
+    <Transaction>2023/04/20 08:15:03.000.178,D:\Renato\Metodo Abstrato\MetodoAbstrato.dproj=D:\Renato\Metodo Abstrato\MetodoeSobrecarga.dproj</Transaction>
+    <Transaction>2023/04/20 08:15:03.000.131,D:\Renato\Metodo Abstrato\MetodoeSobrecarga.dproj=D:\Renato\Metodo Abstrato\MetodoAbstrato.dproj</Transaction>
+    <Transaction>2023/04/20 08:15:35.000.879,D:\Renato\Metodo Abstrato\MetodoAbstrato.dproj=D:\Renato\Metodo Abstrato\MetodoeSobrecarga.dproj</Transaction>
+    <Transaction>2023/04/20 08:15:35.000.864,D:\Renato\Metodo Abstrato\MetodoeSobrecarga.dproj=D:\Renato\Metodo Abstrato\MetodoAbstrato.dproj</Transaction>
+    <Transaction>2023/04/20 08:15:54.000.344,D:\Renato\Metodo Abstrato\MetodoeSobrecarga.dproj=D:\Renato\Metodo Abstrato\Metodo.dproj</Transaction>
+    <Transaction>2023/04/20 08:15:59.000.275,D:\Renato\Metodo Abstrato\Metodo.dproj=D:\Renato\Metodo Abstrato\MetodosAbtratos.dproj</Transaction>
+    <Transaction>2023/04/20 08:21:51.000.283,D:\Renato\Metodo Abstrato\Model.Cliente.pas=D:\Renato\Metodo Abstrato\Model.Pessoa.pas</Transaction>
+    <Transaction>2023/04/20 08:25:15.000.605,=D:\Renato\Metodo Abstrato\Unit2.pas</Transaction>
+    <Transaction>2023/04/20 08:25:24.000.041,D:\Renato\Metodo Abstrato\Unit2.pas=D:\Renato\Metodo Abstrato\Model.Cliente.pas</Transaction>
+  </Transactions>
+</BorlandProject>

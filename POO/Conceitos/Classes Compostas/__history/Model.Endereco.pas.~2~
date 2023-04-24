@@ -1,0 +1,32 @@
+unit Model.Endereco;
+
+interface
+
+type
+  TEndereco = class
+
+  private
+    FBairro: String;
+    FCidade: string;
+    procedure SetBairro(const Value: String);
+    procedure SetCidade(const Value: String);
+  public
+    property Cidade: String read FCidade write SetCidade;
+    property Bairro: String read FBairro write SetBairro;
+  end;
+
+implementation
+
+{ TEndereco }
+
+procedure TEndereco.SetBairro(const Value: String);
+begin
+  FBairro := Value;
+end;
+
+procedure TEndereco.SetCidade(const Value: String);
+begin
+  FCidade := Value;
+end;
+
+end.

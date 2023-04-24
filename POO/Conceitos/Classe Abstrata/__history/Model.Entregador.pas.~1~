@@ -1,0 +1,16 @@
+unit Model.Entregador;
+
+interface
+
+uses
+  Model.Pessoa;
+
+type
+  TEntregador = class sealed(TPessoa)
+    private
+    public
+  end;
+
+implementation
+
+end.
