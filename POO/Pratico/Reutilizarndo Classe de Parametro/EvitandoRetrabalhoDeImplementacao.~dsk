@@ -1,52 +1,61 @@
 ﻿[Closed Files]
-File_0=TSourceModule,'D:\Renato\Delphi\POO\Pratico\Evitando Retrabalho de Implementacao\Regra.LucroPresumido.pas',0,1,28,11,50,0,0,,
-File_1=TSourceModule,'D:\Renato\Delphi\POO\Pratico\Evitando Retrabalho de Implementacao\Regra.LucroReal.pas',0,1,1,65,26,0,0,,
-File_2=TSourceModule,'D:\Renato\Delphi\POO\Pratico\Evitando Retrabalho de Implementacao\Regra.SimplesNacional.pas',0,1,28,18,39,0,0,,
-File_3=TSourceModule,'D:\Renato\Delphi\POO\Pratico\Evitando Retrabalho de Implementacao\Regra.Controller.pas',0,1,28,5,58,0,0,,
-File_4=TSourceModule,'D:\Renato\Delphi\POO\Pratico\Evitando Retrabalho de Implementacao\Regra.Interfaces.pas',0,1,1,46,28,0,0,,
-File_5=TSourceModule,'D:\Renato\Delphi\POO\Pratico\Evitando Retrabalho de Implementacao\Regra.Operacoes.pas',0,1,7,108,25,0,0,,
-File_6=TSourceModule,'D:\Renato\Delphi\POO\Pratico\Evitando Retrabalho de Implementacao\Unit1.pas',0,1,31,69,55,0,0,,
-File_7=TSourceModule,'D:\Renato\Delphi\POO\Pratico\Evitando Retrabalho de Implementacao\Regra.Tipo.pas',0,1,1,1,9,0,0,,
-File_8=TSourceModule,'c:\program files (x86)\embarcadero\studio\22.0\SOURCE\VCL\Vcl.Forms.pas',0,1,11709,1,11730,0,0,{{1990,4}
-File_9=TSourceModule,'c:\program files (x86)\embarcadero\studio\22.0\SOURCE\RTL\SYS\System.pas',0,1,19312,1,19333,0,0,,
-File_10=TSourceModule,'c:\program files (x86)\embarcadero\studio\22.0\SOURCE\VCL\Vcl.StdCtrls.pas',0,1,5566,1,5587,0,0,{{1773,4}
-File_11=TSourceModule,'c:\program files (x86)\embarcadero\studio\22.0\SOURCE\VCL\Vcl.Controls.pas',0,1,10289,1,10316,0,0,,
-File_12=TSourceModule,'c:\program files (x86)\embarcadero\studio\22.0\source\rtl\common\System.Classes.pas',0,1,18470,1,18493,0,0,,
-File_13=TSourceModule,'D:\Renato\Delphi\POO\Pratico\Trabalhando Possibilidades de Refatoração\Regra.Controller.pas',0,1,27,112,55,0,0,,
-File_14=TSourceModule,'D:\Renato\Delphi\POO\Pratico\Trabalhando Possibilidades de Refatoração\Regra.Interfaces.pas',0,1,1,42,11,0,0,,
+File_0=TSourceModule,'D:\Renato\Delphi\POO\Pratico\Evitando Retrabalho de Implementacao\Regra.Tipo.pas',0,1,1,1,9,0,0,,
+File_1=TSourceModule,'c:\program files (x86)\embarcadero\studio\22.0\SOURCE\VCL\Vcl.Forms.pas',0,1,11709,1,11730,0,0,{{1990,4},{2006,15},{'TScrollWindow'}}{{2100,4},{2203,15},{'TMainMenuBarStyleHook'}},
+File_2=TSourceModule,'c:\program files (x86)\embarcadero\studio\22.0\SOURCE\RTL\SYS\System.pas',0,1,19312,1,19333,0,0,,
+File_3=TSourceModule,'c:\program files (x86)\embarcadero\studio\22.0\SOURCE\VCL\Vcl.StdCtrls.pas',0,1,5566,1,5587,0,0,{{1773,4},{1791,15},{'TScrollWindow'}},
+File_4=TSourceModule,'c:\program files (x86)\embarcadero\studio\22.0\SOURCE\VCL\Vcl.Controls.pas',0,1,10289,1,10316,0,0,,
+File_5=TSourceModule,'c:\program files (x86)\embarcadero\studio\22.0\source\rtl\common\System.Classes.pas',0,1,18470,1,18493,0,0,,
+File_6=TSourceModule,'D:\Renato\Delphi\POO\Pratico\Trabalhando Possibilidades de Refatoração\Regra.Controller.pas',0,1,27,112,55,0,0,,
+File_7=TSourceModule,'D:\Renato\Delphi\POO\Pratico\Trabalhando Possibilidades de Refatoração\Regra.Interfaces.pas',0,1,1,42,11,0,0,,
+File_8=TSourceModule,'D:\Renato\Delphi\POO\Pratico\Trabalhando Possibilidades de Refatoração\Regra.LucroReal.pas',0,1,34,108,48,0,0,,
+File_9=TSourceModule,'D:\Renato\Delphi\POO\Pratico\Trabalhando Possibilidades de Refatoração\Regra.LucroPresumido.pas',0,1,36,37,60,0,0,,
+File_10=TSourceModule,'D:\Renato\Delphi\POO\Pratico\Trabalhando Possibilidades de Refatoração\Regra.SimplesNacional.pas',0,1,31,58,61,0,0,,
+File_11=TSourceModule,'D:\Renato\Delphi\POO\Pratico\Trabalhando Possibilidades de Refatoração\Unit1.pas',0,1,18,25,58,0,0,,
+File_12=TSourceModule,'D:\Renato\Delphi\POO\Pratico\Trabalhando Possibilidades de Refatoração\Regra.Tipo.pas',0,1,1,1,1,0,0,,
+File_13=TSourceModule,'D:\Renato\Delphi\POO\Pratico\Usando Eventos para Tratar Comportamentos da View\Regra.Interfaces.pas',0,1,1,100,18,0,0,,
 
 [Modules]
-Module0=D:\Renato\Delphi\POO\Pratico\Reutilizarndo Classe de Parametro\Regra.Parametros.pas
-Module1=D:\Renato\Delphi\POO\Pratico\Reutilizarndo Classe de Parametro\Regra.Operacoes.pas
-Module2=D:\Renato\Delphi\POO\Pratico\Reutilizarndo Classe de Parametro\Regra.Interfaces.pas
-Module3=D:\Renato\Delphi\POO\Pratico\Reutilizarndo Classe de Parametro\Regra.Controller.pas
-Module4=D:\Renato\Delphi\POO\Pratico\Reutilizarndo Classe de Parametro\Unit1.pas
-Count=5
+Module0=D:\Renato\Delphi\POO\Pratico\Evitando Retrabalho de Implementacao\Unit1.pas
+Module1=D:\Renato\Delphi\POO\Pratico\Evitando Retrabalho de Implementacao\Regra.Operacoes.pas
+Module2=D:\Renato\Delphi\POO\Pratico\Evitando Retrabalho de Implementacao\Regra.Interfaces.pas
+Module3=D:\Renato\Delphi\POO\Pratico\Evitando Retrabalho de Implementacao\Regra.Controller.pas
+Module4=D:\Renato\Delphi\POO\Pratico\Evitando Retrabalho de Implementacao\Regra.LucroPresumido.pas
+Module5=D:\Renato\Delphi\POO\Pratico\Evitando Retrabalho de Implementacao\Regra.LucroReal.pas
+Module6=D:\Renato\Delphi\POO\Pratico\Evitando Retrabalho de Implementacao\Regra.SimplesNacional.pas
+Count=7
 EditWindowCount=1
 
-[D:\Renato\Delphi\POO\Pratico\Reutilizarndo Classe de Parametro\Regra.Parametros.pas]
+[D:\Renato\Delphi\POO\Pratico\Evitando Retrabalho de Implementacao\Unit1.pas]
 ModuleType=TSourceModule
 
-[D:\Renato\Delphi\POO\Pratico\Reutilizarndo Classe de Parametro\Regra.Operacoes.pas]
+[D:\Renato\Delphi\POO\Pratico\Evitando Retrabalho de Implementacao\Regra.Operacoes.pas]
 ModuleType=TSourceModule
 
-[D:\Renato\Delphi\POO\Pratico\Reutilizarndo Classe de Parametro\Regra.Interfaces.pas]
+[D:\Renato\Delphi\POO\Pratico\Evitando Retrabalho de Implementacao\Regra.Interfaces.pas]
 ModuleType=TSourceModule
 
-[D:\Renato\Delphi\POO\Pratico\Reutilizarndo Classe de Parametro\Regra.Controller.pas]
+[D:\Renato\Delphi\POO\Pratico\Evitando Retrabalho de Implementacao\Regra.Controller.pas]
 ModuleType=TSourceModule
 
-[D:\Renato\Delphi\POO\Pratico\Reutilizarndo Classe de Parametro\Unit1.pas]
+[D:\Renato\Delphi\POO\Pratico\Evitando Retrabalho de Implementacao\Regra.LucroPresumido.pas]
+ModuleType=TSourceModule
+
+[D:\Renato\Delphi\POO\Pratico\Evitando Retrabalho de Implementacao\Regra.LucroReal.pas]
+ModuleType=TSourceModule
+
+[D:\Renato\Delphi\POO\Pratico\Evitando Retrabalho de Implementacao\Regra.SimplesNacional.pas]
 ModuleType=TSourceModule
 
 [EditWindow0]
-ViewCount=5
-CurrentEditView=D:\Renato\Delphi\POO\Pratico\Reutilizarndo Classe de Parametro\Regra.Parametros.pas
+ViewCount=7
+CurrentEditView=D:\Renato\Delphi\POO\Pratico\Evitando Retrabalho de Implementacao\Unit1.pas
 View0=0
 View1=1
 View2=2
 View3=3
 View4=4
+View5=5
+View6=6
 PercentageSizes=1
 Create=1
 Visible=1
@@ -64,24 +73,24 @@ DockedToMainForm=1
 BorlandEditorCodeExplorer=BorlandEditorCodeExplorer@EditWindow0
 TopPanelSize=0
 LeftPanelSize=1896
-LeftPanelClients=PropertyInspector,DockSite3,DockSite1
-LeftPanelData=00000800010100000000181000000000000001680700000000000001000000008F07000009000000446F636B536974653301000000006210000009000000446F636B536974653101000000009C1C00001100000050726F7065727479496E73706563746F72FFFFFFFF
+LeftPanelClients=PropertyInspector,DockSite3
+LeftPanelData=00000800010100000000181000000000000001680700000000000001000000005C0E000009000000446F636B536974653301000000009C1C00001100000050726F7065727479496E73706563746F72FFFFFFFF
 RightPanelSize=2000
 RightPanelClients=DockSite2,DockSite4
 RightPanelData=00000800010100000000181000000000000001D00700000000000001000000004412000009000000446F636B536974653201000000009C1C000009000000446F636B5369746534FFFFFFFF
 BottomPanelSize=1639
-BottomPanelClients=MessageView
-BottomPanelData=00000800010000000000DE440000000000000067060000000000000100000000DE4400000F0000004D65737361676556696577466F726DFFFFFFFF
+BottomPanelClients=DockSite1,MessageView
+BottomPanelData=0000080001020100000009000000446F636B5369746531DE440000000000000267060000000000000100000000DE4400000F0000004D65737361676556696577466F726DFFFFFFFF
 BottomMiddlePanelSize=0
 BottomMiddlePanelClients=DockSite0,GraphDrawingModel
 BottomMiddelPanelData=0000080001020200000009000000446F636B536974653010000000477261706844726177696E67566965779F1D00000000000002F206000000000000FFFFFFFF
 
 [View0]
 CustomEditViewType=TEditView
-Module=D:\Renato\Delphi\POO\Pratico\Reutilizarndo Classe de Parametro\Unit1.pas
-CursorX=1
-CursorY=1
-TopLine=1
+Module=D:\Renato\Delphi\POO\Pratico\Evitando Retrabalho de Implementacao\Unit1.pas
+CursorX=69
+CursorY=55
+TopLine=31
 LeftCol=1
 Elisions=
 Bookmarks=
@@ -89,50 +98,76 @@ EditViewName=Borland.FormDesignerView
 
 [View1]
 CustomEditViewType=TEditView
-Module=D:\Renato\Delphi\POO\Pratico\Reutilizarndo Classe de Parametro\Regra.Interfaces.pas
-CursorX=5
-CursorY=27
-TopLine=1
+Module=D:\Renato\Delphi\POO\Pratico\Evitando Retrabalho de Implementacao\Regra.Operacoes.pas
+CursorX=108
+CursorY=25
+TopLine=7
 LeftCol=1
 Elisions=
 Bookmarks=
-EditViewName=D:\Renato\Delphi\POO\Pratico\Reutilizarndo Classe de Parametro\Regra.Interfaces.pas
+EditViewName=D:\Renato\Delphi\POO\Pratico\Evitando Retrabalho de Implementacao\Regra.Operacoes.pas
 
 [View2]
 CustomEditViewType=TEditView
-Module=D:\Renato\Delphi\POO\Pratico\Reutilizarndo Classe de Parametro\Regra.Parametros.pas
-CursorX=48
-CursorY=22
+Module=D:\Renato\Delphi\POO\Pratico\Evitando Retrabalho de Implementacao\Regra.Interfaces.pas
+CursorX=46
+CursorY=28
 TopLine=1
 LeftCol=1
 Elisions=
 Bookmarks=
-EditViewName=D:\Renato\Delphi\POO\Pratico\Reutilizarndo Classe de Parametro\Regra.Parametros.pas
+EditViewName=D:\Renato\Delphi\POO\Pratico\Evitando Retrabalho de Implementacao\Regra.Interfaces.pas
 
 [View3]
 CustomEditViewType=TEditView
-Module=D:\Renato\Delphi\POO\Pratico\Reutilizarndo Classe de Parametro\Regra.Controller.pas
-CursorX=1
-CursorY=1
+Module=D:\Renato\Delphi\POO\Pratico\Evitando Retrabalho de Implementacao\Regra.Controller.pas
+CursorX=5
+CursorY=58
+TopLine=28
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Renato\Delphi\POO\Pratico\Evitando Retrabalho de Implementacao\Regra.Controller.pas
+
+[View4]
+CustomEditViewType=TEditView
+Module=D:\Renato\Delphi\POO\Pratico\Evitando Retrabalho de Implementacao\Regra.SimplesNacional.pas
+CursorX=18
+CursorY=39
+TopLine=28
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Renato\Delphi\POO\Pratico\Evitando Retrabalho de Implementacao\Regra.SimplesNacional.pas
+
+[View5]
+CustomEditViewType=TEditView
+Module=D:\Renato\Delphi\POO\Pratico\Evitando Retrabalho de Implementacao\Regra.LucroReal.pas
+CursorX=65
+CursorY=26
 TopLine=1
 LeftCol=1
 Elisions=
 Bookmarks=
-EditViewName=D:\Renato\Delphi\POO\Pratico\Reutilizarndo Classe de Parametro\Regra.Controller.pas
+EditViewName=D:\Renato\Delphi\POO\Pratico\Evitando Retrabalho de Implementacao\Regra.LucroReal.pas
 
-[View4]
+[View6]
 CustomEditViewType=TEditView
-Module=D:\Renato\Delphi\POO\Pratico\Reutilizarndo Classe de Parametro\Regra.Operacoes.pas
-CursorX=30
-CursorY=48
-TopLine=13
+Module=D:\Renato\Delphi\POO\Pratico\Evitando Retrabalho de Implementacao\Regra.LucroPresumido.pas
+CursorX=11
+CursorY=50
+TopLine=28
 LeftCol=1
 Elisions=
 Bookmarks=
-EditViewName=D:\Renato\Delphi\POO\Pratico\Reutilizarndo Classe de Parametro\Regra.Operacoes.pas
+EditViewName=D:\Renato\Delphi\POO\Pratico\Evitando Retrabalho de Implementacao\Regra.LucroPresumido.pas
 
 [Watches]
-Count=0
+Count=4
+Watch0='ComboBox1.ItemIndex',256,0,18,1,0,'Watches',1
+Watch1='aValue',256,0,18,1,0,'Watches',1
+Watch2='FDisplay',256,0,18,1,0,'Watches',1
+Watch3='Self',256,0,18,1,0,'Watches',1
 
 [WatchWindow]
 WatchColumnWidth=120
@@ -144,19 +179,20 @@ Docked=1
 State=0
 Left=0
 Top=0
-Width=1896
-Height=1667
+Width=3823
+Height=1157
 MaxLeft=-1
 MaxTop=-1
-ClientWidth=1896
-ClientHeight=1667
+ClientWidth=3823
+ClientHeight=1157
 TBDockHeight=213
 LRDockWidth=13604
 Dockable=1
 StayOnTop=0
 
 [Breakpoints]
-Count=0
+Count=1
+Breakpoint0='D:\Renato\Delphi\POO\Pratico\Trabalhando Possibilidades de Refatoração\Regra.Controller.pas',67,'',0,1,'',1,0,0,'',1,'','','',0,''
 
 [EmbarcaderoWin32Debugger_AddressBreakpoints]
 Count=0
@@ -266,18 +302,23 @@ Visible=1
 Docked=1
 State=0
 Left=0
-Top=481
+Top=425
 Width=1896
-Height=2870
+Height=3389
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=1896
-ClientHeight=2870
+ClientHeight=3389
 TBDockHeight=8778
 LRDockWidth=1896
 Dockable=1
 StayOnTop=0
 SplitPos=111
+
+[PropInspDesignerSelection]
+ArrangeBy=Name
+SelectedItem=Caption,
+ExpandedItems=Anchors=0,BorderIcons=0,Constraints=0,CustomTitleBar=0
 
 [frmDesignPreview]
 PercentageSizes=1
@@ -288,11 +329,11 @@ State=0
 Left=0
 Top=0
 Width=2000
-Height=8519
+Height=6528
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2000
-ClientHeight=8519
+ClientHeight=6528
 TBDockHeight=5963
 LRDockWidth=2510
 Dockable=1
@@ -328,12 +369,12 @@ Docked=1
 State=0
 Left=0
 Top=0
-Width=635
-Height=8519
+Width=3823
+Height=1157
 MaxLeft=-1
 MaxTop=-1
-ClientWidth=635
-ClientHeight=8519
+ClientWidth=3823
+ClientHeight=1157
 TBDockHeight=407
 LRDockWidth=4953
 Dockable=1
@@ -347,12 +388,12 @@ Docked=1
 State=0
 Left=0
 Top=0
-Width=635
-Height=8519
+Width=3823
+Height=1157
 MaxLeft=-1
 MaxTop=-1
-ClientWidth=635
-ClientHeight=8519
+ClientWidth=3823
+ClientHeight=1157
 TBDockHeight=213
 LRDockWidth=7406
 Dockable=1
@@ -360,7 +401,7 @@ StayOnTop=0
 Column0Width=145
 Column1Width=100
 Column2Width=115
-Column3Width=50
+Column3Width=374
 
 [LocalVarsWindow]
 PercentageSizes=1
@@ -370,12 +411,12 @@ Docked=1
 State=0
 Left=0
 Top=0
-Width=635
-Height=8519
+Width=3823
+Height=1157
 MaxLeft=-1
 MaxTop=-1
-ClientWidth=635
-ClientHeight=8519
+ClientWidth=3823
+ClientHeight=1157
 TBDockHeight=1537
 LRDockWidth=3484
 Dockable=1
@@ -389,12 +430,12 @@ Docked=1
 State=0
 Left=0
 Top=0
-Width=635
-Height=8519
+Width=3823
+Height=1157
 MaxLeft=-1
 MaxTop=-1
-ClientWidth=635
-ClientHeight=8519
+ClientWidth=3823
+ClientHeight=1157
 TBDockHeight=2065
 LRDockWidth=3484
 Dockable=1
@@ -409,11 +450,11 @@ State=0
 Left=0
 Top=0
 Width=2339
-Height=1222
+Height=981
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2339
-ClientHeight=1222
+ClientHeight=981
 TBDockHeight=2315
 LRDockWidth=2823
 Dockable=1
@@ -474,11 +515,11 @@ State=0
 Left=0
 Top=0
 Width=2000
-Height=8519
+Height=6528
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2000
-ClientHeight=8519
+ClientHeight=6528
 TBDockHeight=4880
 LRDockWidth=7151
 Dockable=1
@@ -568,12 +609,12 @@ Docked=1
 State=0
 Left=0
 Top=0
-Width=635
-Height=8519
+Width=3823
+Height=1157
 MaxLeft=-1
 MaxTop=-1
-ClientWidth=635
-ClientHeight=8519
+ClientWidth=3823
+ClientHeight=1157
 TBDockHeight=1546
 LRDockWidth=8740
 Dockable=1
@@ -595,11 +636,11 @@ State=0
 Left=0
 Top=0
 Width=1896
-Height=1602
+Height=3343
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=1896
-ClientHeight=1602
+ClientHeight=3343
 TBDockHeight=3676
 LRDockWidth=1896
 Dockable=1
@@ -633,11 +674,11 @@ State=0
 Left=0
 Top=0
 Width=2000
-Height=8519
+Height=6528
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2000
-ClientHeight=8519
+ClientHeight=6528
 TBDockHeight=4880
 LRDockWidth=5307
 Dockable=1
@@ -690,27 +731,27 @@ ActiveTabID=RefactoringForm
 TabDockClients=RefactoringForm,FindReferencsForm,ToDo List,MetricsView,QAView
 
 [DockSite1]
-HostDockSite=DockLeftPanel
+HostDockSite=DockBottomPanel
 DockSiteType=1
 PercentageSizes=1
 Create=1
-Visible=1
+Visible=0
 Docked=1
 State=0
 Left=0
-Top=237
-Width=1896
-Height=1926
+Top=28
+Width=3823
+Height=1417
 MaxLeft=-1
 MaxTop=-1
-ClientWidth=1896
-ClientHeight=1926
-TBDockHeight=8778
-LRDockWidth=1896
+ClientWidth=3823
+ClientHeight=1417
+TBDockHeight=1417
+LRDockWidth=3823
 Dockable=1
 StayOnTop=0
 TabPosition=1
-ActiveTabID=WatchWindow
+ActiveTabID=DebugLogView
 TabDockClients=DebugLogView,BreakpointWindow,ThreadStatusWindow,CallStackWindow,WatchWindow,LocalVarsWindow
 
 [DockSite2]
@@ -748,11 +789,11 @@ State=0
 Left=0
 Top=28
 Width=1896
-Height=1602
+Height=3343
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=1896
-ClientHeight=1602
+ClientHeight=3343
 TBDockHeight=8778
 LRDockWidth=1896
 Dockable=1
