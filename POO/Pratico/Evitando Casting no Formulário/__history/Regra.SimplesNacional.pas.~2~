@@ -1,0 +1,22 @@
+unit Regra.SimplesNacional;
+
+interface
+type
+  TRegraSimplesNacional = class
+  private
+  public
+    function Name(): string;
+
+
+  end;
+
+implementation
+
+{ TRegraSimplesNacional }
+
+function TRegraSimplesNacional.Name(): string;
+begin
+  Result:= 'Simples Nacional';
+end;
+
+end.

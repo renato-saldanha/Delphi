@@ -1,0 +1,42 @@
+unit Regra.LucroReal;
+
+interface
+
+uses
+  Regra.Interfaces;
+
+type
+  TRegraLucroReal = class(TInterfacedObject, iRegras)
+  private
+  public
+    class function New: iRegras;
+    function Name(): string;
+    function CalculaImposto(aValue: Currency): Currency; overload;
+    function CalculaImposto(aValue: String): Currency; overload;
+  end;
+
+implementation
+
+{ TRegraSimplesNacional }
+
+function TRegraLucroReal.CalculaImposto(aValue: Currency): Currency;
+begin
+  Result:= (aValue * 0.4) + aValue;
+end;
+                                                                                    
+function TRegraLucroReal.CalculaImposto(aValue: String): Currency;
+begin
+  Result:= CalculaImposto(StrToCurr(aValue));
+end;
+
+function TRegraLucroReal.Name: string;
+begin
+   Result:= 'Lucro Real';
+end;
+
+class function TRegraLucroReal.New: iRegras;
+begin
+  Result:= Self.Create;
+end;
+
+end.

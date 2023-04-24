@@ -2,15 +2,13 @@ unit Regra;
 
 interface
 
-uses
-  Uteis;
+
 type
   TRegra = class
-
-
-    private
-    public
-      function Name(): String; virtual; abstract;
+  private
+  public
+    function Name(): string; virtual; abstract;
+    function CalculaImposto(aValue: Currency): Currency; virtual; abstract;
 
   end;
 
@@ -18,5 +16,5 @@ implementation
 
 { TRegra }
 
-
 end.
+

@@ -1,0 +1,48 @@
+unit Regra.Controller;
+
+interface
+
+uses
+  Regra.Interfaces, System.Generics.Collections;
+
+type
+  TRegraController = class(TInterfacedObject, iRegrasController)
+  private
+    FListRegras: TDictionary<Integer, string>;
+  public
+    constructor Create;
+    destructor Destroy; override;
+    class function New: iRegrasController;
+    function Registro(aKey: Integer; aValue: string): iRegrasController;
+  end;
+
+implementation
+
+uses
+  System;
+
+{ TRegraController }
+
+constructor TRegraController.Create;
+begin
+  FListRegras:= TDic
+end;
+
+destructor TRegraController.Destroy;
+begin
+
+  inherited;
+end;
+
+class function TRegraController.New: iRegrasController;
+begin
+
+end;
+
+function TRegraController.Registro(aKey: Integer; aValue: string): iRegrasController;
+begin
+
+end;
+
+end.
+

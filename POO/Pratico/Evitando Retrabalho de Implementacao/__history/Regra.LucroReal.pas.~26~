@@ -1,0 +1,74 @@
+unit Regra.LucroReal;
+
+interface
+
+uses
+  Regra.Interfaces, System.SysUtils, Regra.Controller;
+
+type
+  TRegraLucroReal = class(TInterfacedObject, iRegras)
+  private
+    FDisplay: TProc<String>;
+    function CalcularImposto(aValue: Currency): Currency;
+    function Operacoes: iRegrasOperacoes;
+  public
+    class function New: iRegras;
+    function Name(): string;
+
+    function Display(aValue: TProc<string>): iRegras;
+    function PercentImposto(): Currency;
+  end;
+
+implementation
+
+uses
+  Regra.Tipo;
+
+{ TRegraSimplesNacional }
+
+class function TRegraLucroReal.New: iRegras;
+begin
+  Result:= Self.Create;
+end;
+
+function TRegraLucroReal.Operacoes: iRegrasOperacoes;
+begin
+//
+end;
+
+function TRegraLucroReal.PercentImposto: Currency;
+begin
+  Result:= 0.4;
+end;
+
+function TRegraLucroReal.CalcularImposto(aValue: Currency): Currency;
+begin
+  Result:= (aValue * 0.4) + aValue;
+
+  if (Assigned(FDisplay)) then
+    FDisplay(CurrToStr(Result));
+end;
+
+function TRegraLucroReal.CalcularImposto(aValue: String): Currency;
+begin
+  Result:= 0;
+
+  if (TryStrToCurr(aValue, Result)) then
+    Result:= CalcularImposto(StrToCurr(aValue));
+end;
+
+function TRegraLucroReal.Name: string;
+begin
+   Result:= 'Lucro Real';
+end;
+
+function TRegraLucroReal.Display(aValue: TProc<string>): iRegras;
+begin
+  Result    := Self;
+  FDisplay  := aValue;
+end;
+
+initialization
+  TRegraController.New.Registro(Integer(TRegraLucroReal), 'Lucro Real');
+
+end.

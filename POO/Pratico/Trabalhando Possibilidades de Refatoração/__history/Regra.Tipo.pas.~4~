@@ -1,0 +1,33 @@
+unit Regra.Tipo;
+
+interface
+
+uses
+  Regra, Regra.LucroPresumido;
+
+type
+  TEnumRegras = (trSimplesNacional, trLucroPresumido, trLucroReal);
+
+  TEnumRegrasHelper = record Helper for TEnumRegras
+    function this: TRegra;
+  end;
+
+
+implementation
+
+uses
+  Regra.SimplesNacional;
+
+{ TEnumRegrasHelper }
+
+function TEnumRegrasHelper.this: TRegra;
+begin
+  case Self of
+    trSimplesNacional: Result := TRegraSimplesNacional;
+    trLucroPresumido: Result := TRegraLucroPresumido;
+    trLucroReal: Result := TRegra;
+  end;
+
+end;
+
+end.

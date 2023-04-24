@@ -1,0 +1,9 @@
+unit Regra.Paramtros;
+
+interface
+type
+  TRegraParametros = class(Tinter)
+
+implementation
+
+end.

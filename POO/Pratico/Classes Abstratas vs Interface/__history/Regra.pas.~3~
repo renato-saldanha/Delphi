@@ -1,0 +1,27 @@
+unit Regra;
+
+interface
+
+uses
+  Uteis;
+type
+  TRegra = class
+
+
+    private
+    public
+      function Name(): String; virtual; abstract;
+      constructor Create(Regra: TRegra); override;
+  end;
+
+implementation
+
+{ TRegra }
+
+constructor TRegra.Create(Regra: TRegra);
+begin
+  inherited;
+
+end;
+
+end.

@@ -1,0 +1,22 @@
+unit RegraSimplesNacional;
+
+interface
+type
+  TRegraSimplesNacional = class
+  private
+  public
+    function name: string;
+
+
+  end;
+
+implementation
+
+{ TRegraSimplesNacional }
+
+function TRegraSimplesNacional.name: string;
+begin
+  Result:= 'Simples Nacional';
+end;
+
+end.

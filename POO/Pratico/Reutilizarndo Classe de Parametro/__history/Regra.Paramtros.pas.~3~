@@ -1,0 +1,12 @@
+unit Regra.Paramtros;
+
+interface
+
+uses
+  Regra.Interfaces;
+type
+  TRegraParametros = class(TInterfacedObject, iregra)
+
+implementation
+
+end.

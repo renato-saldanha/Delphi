@@ -1,0 +1,10 @@
+unit Regra.Tipo;
+
+interface
+
+type
+  TEnumRegra = (trSimplesNacional, trLucroPresumido, trLucroReal);
+
+implementation
+
+end.

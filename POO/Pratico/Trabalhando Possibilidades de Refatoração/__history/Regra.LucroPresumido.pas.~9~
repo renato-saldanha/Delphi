@@ -1,0 +1,48 @@
+unit Regra.LucroPresumido;
+
+interface
+
+uses
+  Regra.Interfaces;
+
+type
+  TRegraLucroPresumido = class(TInterfacedObject, iRegras)
+  private
+    function CalculaImposto(aValue: Currency): Currency;
+  public
+    class function New: iRegras;
+    function Name(): string;
+    function CalcularImposto(aValue: Currency): Currency; overload;
+    function CalcularImposto(aValue: String): Currency; overload;
+  end;
+
+implementation
+
+{ TRegraSimplesNacional }
+
+function TRegraLucroPresumido.CalculaImposto(aValue: Currency): Currency;
+begin
+  Result:= (aValue * 0.3) + aValue;
+end;
+
+function TRegraLucroPresumido.CalcularImposto(aValue: String): Currency;
+begin
+  Result:=
+end;
+
+function TRegraLucroPresumido.CalcularImposto(aValue: Currency): Currency;
+begin
+
+end;
+
+function TRegraLucroPresumido.Name(): string;
+begin
+  Result:= 'Lucro Presumido';
+end;
+
+class function TRegraLucroPresumido.New: iRegras;
+begin
+  Result:= Self.Create;
+end;
+
+end.

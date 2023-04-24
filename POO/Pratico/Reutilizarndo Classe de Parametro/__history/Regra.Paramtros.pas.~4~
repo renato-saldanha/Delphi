@@ -1,0 +1,19 @@
+unit Regra.Paramtros;
+
+interface
+type
+  TRegraParametros = class(TInterfacedObject, iRegrasParametros)
+  private
+  public
+  constructor Create(aParent: iRegras);
+  destructor Destroy; override;
+  class function New(): IRegrasp
+
+  end;
+
+implementation
+
+uses
+  Regra.Interfaces;
+
+end.
