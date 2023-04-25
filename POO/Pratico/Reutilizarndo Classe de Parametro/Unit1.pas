@@ -52,16 +52,17 @@ begin
   RecebeRegra(FRegras);
   FRegras.Operacoes.CalcularImposto(EdtValorImposto.Text);
   FRegras.Operacoes.CalcularImpostoST(EdtValorImposto.Text);
+  FRegras.Operacoes.CalcularDiferencaDiasPagamento('11/10/2023');
 end;
 
 procedure TForm1.RecebeRegra(aValue: iRegras);
 begin
-  Memo1.Lines.Add(aValue.Name());
+  Memo1.Lines.Add(aValue.Parametros.Name());
 end;
 
 procedure TForm1.ComboBox1Change(Sender: TObject);
 begin
-  FRegras:= TEnumRegras(ComboBox1.ItemIndex).this.Display(ExibirResultado);
+  FRegras:= TEnumRegras(ComboBox1.ItemIndex).this.Parametros.Display(ExibirResultado).&End;
 end;
 
 procedure TForm1.ExibirResultado(aValue: String);

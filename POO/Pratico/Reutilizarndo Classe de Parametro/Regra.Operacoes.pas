@@ -3,7 +3,7 @@ unit Regra.Operacoes;
 interface
 
 uses
-  Regra.Interfaces, System.SysUtils;
+  Regra.Interfaces, System.SysUtils, System.DateUtils;
 type
   TRegrasOperacoes = class(TInterfacedObject, iRegrasOperacoes)
     private
@@ -19,8 +19,12 @@ type
 
       function CalcularImposto(aValue: Currency): Currency; overload;
       function CalcularImposto(aValue: String): Currency; overload;
+
       function CalcularImpostoST(aValue: Currency): Currency; overload;
       function CalcularImpostoST(aValue: String): Currency; overload;
+
+      function CalcularDiferencaDiasPagamento(aValue: TDate): Currency; overload;
+      function CalcularDiferencaDiasPagamento(aValue: String): Currency; overload;
   end;
 
 
@@ -45,10 +49,10 @@ end;
 
 function TRegrasOperacoes.CalcularImposto(aValue: Currency): Currency;
 begin
-  Result:= (aValue * FParent.PercentImposto) + aValue;
+  Result:= (aValue * FParent.Parametros.PercentImposto) + aValue;
 
-  if (Assigned(FParent.Display)) then
-    FParent.Display()(CurrToStr(Result));
+  if (Assigned(FParent.Parametros.Display)) then
+    FParent.Parametros.Display()(CurrToStr(Result));
 end;
 
 function TRegrasOperacoes.CalcularImposto(aValue: String): Currency;
@@ -67,12 +71,27 @@ begin
     Result:= CalcularImpostoST(StrToCurr(aValue));
 end;
 
+function TRegrasOperacoes.CalcularDiferencaDiasPagamento(
+  aValue: String): Currency;
+begin
+  Result:= CalcularDiferencaDiasPagamento(StrToDate(aValue))
+end;
+
+function TRegrasOperacoes.CalcularDiferencaDiasPagamento(
+  aValue: TDate): Currency;
+begin
+  Result:= DaysBetween(FParent.Parametros.DataPagamento, aValue);
+
+  if (Assigned(FParent.Parametros.Display)) then
+    FParent.Parametros.Display()(CurrToStr(Result) + ' dias restantes');
+end;
+
 function TRegrasOperacoes.CalcularImpostoST(aValue: Currency): Currency;
 begin
-  Result:= (aValue * FParent.PercentImposto - (aValue * 0.75)) + aValue;
+  Result:= (aValue * FParent.Parametros.PercentImposto - (aValue * FParent.Parametros.PercentImpostoST)) + aValue;
 
-  if (Assigned(FParent.Display)) then
-    FParent.Display()(CurrToStr(Result));
+  if (Assigned(FParent.Parametros.Display)) then
+    FParent.Parametros.Display()(CurrToStr(Result));
 end;
 
 function TRegrasOperacoes.Display(aValue: TProc<string>): iRegrasOperacoes;
