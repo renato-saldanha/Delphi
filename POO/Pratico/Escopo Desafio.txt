@@ -1,0 +1,6 @@
+*** Projeto ***
+classe para cada preço
+classe Controller
+classe Operacoes
+classe Parametros
+classe Tipo - Helper de enumerado

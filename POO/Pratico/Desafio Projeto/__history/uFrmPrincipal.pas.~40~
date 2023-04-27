@@ -38,7 +38,7 @@ uses
 
 procedure TForm1.CbxTipoPrecoChange(Sender: TObject);
 begin
-  FRegra:= iRegra(TEnumTipoPreco(CbxTipoPreco.ItemIndex).this.Operacoes.Display(ExibeResultado));
+  FRegra:= TEnumTipoPreco(CbxTipoPreco.ItemIndex).this.Parametros.Display(ExibeResultado).&End;
   RecebeRegra(FRegra);
 end;
 
@@ -49,6 +49,7 @@ end;
 
 procedure TForm1.FormCreate(Sender: TObject);
 begin
+  Memo.Lines.Clear;
   ReportMemoryLeaksOnShutdown := True;
   TRegrasController.New.ListarRegras(CbxTipoPreco.items)
 end;
@@ -62,9 +63,6 @@ procedure TForm1.BtnVerPrecoClick(Sender: TObject);
 begin
   FRegra.Operacoes.CalcularPreco(EdtPreco.Text);
 
-
-//  Memo.Lines.Add(CbxTipoPreco.Items[CbxTipoPreco.ItemIndex]);
-//  Memo.Lines.Add('Preço R$: ' + FormatFloat('#.#0', PrecoFinal));
 end;
 
 end.
