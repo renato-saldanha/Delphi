@@ -1,0 +1,27 @@
+unit Regra.Tipo;
+
+interface
+
+uses
+  Regra.Interfaces;
+
+type
+  TEnumTipoPreco = (trPrecoFeriado, trPrecoAtacado, trPrecoVarejo);
+
+  TEnumTipoPrecoHelper = record Helper for TEnumTipoPreco
+    function this: iRegras;
+  end;
+implementation
+
+{ TEnumTipoPrecoHelper }
+
+function TEnumTipoPrecoHelper.this: iRegras;
+begin
+  case (Self) of
+    trPrecoFeriado : Result:= TRegra;
+    trPrecoAtacado : PercAumentoPreco := 0.5;
+    trPrecoVarejo  : PercAumentoPreco := 0.3;
+  end;
+end;
+
+end.

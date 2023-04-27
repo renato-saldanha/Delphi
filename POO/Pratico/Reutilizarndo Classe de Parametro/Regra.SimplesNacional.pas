@@ -12,7 +12,7 @@ type
     FParametros: iRegrasParametros;
   public
     constructor Create();
-    destructor Destroy;
+    destructor Destroy; override;
     class function New(): iRegras;
     function Operacoes: iRegrasOperacoes;
     function Parametros: iRegrasParametros;
@@ -38,7 +38,7 @@ end;
 
 destructor TRegraSimplesNacional.Destroy;
 begin
-
+  inherited;
 end;
 
 class function TRegraSimplesNacional.New: iRegras;

@@ -1,0 +1,43 @@
+unit Regra.Interfaces;
+
+interface
+
+uses
+  System.SysUtils, System.Classes;
+
+type
+  iRegrasOperacoes = interface;
+  iRegrasParametros = interface;
+
+  iRegras = interface
+    ['{4F14C4D0-3D2B-4E5C-86F0-90B768632FFE}']
+    function Operacoes: iRegrasOperacoes;
+    function Parametros: iRegrasParametros;
+  end;
+
+  iRegrasController = interface
+    ['{7624E131-D2C1-4131-9DF6-B9CF9671B8E2}']
+    function RegistrarClasse(aKey: Integer; aValue: string): iRegrasController;
+    function ListarRegras(aValue: TStrings): iRegrasController;
+  end;
+
+  iRegrasOperacoes = interface
+    ['{60FAA717-7424-4D45-B355-A7B6BBDB16A3}']
+    function CalcularPreco(aValue: String): string;
+  end;
+
+  iRegrasParametros = interface
+    ['{7A8B642F-1F5F-4E69-ACC8-41D9F134C8E0}']
+    function Name(aValue: string): iRegrasParametros; overload;
+    function Name: String; overload;
+
+    function PercAumento(aValue: Currency): iRegrasParametros; overload;
+    function PercAumento: Currency; overload;
+
+    function Display(aValue: TProc<String>): iRegrasParametros; overload;
+    function Display: TProc<String>; overload;
+  end;
+
+implementation
+
+end.

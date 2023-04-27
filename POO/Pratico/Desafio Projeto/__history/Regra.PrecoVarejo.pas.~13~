@@ -1,0 +1,56 @@
+unit Regra.PrecoVarejo;
+
+interface
+
+uses
+  Regra.Interfaces, System.SysUtils;
+type
+  TRegraPrecoVarejo= class(TInterfacedObject, iRegras)
+    private
+      FOperacoes: iRegrasOperacoes;
+      FParametros: iRegrasParametros;
+      FDisplay: TProc<string>;
+    public
+      constructor Create;
+      destructor Destroy; override;
+      class function New: iRegras;
+      function Operacoes: iRegrasOperacoes<T>;
+      function Parametros: iRegrasParametros;
+  end;
+
+implementation
+
+uses
+  Regra.Controller, Regra.Tipo;
+
+{ TRegraPrecoVarejo }
+
+constructor TRegraPrecoVarejo.Create;
+begin
+
+end;
+
+destructor TRegraPrecoVarejo.Destroy;
+begin
+
+  inherited;
+end;
+
+class function TRegraPrecoVarejo.New: iRegras;
+begin
+  Result:= Self.Create;
+end;
+
+function TRegraPrecoVarejo.Operacoes: iRegrasOperacoes;
+begin
+  Result:= FOperacoes;
+end;
+
+function TRegraPrecoVarejo.Parametros: iRegrasParametros;
+begin
+  Result:= FParametros;
+end;
+
+initialization
+  TRegrasController.New.RegistrarClasse(Integer(trPrecoVarejo), 'Preço Varejo');
+end.

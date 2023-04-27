@@ -1,0 +1,68 @@
+unit uFrmPrincipal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Regra.Interfaces,
+  Regra.Tipo;
+
+type
+  TForm1 = class(TForm)
+    CbxTipoPreco: TComboBox;
+    EdtPreco: TEdit;
+    BtnVerPreco: TButton;
+    Memo: TMemo;
+    procedure FormCreate(Sender: TObject);
+    procedure BtnVerPrecoClick(Sender: TObject);
+    procedure CbxTipoPrecoChange(Sender: TObject);
+  private
+    { Private declarations }
+    FRegra: iRegras;
+    function RecebeRegra(aValue: iRegras): iRegras;
+    procedure ExibeResultado(aValue: String);
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+  PercAumentoPreco: Currency;
+
+implementation
+
+uses
+  Regra.Controller;
+
+{$R *.dfm}
+
+procedure TForm1.CbxTipoPrecoChange(Sender: TObject);
+begin
+  FRegra:= TEnumTipoPreco(CbxTipoPreco.ItemIndex).this.Parametros.Display(ExibeResultado).&End;
+  RecebeRegra(FRegra);
+end;
+
+procedure TForm1.ExibeResultado(aValue: String);
+begin
+  Memo.Lines.Add(aValue);
+end;
+
+procedure TForm1.FormCreate(Sender: TObject);
+begin
+  Memo.Lines.Clear;
+  ReportMemoryLeaksOnShutdown := True;
+  TRegrasController.New.ListarRegras(CbxTipoPreco.items)
+end;
+
+function TForm1.RecebeRegra(aValue: iRegras): iRegras;
+begin
+  Memo.Lines.Add(aValue.Parametros.Name);
+end;
+
+procedure TForm1.BtnVerPrecoClick(Sender: TObject);
+begin
+  FRegra.Operacoes.CalcularPreco(EdtPreco.Text);
+
+end;
+
+end.

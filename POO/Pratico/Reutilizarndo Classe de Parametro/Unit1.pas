@@ -10,7 +10,8 @@ uses
   Regra.LucroPresumido,
   Regra.LucroReal,
   Regra.Interfaces,
-  Regra.Controller;
+  Regra.Controller,
+  Regra.Tipo;
 
 type
   TForm1 = class(TForm)
@@ -35,8 +36,6 @@ var
 
 implementation
 
-uses
-  Regra.Tipo;
 
 {$R *.dfm}
 

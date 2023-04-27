@@ -1,0 +1,29 @@
+unit Regra.Controller;
+
+interface
+
+uses
+  Regra.Interfaces;
+type
+  TRegrasController = class(TInterfacedObject, iRegrasController)
+    private
+    public
+      function RegistrarClasse(aKey: Integer; aValue: string): iRegrasController;
+      function ListarRegras(aValue: string): iRegrasController;
+  end;
+implementation
+
+{ TRegrasController }
+
+function TRegrasController.ListarRegras(aValue: string): iRegrasController;
+begin
+
+end;
+
+function TRegrasController.RegistrarClasse(aKey: Integer;
+  aValue: string): iRegrasController;
+begin
+
+end;
+
+end.

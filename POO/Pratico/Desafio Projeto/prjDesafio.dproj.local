@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/04/25 12:51:25.000.084,=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/04/25 17:16:32.000.815,=D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Unit1.pas</Transaction>
+    <Transaction>2023/04/25 17:17:03.000.004,D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Unit1.pas=D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Regra.Controller.pas</Transaction>
+    <Transaction>2023/04/25 17:23:47.000.931,=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/04/25 17:26:55.000.795,=D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Unit1.pas</Transaction>
+    <Transaction>2023/04/25 17:27:41.000.115,D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Unit1.pas=D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Regra.Interfaces.pas</Transaction>
+    <Transaction>2023/04/25 17:30:15.000.165,=D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Unit1.pas</Transaction>
+    <Transaction>2023/04/25 17:30:37.000.150,D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Unit1.pas=D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Regra.PrecoFeriado.pas</Transaction>
+    <Transaction>2023/04/25 17:30:43.000.885,=D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Unit1.pas</Transaction>
+    <Transaction>2023/04/25 17:30:58.000.967,D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Unit1.pas=D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Regra.PrecoVarejo.pas</Transaction>
+    <Transaction>2023/04/25 17:31:05.000.555,=D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Unit1.pas</Transaction>
+    <Transaction>2023/04/25 17:31:18.000.365,D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Unit1.pas=D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Regra.PrecoAtacado.pas</Transaction>
+    <Transaction>2023/04/25 17:32:06.000.357,=D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Unit1.pas</Transaction>
+    <Transaction>2023/04/25 17:32:15.000.161,D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Unit1.pas=D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Regra.Parametros.pas</Transaction>
+    <Transaction>2023/04/25 17:32:20.000.257,=D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Unit1.pas</Transaction>
+    <Transaction>2023/04/25 17:32:31.000.157,D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Unit1.pas=D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Regra.Operacoes.pas</Transaction>
+    <Transaction>2023/04/25 17:34:07.000.094,=D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Unit1.pas</Transaction>
+    <Transaction>2023/04/25 17:34:11.000.675,D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Unit1.pas=D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Regra.Tipo.pas</Transaction>
+    <Transaction>2023/04/25 17:56:36.000.064,C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit1.pas=D:\Renato\Delphi\POO\Pratico\Desafio Projeto\uFrmPrincipal.pas</Transaction>
+    <Transaction>2023/04/25 17:56:36.000.064,C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit1.dfm=D:\Renato\Delphi\POO\Pratico\Desafio Projeto\uFrmPrincipal.dfm</Transaction>
+    <Transaction>2023/04/25 18:07:31.000.870,C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Project1.dproj=D:\Renato\Delphi\POO\Pratico\Desafio Projeto\prjDesafio.dproj</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="Regra.Controller.pas"/>
+    <File Path="Regra.Interfaces.pas"/>
+    <File Path="Regra.Operacoes.pas"/>
+    <File Path="Regra.Parametros.pas"/>
+    <File Path="Regra.PrecoAtacado.pas"/>
+    <File Path="Regra.PrecoFeriado.pas"/>
+    <File Path="Regra.PrecoVarejo.pas"/>
+    <File Path="Regra.Tipo.pas"/>
+    <File Path="uFrmPrincipal.pas"/>
+    <File Path="uFrmPrincipal.dfm"/>
+  </ProjectSortOrder>
+</BorlandProject>

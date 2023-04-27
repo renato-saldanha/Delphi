@@ -1,0 +1,57 @@
+unit Regra.Controller;
+
+interface
+
+uses
+  Regra.Interfaces, System.Generics.Collections, System.Classes;
+type
+  TRegrasController = class(TInterfacedObject, iRegrasController)
+    private
+      FListaRegras : TDictionary<integer, String>;
+    public
+    constructor Create;
+    destructor Destroy; override;
+      class function New: iRegrasController;
+      function RegistrarClasse(aKey: Integer; aValue: string): iRegrasController;
+      function ListarRegras(aValue: TStrings): iRegrasController;
+
+  end;
+implementation
+
+{ TRegrasController }
+
+constructor TRegrasController.Create;
+begin
+  FListaRegras := TDictionary<Integer, String>.Create;
+end;
+
+destructor TRegrasController.Destroy;
+begin
+  FListaRegras.Free;
+  inherited;
+end;
+
+function TRegrasController.ListarRegras(aValue: TStrings): iRegrasController;
+var
+  Item: String;
+begin
+  Result := Self;
+
+  for Item in aValue.Values do
+    FListaRegras.Add(Item);
+
+end;
+
+class function TRegrasController.New: iRegrasController;
+begin
+  Result := Self.Create;
+end;
+
+function TRegrasController.RegistrarClasse(aKey: Integer;
+  aValue: string): iRegrasController;
+begin
+  Result := Self;
+  FListaRegras.Add(aKey, aValue)
+end;
+
+end.

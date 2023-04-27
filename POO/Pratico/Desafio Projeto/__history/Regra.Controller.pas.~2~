@@ -1,0 +1,13 @@
+unit Regra.Controller;
+
+interface
+
+uses
+  Regra.Interfaces;
+type
+  TRegrasController = class(TInterfacedObject, iRegrasController)
+
+  end;
+implementation
+
+end.

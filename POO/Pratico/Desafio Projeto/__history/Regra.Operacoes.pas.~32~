@@ -1,0 +1,65 @@
+unit Regra.Operacoes;
+
+interface
+
+uses
+  Regra.Interfaces, System.SysUtils;
+
+type
+  TRegrasOperacoes = class(TInterfacedObject, iRegrasOperacoes)
+  private
+    FDisplay: TProc<string>;
+
+    [weak]
+    FParent: iRegras;
+  public
+    constructor Create(aParent: iRegras);
+    destructor Destroy; override;
+    class function New(aParent: iRegras): iRegrasOperacoes;
+    function CalcularPreco(aValue: String): string;
+    function Display(aValue: TProc<String>): iRegrasOperacoes; overload;
+    function Display: TProc<String>; overload;
+  end;
+
+implementation
+
+{ TRegrasOperacoes }
+
+constructor TRegrasOperacoes.Create(aParent: iRegras);
+begin
+  FParent := aParent;
+end;
+
+destructor TRegrasOperacoes.Destroy;
+begin
+
+  inherited;
+end;
+
+function TRegrasOperacoes.Display: TProc<string>;
+begin
+  Result := FDisplay
+end;
+
+class function TRegrasOperacoes.New(aParent: iRegras): iRegrasOperacoes;
+begin
+  Result := Self.Create(aParent);
+end;
+
+function TRegrasOperacoes.Display(aValue: TProc<string>): iRegrasOperacoes;
+begin
+  FDisplay := aValue;
+  Result := Self;
+end;
+
+function TRegrasOperacoes.CalcularPreco(aValue: String): string;
+begin
+  Result := CurrToStr(StrToCurr(aValue) + (StrToCurr(aValue) * FParent.Parametros.PercAumento));
+
+  if Assigned(FDisplay) then
+  begin
+    FDisplay(Result);
+  end;
+end;
+
+end.

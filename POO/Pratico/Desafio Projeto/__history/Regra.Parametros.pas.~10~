@@ -1,0 +1,76 @@
+unit Regra.Parametros;
+
+interface
+
+uses
+  Regra.Interfaces, System.SysUtils;
+
+type
+  TRegrasParametros = class(TInterfacedObject, iRegrasParametros)
+  private
+    FName: String;
+    FDisplay: TProc<string>;
+    FPercAumento: Currency;
+    FParent: iRegrasParametros;
+  public
+    constructor Create;
+    destructor Destroy; override;
+    function Name(aValue: string): iRegrasParametros; overload;
+    function Name: String; overload;
+
+    function PercAumento(aValue: Currency): iRegrasParametros; overload;
+    function PercAumento: Currency; overload;
+
+    function Display(aValue: TProc<String>): iRegrasParametros; overload;
+    function Display: TProc<String>; overload;
+  end;
+
+implementation
+
+{ TRegrasParametros }
+
+constructor TRegrasParametros.Create;
+begin
+
+end;
+
+destructor TRegrasParametros.Destroy;
+begin
+
+  inherited;
+end;
+
+function TRegrasParametros.Name: String;
+begin
+  Result := FName;
+end;
+
+function TRegrasParametros.PercAumento: Currency;
+begin
+  Result := FPercAumento;
+end;
+
+function TRegrasParametros.PercAumento(aValue: Currency): iRegrasParametros;
+begin
+  FPercAumento := aValue;
+  Result := Self;
+end;
+
+function TRegrasParametros.Name(aValue: string): iRegrasParametros;
+begin
+  FName := aValue;
+  Result := Self;
+end;
+
+function TRegrasParametros.Display: TProc<string>;
+begin
+  Result := FDisplay
+end;
+
+function TRegrasParametros.Display(aValue: TProc<string>): iRegrasParametros;
+begin
+  FDisplay := aValue;
+  Result := Self;
+end;
+
+end.
