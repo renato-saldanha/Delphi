@@ -27,12 +27,18 @@ type
 
 var
   Form1: TForm1;
-  PercAumentoPreco: Currency;
-
+  
 implementation
 
 
 {$R *.dfm}
+
+procedure TForm1.FormCreate(Sender: TObject);
+begin
+  Memo.Lines.Clear;
+  ReportMemoryLeaksOnShutdown := True;
+  TRegrasController.New.ListarRegras(CbxTipoPreco.items)
+end;
 
 procedure TForm1.CbxTipoPrecoChange(Sender: TObject);
 begin
@@ -43,13 +49,6 @@ end;
 procedure TForm1.ExibeResultado(aValue: String);
 begin
   Memo.Lines.Add(aValue);
-end;
-
-procedure TForm1.FormCreate(Sender: TObject);
-begin
-  Memo.Lines.Clear;
-  ReportMemoryLeaksOnShutdown := True;
-  TRegrasController.New.ListarRegras(CbxTipoPreco.items)
 end;
 
 function TForm1.RecebeRegra(aValue: iRegras): iRegras;

@@ -15,44 +15,44 @@ File_12=TSourceModule,'D:\Renato\Delphi\POO\Pratico\Evitando Retrabalho de Imple
 File_13=TSourceModule,'D:\Renato\Delphi\POO\Pratico\Evitando Retrabalho de Implementacao\Regra.SimplesNacional.pas',0,1,28,18,39,0,0,,
 
 [Modules]
-Module0=D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Regra.Tipo.pas
+Module0=D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Regra.Operacoes.pas
 Module1=D:\Renato\Delphi\POO\Pratico\Desafio Projeto\uFrmPrincipal.pas
-Module2=D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Regra.PrecoFeriado.pas
-Module3=D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Regra.Parametros.pas
-Module4=D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Regra.Interfaces.pas
-Module5=D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Regra.Operacoes.pas
-Module6=D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Regra.PrecoVarejo.pas
-Module7=D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Regra.PrecoAtacado.pas
+Module2=D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Regra.Parametros.pas
+Module3=D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Regra.PrecoVarejo.pas
+Module4=D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Regra.PrecoFeriado.pas
+Module5=D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Regra.PrecoAtacado.pas
+Module6=D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Regra.Tipo.pas
+Module7=D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Regra.Interfaces.pas
 Count=8
 EditWindowCount=1
 
-[D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Regra.Tipo.pas]
+[D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Regra.Operacoes.pas]
 ModuleType=TSourceModule
 
 [D:\Renato\Delphi\POO\Pratico\Desafio Projeto\uFrmPrincipal.pas]
 ModuleType=TSourceModule
 
-[D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Regra.PrecoFeriado.pas]
-ModuleType=TSourceModule
-
 [D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Regra.Parametros.pas]
-ModuleType=TSourceModule
-
-[D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Regra.Interfaces.pas]
-ModuleType=TSourceModule
-
-[D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Regra.Operacoes.pas]
 ModuleType=TSourceModule
 
 [D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Regra.PrecoVarejo.pas]
 ModuleType=TSourceModule
 
+[D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Regra.PrecoFeriado.pas]
+ModuleType=TSourceModule
+
 [D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Regra.PrecoAtacado.pas]
+ModuleType=TSourceModule
+
+[D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Regra.Tipo.pas]
+ModuleType=TSourceModule
+
+[D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Regra.Interfaces.pas]
 ModuleType=TSourceModule
 
 [EditWindow0]
 ViewCount=8
-CurrentEditView=D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Regra.Tipo.pas
+CurrentEditView=D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Regra.Operacoes.pas
 View0=0
 View1=1
 View2=2
@@ -126,9 +126,9 @@ EditViewName=D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Regra.Interfaces.pas
 [View3]
 CustomEditViewType=TEditView
 Module=D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Regra.PrecoFeriado.pas
-CursorX=61
-CursorY=43
-TopLine=32
+CursorX=1
+CursorY=16
+TopLine=1
 LeftCol=1
 Elisions=
 Bookmarks=
@@ -137,9 +137,9 @@ EditViewName=D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Regra.PrecoFeriado.pas
 [View4]
 CustomEditViewType=TEditView
 Module=D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Regra.PrecoVarejo.pas
-CursorX=15
-CursorY=30
-TopLine=10
+CursorX=1
+CursorY=15
+TopLine=1
 LeftCol=1
 Elisions=
 Bookmarks=
@@ -149,8 +149,8 @@ EditViewName=D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Regra.PrecoVarejo.pas
 CustomEditViewType=TEditView
 Module=D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Regra.PrecoAtacado.pas
 CursorX=5
-CursorY=32
-TopLine=18
+CursorY=38
+TopLine=22
 LeftCol=1
 Elisions=
 Bookmarks=
@@ -161,7 +161,7 @@ CustomEditViewType=TEditView
 Module=D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Regra.Parametros.pas
 CursorX=32
 CursorY=36
-TopLine=19
+TopLine=55
 LeftCol=1
 Elisions=
 Bookmarks=
@@ -339,11 +339,11 @@ State=0
 Left=0
 Top=0
 Width=2000
-Height=2778
+Height=6528
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2000
-ClientHeight=2778
+ClientHeight=6528
 TBDockHeight=5963
 LRDockWidth=2510
 Dockable=1
@@ -355,8 +355,8 @@ Create=1
 Visible=0
 Docked=1
 State=0
-Left=0
-Top=0
+Left=-1528
+Top=260
 Width=276
 Height=361
 MaxLeft=-1
@@ -460,11 +460,11 @@ State=0
 Left=0
 Top=0
 Width=2339
-Height=1222
+Height=981
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2339
-ClientHeight=1222
+ClientHeight=981
 TBDockHeight=2315
 LRDockWidth=2823
 Dockable=1
@@ -525,11 +525,11 @@ State=0
 Left=0
 Top=0
 Width=2000
-Height=0
+Height=6528
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2000
-ClientHeight=0
+ClientHeight=6528
 TBDockHeight=4880
 LRDockWidth=7151
 Dockable=1
@@ -541,8 +541,8 @@ Create=1
 Visible=0
 Docked=1
 State=0
-Left=0
-Top=0
+Left=380
+Top=857
 Width=2854
 Height=3213
 MaxLeft=-1
@@ -560,8 +560,8 @@ Create=1
 Visible=0
 Docked=1
 State=0
-Left=0
-Top=0
+Left=-8
+Top=-124
 Width=1849
 Height=3139
 MaxLeft=-1
@@ -665,11 +665,11 @@ State=0
 Left=0
 Top=0
 Width=2000
-Height=0
+Height=6528
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2000
-ClientHeight=0
+ClientHeight=6528
 TBDockHeight=4880
 LRDockWidth=5307
 Dockable=1
@@ -729,8 +729,8 @@ Create=1
 Visible=0
 Docked=1
 State=0
-Left=8
-Top=8
+Left=0
+Top=28
 Width=3823
 Height=1417
 MaxLeft=-1

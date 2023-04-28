@@ -29,6 +29,14 @@ begin
   FListaRegras := TDictionary<Integer, String>.Create;
 end;
 
+class function TRegrasController.New: iRegrasController;
+begin
+  if not (Assigned(RegrasController))  then
+    RegrasController := Self.Create;
+
+  Result := RegrasController;
+end;
+
 destructor TRegrasController.Destroy;
 begin
   FListaRegras.Free;
@@ -47,14 +55,6 @@ begin
 
   for I in KeysArray do
     aValue.Add(FListaRegras.Items[I])
-end;
-
-class function TRegrasController.New: iRegrasController;
-begin
-  if not (Assigned(RegrasController))  then
-    RegrasController := Self.Create;
-
-  Result := RegrasController;
 end;
 
 function TRegrasController.RegistrarClasse(aKey: Integer;

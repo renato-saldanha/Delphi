@@ -1,0 +1,22 @@
+program Project1;
+
+uses
+  Vcl.Forms,
+  Form.Principal in 'C:\Users\DESEN\Downloads\Prj2\Form.Principal.pas' {Form1},
+  Regra.Controller in 'C:\Users\DESEN\Downloads\Prj2\Regra.Controller.pas',
+  Regra.Interfaces in 'C:\Users\DESEN\Downloads\Prj2\Regra.Interfaces.pas',
+  Regra.PrecoFeriado in 'C:\Users\DESEN\Downloads\Prj2\Regra.PrecoFeriado.pas',
+  Regra.PrecoVarejo in 'C:\Users\DESEN\Downloads\Prj2\Regra.PrecoVarejo.pas',
+  Regra.PrecoAtacado in 'C:\Users\DESEN\Downloads\Prj2\Regra.PrecoAtacado.pas',
+  Regra.Tipo in 'C:\Users\DESEN\Downloads\Prj2\Regra.Tipo.pas',
+  Regra.Operacoes in 'C:\Users\DESEN\Downloads\Prj2\Regra.Operacoes.pas',
+  Regra.Parametros in 'C:\Users\DESEN\Downloads\Prj2\Regra.Parametros.pas';
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+end.

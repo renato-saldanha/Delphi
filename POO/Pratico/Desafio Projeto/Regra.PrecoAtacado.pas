@@ -12,7 +12,6 @@ type
     public
       constructor Create;
       destructor Destroy; override;
-      class function New: iRegras;
       function Operacoes: iRegrasOperacoes;
       function Parametros: iRegrasParametros;
   end;
@@ -36,11 +35,6 @@ destructor TRegraPrecoAtacado.Destroy;
 begin
 
   inherited;
-end;
-
-class function TRegraPrecoAtacado.New: iRegras;
-begin
-  Result:= Self.Create;
 end;
 
 function TRegraPrecoAtacado.Operacoes: iRegrasOperacoes;
