@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/04/25 12:51:25.000.084,=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/05/02 08:05:55.000.324,=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/05/02 08:06:02.000.077,C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Regra.Controller.pas=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/05/02 08:10:16.000.021,C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Form.Principal.dfm=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2023/05/02 08:10:16.000.021,C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Form.Principal.pas=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/05/02 08:10:20.000.824,C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2023/05/02 08:10:50.000.481,=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/05/02 08:17:48.000.563,=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/05/02 08:18:00.000.854,C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Regra.PrecoFeriado.pas=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/05/02 08:18:06.000.364,=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/05/02 08:18:17.000.514,C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Regra.PrecoVarejo.pas=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/05/02 08:18:22.000.147,=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/05/02 08:18:29.000.481,C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Regra.PrecoAtacado.pas=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/05/02 08:18:41.000.836,=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/05/02 08:18:45.000.674,C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Regra.Interfaces.pas=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/05/02 08:26:56.000.657,=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/05/02 08:27:02.000.953,C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Regra.Tipo.pas=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/05/02 08:52:25.000.353,=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/05/02 08:52:34.000.265,C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Regra.Operacoes.pas=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/05/02 09:01:57.000.388,=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/05/02 09:02:17.000.323,C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Regra.Parametros.pas=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>
