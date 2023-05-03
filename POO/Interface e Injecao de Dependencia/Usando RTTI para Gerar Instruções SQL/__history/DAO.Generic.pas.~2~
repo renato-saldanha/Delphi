@@ -1,0 +1,36 @@
+unit DAO.Generic;
+
+interface
+
+uses
+  Interfaces;
+
+type
+  TDAOGeneric<T: class> = class(TInterfacedObject, iDAOInterface<T>)
+  private
+  public
+    procedure Insert(aClass: T);
+    procedure Delete(aClass: T);
+    procedure Update(aClass: T);
+  end;
+
+implementation
+
+{ TDAOGeneric<T> }
+
+procedure TDAOGeneric<T>.Delete(aClass: T);
+begin
+
+end;
+
+procedure TDAOGeneric<T>.Insert(aClass: T);
+begin
+
+end;
+
+procedure TDAOGeneric<T>.Update(aClass: T);
+begin
+
+end;
+
+end.

@@ -1,0 +1,7 @@
+unit DAO.Generic;
+
+interface
+
+implementation
+
+end.

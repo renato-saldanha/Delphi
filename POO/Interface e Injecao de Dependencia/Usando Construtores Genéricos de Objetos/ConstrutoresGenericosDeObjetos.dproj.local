@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/05/03 17:34:05.000.977,=D:\Renato\Delphi\POO\Interface e Injecao de Dependencia\Desacoplamento com Interfaces\Unit1.pas</Transaction>
+    <Transaction>2023/05/03 17:34:12.000.890,D:\Renato\Delphi\POO\Interface e Injecao de Dependencia\Desacoplamento com Interfaces\Unit1.pas=D:\Renato\Delphi\POO\Interface e Injecao de Dependencia\Desacoplamento com Interfaces\PessoaDAO.pas</Transaction>
+    <Transaction>2023/05/03 17:35:12.000.148,=D:\Renato\Delphi\POO\Interface e Injecao de Dependencia\Desacoplamento com Interfaces\Unit1.pas</Transaction>
+    <Transaction>2023/05/03 17:35:18.000.558,D:\Renato\Delphi\POO\Interface e Injecao de Dependencia\Desacoplamento com Interfaces\Unit1.pas=D:\Renato\Delphi\POO\Interface e Injecao de Dependencia\Desacoplamento com Interfaces\ProdutoDAO.pas</Transaction>
+    <Transaction>2023/05/03 17:39:09.000.564,=D:\Renato\Delphi\POO\Interface e Injecao de Dependencia\Desacoplamento com Interfaces\Unit1.pas</Transaction>
+    <Transaction>2023/05/03 17:39:18.000.014,D:\Renato\Delphi\POO\Interface e Injecao de Dependencia\Desacoplamento com Interfaces\Unit1.pas=D:\Renato\Delphi\POO\Interface e Injecao de Dependencia\Desacoplamento com Interfaces\DAO.Generic.pas</Transaction>
+    <Transaction>2023/05/03 17:39:49.000.835,D:\Renato\Delphi\POO\Interface e Injecao de Dependencia\Usando Construtores Genéricos de Objetos\PessoaDAO.pas=</Transaction>
+    <Transaction>2023/05/03 17:39:52.000.564,D:\Renato\Delphi\POO\Interface e Injecao de Dependencia\Usando Construtores Genéricos de Objetos\ProdutoDAO.pas=</Transaction>
+    <Transaction>2023/05/03 18:21:53.736,D:\Renato\Delphi\POO\Interface e Injecao de Dependencia\Usando Construtores Genéricos de Objetos\ConstrutoresGenericos.dproj=D:\Renato\Delphi\POO\Interface e Injecao de Dependencia\Usando Construtores Genéricos de Objetos\Project2.dproj</Transaction>
+    <Transaction>2023/05/03 18:22:04.960,D:\Renato\Delphi\POO\Interface e Injecao de Dependencia\Usando Construtores Genéricos de Objetos\ConstrutoresGenericosDeObjetos.dproj=D:\Renato\Delphi\POO\Interface e Injecao de Dependencia\Usando Construtores Genéricos de Objetos\ConstrutoresGenericos.dproj</Transaction>
+    <Transaction>2023/05/03 18:24:28.000.461,=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/05/03 18:27:00.000.754,C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit1.pas=D:\Renato\Delphi\POO\Interface e Injecao de Dependencia\Desacoplamento com Interfaces\Form.Principal.pas</Transaction>
+    <Transaction>2023/05/03 18:27:00.000.754,C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit1.dfm=D:\Renato\Delphi\POO\Interface e Injecao de Dependencia\Desacoplamento com Interfaces\Form.Principal.dfm</Transaction>
+    <Transaction>2023/05/03 18:27:09.000.421,=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/05/03 18:27:18.000.484,C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit1.pas=D:\Renato\Delphi\POO\Interface e Injecao de Dependencia\Desacoplamento com Interfaces\Pessoa.pas</Transaction>
+    <Transaction>2023/05/03 18:27:22.000.988,=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/05/03 18:27:26.000.346,C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit1.pas=D:\Renato\Delphi\POO\Interface e Injecao de Dependencia\Desacoplamento com Interfaces\Produto.pas</Transaction>
+    <Transaction>2023/05/03 18:27:31.000.568,=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/05/03 18:27:35.000.826,C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit1.pas=D:\Renato\Delphi\POO\Interface e Injecao de Dependencia\Desacoplamento com Interfaces\Interfaces.pas</Transaction>
+    <Transaction>2023/05/03 18:27:45.000.063,C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Project2.dproj=D:\Renato\Delphi\POO\Interface e Injecao de Dependencia\Desacoplamento com Interfaces\Project2.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

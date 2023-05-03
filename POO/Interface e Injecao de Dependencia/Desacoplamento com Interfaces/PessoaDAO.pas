@@ -1,0 +1,34 @@
+unit PessoaDAO;
+
+interface
+
+uses
+  Pessoa;
+type
+  TPessoaDAO = class
+    private
+    public
+      procedure Insert(aClass: TPessoa);
+      procedure Delete(aClass: TPessoa);
+      procedure Update(aClass: TPessoa);
+  end;
+implementation
+
+{ TPessoaDAO }
+
+procedure TPessoaDAO.Delete(aClass: TPessoa);
+begin
+//
+end;
+
+procedure TPessoaDAO.Insert(aClass: TPessoa);
+begin
+  ///
+end;
+
+procedure TPessoaDAO.Update(aClass: TPessoa);
+begin
+     //
+end;
+
+end.

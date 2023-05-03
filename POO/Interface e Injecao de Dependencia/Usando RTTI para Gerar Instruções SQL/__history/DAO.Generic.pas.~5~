@@ -1,0 +1,64 @@
+unit DAO.Generic;
+
+interface
+
+uses
+  Interfaces;
+
+type
+  TDAOGeneric<T: class, constructor> = class(TInterfacedObject, iDAOInterface<T>)
+  private
+    FEntidade: T;
+  public
+    constructor Create;
+    destructor Destroy; override;
+    class function New: iDAOInterface<T>;
+    procedure Insert(aClass: T);
+    procedure Delete(aClass: T);
+    procedure Update(aClass: T);
+
+    function this: T;
+  end;
+
+implementation
+
+{ TDAOGeneric<T> }
+
+constructor TDAOGeneric<T>.Create;
+begin
+  FEntidade := T.Create;
+end;
+
+class function TDAOGeneric<T>.New: iDAOInterface<T>;
+begin
+  if not Assigned(Self) then
+    Result := Self.Create;
+end;
+
+function TDAOGeneric<T>.this: T;
+begin
+  Result := FEntidade;
+end;
+
+destructor TDAOGeneric<T>.Destroy;
+begin
+  FEntidade.Free;
+  inherited;
+end;
+
+procedure TDAOGeneric<T>.Delete(aClass: T);
+begin
+  //
+end;
+
+procedure TDAOGeneric<T>.Insert(aClass: T);
+begin
+  //
+end;
+
+procedure TDAOGeneric<T>.Update(aClass: T);
+begin
+  //
+end;
+
+end.

@@ -1,0 +1,58 @@
+unit Form.Principal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Pessoa,
+  Produto, DAO.Generic, Interfaces;
+
+type
+  TForm1 = class(TForm)
+    Btn1: TButton;
+    Button1: TButton;
+    procedure Btn1Click(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm1.Btn1Click(Sender: TObject);
+var
+  vPessoa : iDAOInterface<TPessoa>;
+begin
+  try
+    vPessoa             := TDAOGeneric<TPessoa>.New;
+    vPessoa.Nome        := 'Renato';
+    vPessoa.SobreNome   := 'Saldanha';
+    vPessoa.Insert;
+  finally
+    vPessoa.Free;
+  end;
+end;
+
+procedure TForm1.Button1Click(Sender: TObject);
+var
+  vProduto : TProduto;
+begin
+  vProduto     := TProduto.Create;
+  try
+    vProduto.Nome        := 'Oleo';
+    vProduto.Marca       := 'Vigor';
+    TDAOGeneric<TProduto>.New.Insert;
+  finally
+    vProduto.Free;
+  end;
+
+end;
+
+end.

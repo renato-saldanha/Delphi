@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/05/03 17:34:05.000.977,=D:\Renato\Delphi\POO\Interface e Injecao de Dependencia\Desacoplamento com Interfaces\Unit1.pas</Transaction>
+    <Transaction>2023/05/03 17:34:12.000.890,D:\Renato\Delphi\POO\Interface e Injecao de Dependencia\Desacoplamento com Interfaces\PessoaDAO.pas=D:\Renato\Delphi\POO\Interface e Injecao de Dependencia\Desacoplamento com Interfaces\Unit1.pas</Transaction>
+    <Transaction>2023/05/03 17:35:12.000.148,=D:\Renato\Delphi\POO\Interface e Injecao de Dependencia\Desacoplamento com Interfaces\Unit1.pas</Transaction>
+    <Transaction>2023/05/03 17:35:18.000.558,D:\Renato\Delphi\POO\Interface e Injecao de Dependencia\Desacoplamento com Interfaces\ProdutoDAO.pas=D:\Renato\Delphi\POO\Interface e Injecao de Dependencia\Desacoplamento com Interfaces\Unit1.pas</Transaction>
+    <Transaction>2023/05/03 17:39:09.000.564,=D:\Renato\Delphi\POO\Interface e Injecao de Dependencia\Desacoplamento com Interfaces\Unit1.pas</Transaction>
+    <Transaction>2023/05/03 17:39:18.000.014,D:\Renato\Delphi\POO\Interface e Injecao de Dependencia\Desacoplamento com Interfaces\DAO.Generic.pas=D:\Renato\Delphi\POO\Interface e Injecao de Dependencia\Desacoplamento com Interfaces\Unit1.pas</Transaction>
+    <Transaction>2023/05/03 17:39:49.000.835,D:\Renato\Delphi\POO\Interface e Injecao de Dependencia\Usando Construtores Genéricos de Objetos\PessoaDAO.pas=</Transaction>
+    <Transaction>2023/05/03 17:39:52.000.564,D:\Renato\Delphi\POO\Interface e Injecao de Dependencia\Usando Construtores Genéricos de Objetos\ProdutoDAO.pas=</Transaction>
+    <Transaction>2023/05/03 17:57:19.632,=D:\Renato\Delphi\POO\Interface e Injecao de Dependencia\Usando RTTI para Gerar Instruções SQL\Unit1.pas</Transaction>
+    <Transaction>2023/05/03 17:57:28.422,D:\Renato\Delphi\POO\Interface e Injecao de Dependencia\Usando RTTI para Gerar Instruções SQL\DAO.RTTI.pas=D:\Renato\Delphi\POO\Interface e Injecao de Dependencia\Usando RTTI para Gerar Instruções SQL\Unit1.pas</Transaction>
+    <Transaction>2023/05/03 17:58:35.000.251,D:\Renato\Delphi\POO\Interface e Injecao de Dependencia\Entendendo o Gerenciamento de Memória das Interfaces\GerenciamentoDeMemoriaDaInterface.dproj=D:\Renato\Delphi\POO\Interface e Injecao de Dependencia\Entendendo o Gerenciamento de Memória das Interfaces\UsandoRTTIParaGerarSQL.dproj</Transaction>
+    <Transaction>2023/05/03 18:20:30.000.000,D:\Renato\Delphi\POO\Interface e Injecao de Dependencia\Entendendo o Gerenciamento de Memória das Interfaces\GerenciamentoDeMemoriaDaInterface.dproj=D:\Renato\Delphi\POO\Interface e Injecao de Dependencia\Entendendo o Gerenciamento de Memória das Interfaces\Project2.dproj</Transaction>
+    <Transaction>2023/05/03 18:24:28.000.461,=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/05/03 18:27:00.000.754,D:\Renato\Delphi\POO\Interface e Injecao de Dependencia\Desacoplamento com Interfaces\Form.Principal.pas=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/05/03 18:27:00.000.754,D:\Renato\Delphi\POO\Interface e Injecao de Dependencia\Desacoplamento com Interfaces\Form.Principal.dfm=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2023/05/03 18:27:09.000.421,=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/05/03 18:27:18.000.484,D:\Renato\Delphi\POO\Interface e Injecao de Dependencia\Desacoplamento com Interfaces\Pessoa.pas=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/05/03 18:27:22.000.988,=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/05/03 18:27:26.000.346,D:\Renato\Delphi\POO\Interface e Injecao de Dependencia\Desacoplamento com Interfaces\Produto.pas=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/05/03 18:27:31.000.568,=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/05/03 18:27:35.000.826,D:\Renato\Delphi\POO\Interface e Injecao de Dependencia\Desacoplamento com Interfaces\Interfaces.pas=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/05/03 18:27:45.000.063,D:\Renato\Delphi\POO\Interface e Injecao de Dependencia\Desacoplamento com Interfaces\Project2.dproj=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Project2.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
