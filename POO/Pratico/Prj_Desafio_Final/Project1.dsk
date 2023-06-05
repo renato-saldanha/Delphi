@@ -1,31 +1,53 @@
 ﻿[Closed Files]
-File_0=TSourceModule,'C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Regra.Interfaces.pas',0,1,10,1,41,0,0,,
-File_1=TSourceModule,'C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Regra.Controller.pas',0,1,31,104,35,0,0,,
-File_2=TSourceModule,'C:\Users\DESEN\Downloads\Prj2\Regra.PrecoFeriado.pas',0,1,1,21,20,0,0,,
-File_3=TSourceModule,'C:\Users\DESEN\Downloads\Prj2\Regra.PrecoVarejo.pas',0,1,1,19,7,0,0,,
-File_4=TSourceModule,'C:\Users\DESEN\Downloads\Prj2\Regra.PrecoAtacado.pas',0,1,1,14,21,0,0,,
-File_5=TSourceModule,'C:\Users\DESEN\Downloads\Prj2\Regra.Parametros.pas',0,1,25,5,38,0,0,,
-File_6=TSourceModule,'C:\Users\DESEN\Downloads\Prj2\Regra.Operacoes.pas',0,1,3,17,42,0,0,,
-File_7=TSourceModule,'C:\Users\DESEN\Downloads\Prj2\Regra.Interfaces.pas',0,1,10,58,35,0,0,,
-File_8=TSourceModule,'D:\Renato\Delphi\POO\Pratico\Desafio Projeto\uFrmPrincipal.pas',0,1,34,84,45,0,0,,
-File_9=TSourceModule,'D:\Renato\Delphi\POO\Pratico\PRJ2\Form.Principal.pas',0,1,3,124,20,0,0,,
-File_10=TSourceModule,'D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Regra.PrecoAtacado.pas',0,1,13,1,1,0,0,,
-File_11=TSourceModule,'D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Regra.Operacoes.pas',0,1,22,47,9,0,0,,
-File_12=TSourceModule,'C:\Users\DESEN\Downloads\Prj2\Regra.Controller.pas',0,1,19,21,41,0,0,,
-File_13=TSourceModule,'D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Regra.Interfaces.pas',0,1,13,49,7,0,0,,
+File_0=TSourceModule,'D:\Renato\Delphi\POO\Pratico\Prj_Desafio_Final\Regra.Tipo.pas',0,1,1,1,19,0,0,,
+File_1=TSourceModule,'C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Regra.Tipo.pas',0,1,1,47,22,0,0,,
+File_2=TSourceModule,'C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Regra.Interfaces.pas',0,1,10,1,41,0,0,,
+File_3=TSourceModule,'C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Regra.Controller.pas',0,1,31,104,35,0,0,,
+File_4=TSourceModule,'C:\Users\DESEN\Downloads\Prj2\Regra.PrecoFeriado.pas',0,1,1,21,20,0,0,,
+File_5=TSourceModule,'C:\Users\DESEN\Downloads\Prj2\Regra.PrecoVarejo.pas',0,1,1,19,7,0,0,,
+File_6=TSourceModule,'C:\Users\DESEN\Downloads\Prj2\Regra.PrecoAtacado.pas',0,1,1,14,21,0,0,,
+File_7=TSourceModule,'C:\Users\DESEN\Downloads\Prj2\Regra.Parametros.pas',0,1,25,5,38,0,0,,
+File_8=TSourceModule,'C:\Users\DESEN\Downloads\Prj2\Regra.Operacoes.pas',0,1,3,17,42,0,0,,
+File_9=TSourceModule,'C:\Users\DESEN\Downloads\Prj2\Regra.Interfaces.pas',0,1,10,58,35,0,0,,
+File_10=TSourceModule,'D:\Renato\Delphi\POO\Pratico\Desafio Projeto\uFrmPrincipal.pas',0,1,34,84,45,0,0,,
+File_11=TSourceModule,'D:\Renato\Delphi\POO\Pratico\PRJ2\Form.Principal.pas',0,1,3,124,20,0,0,,
+File_12=TSourceModule,'D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Regra.PrecoAtacado.pas',0,1,13,1,1,0,0,,
+File_13=TSourceModule,'D:\Renato\Delphi\POO\Pratico\Desafio Projeto\Regra.Operacoes.pas',0,1,22,47,9,0,0,,
+File_14=TSourceModule,'C:\Users\DESEN\Downloads\Prj2\Regra.Controller.pas',0,1,19,21,41,0,0,,
 
 [Modules]
-Module0=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Regra.PrecoAtacado.pas
-Module1=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Regra.PrecoFeriado.pas
-Module2=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Regra.PrecoVarejo.pas
+Module0=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Form.Principal.pas
+Module1=D:\Renato\Delphi\POO\Pratico\Prj_Desafio_Final\Regra.Controller.pas
+Module2=D:\Renato\Delphi\POO\Pratico\Prj_Desafio_Final\Regra.PrecoFeriado.pas
 Module3=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Regra.Parametros.pas
-Module4=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Form.Principal.pas
-Module5=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Regra.Operacoes.pas
-Module6=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Regra.Tipo.pas
-Count=7
+Module4=D:\Renato\Delphi\POO\Pratico\Prj_Desafio_Final\Form.Principal.pas
+Module5=D:\Renato\Delphi\POO\Pratico\Prj_Desafio_Final\Regra.Interfaces.pas
+Module6=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Regra.Operacoes.pas
+Module7=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Regra.PrecoFeriado.pas
+Module8=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Regra.PrecoVarejo.pas
+Module9=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Regra.PrecoAtacado.pas
+Count=10
 EditWindowCount=1
 
-[C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Regra.PrecoAtacado.pas]
+[C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Form.Principal.pas]
+ModuleType=TSourceModule
+
+[D:\Renato\Delphi\POO\Pratico\Prj_Desafio_Final\Regra.Controller.pas]
+ModuleType=TSourceModule
+
+[D:\Renato\Delphi\POO\Pratico\Prj_Desafio_Final\Regra.PrecoFeriado.pas]
+ModuleType=TSourceModule
+
+[C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Regra.Parametros.pas]
+ModuleType=TSourceModule
+
+[D:\Renato\Delphi\POO\Pratico\Prj_Desafio_Final\Form.Principal.pas]
+ModuleType=TSourceModule
+
+[D:\Renato\Delphi\POO\Pratico\Prj_Desafio_Final\Regra.Interfaces.pas]
+ModuleType=TSourceModule
+
+[C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Regra.Operacoes.pas]
 ModuleType=TSourceModule
 
 [C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Regra.PrecoFeriado.pas]
@@ -34,21 +56,12 @@ ModuleType=TSourceModule
 [C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Regra.PrecoVarejo.pas]
 ModuleType=TSourceModule
 
-[C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Regra.Parametros.pas]
-ModuleType=TSourceModule
-
-[C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Form.Principal.pas]
-ModuleType=TSourceModule
-
-[C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Regra.Operacoes.pas]
-ModuleType=TSourceModule
-
-[C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Regra.Tipo.pas]
+[C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Regra.PrecoAtacado.pas]
 ModuleType=TSourceModule
 
 [EditWindow0]
-ViewCount=7
-CurrentEditView=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Regra.PrecoAtacado.pas
+ViewCount=10
+CurrentEditView=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Form.Principal.pas
 View0=0
 View1=1
 View2=2
@@ -56,6 +69,9 @@ View3=3
 View4=4
 View5=5
 View6=6
+View7=7
+View8=8
+View9=9
 PercentageSizes=1
 Create=1
 Visible=1
@@ -88,9 +104,9 @@ BottomMiddelPanelData=0000080001020200000009000000446F636B5369746530100000004772
 [View0]
 CustomEditViewType=TEditView
 Module=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Form.Principal.pas
-CursorX=25
-CursorY=59
-TopLine=33
+CursorX=81
+CursorY=56
+TopLine=34
 LeftCol=1
 Elisions=
 Bookmarks=
@@ -98,21 +114,21 @@ EditViewName=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Form.Principal
 
 [View1]
 CustomEditViewType=TEditView
-Module=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Regra.Tipo.pas
-CursorX=47
-CursorY=22
+Module=D:\Renato\Delphi\POO\Pratico\Prj_Desafio_Final\Regra.Interfaces.pas
+CursorX=83
+CursorY=20
 TopLine=1
 LeftCol=1
 Elisions=
 Bookmarks=
-EditViewName=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Regra.Tipo.pas
+EditViewName=D:\Renato\Delphi\POO\Pratico\Prj_Desafio_Final\Regra.Interfaces.pas
 
 [View2]
 CustomEditViewType=TEditView
 Module=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Regra.Operacoes.pas
-CursorX=1
-CursorY=51
-TopLine=33
+CursorX=38
+CursorY=25
+TopLine=13
 LeftCol=1
 Elisions=
 Bookmarks=
@@ -120,16 +136,49 @@ EditViewName=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Regra.Operacoe
 
 [View3]
 CustomEditViewType=TEditView
+Module=D:\Renato\Delphi\POO\Pratico\Prj_Desafio_Final\Regra.Controller.pas
+CursorX=29
+CursorY=28
+TopLine=20
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Renato\Delphi\POO\Pratico\Prj_Desafio_Final\Regra.Controller.pas
+
+[View4]
+CustomEditViewType=TEditView
 Module=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Regra.Parametros.pas
-CursorX=1
-CursorY=57
-TopLine=40
+CursorX=75
+CursorY=65
+TopLine=16
 LeftCol=1
 Elisions=
 Bookmarks=
 EditViewName=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Regra.Parametros.pas
 
-[View4]
+[View5]
+CustomEditViewType=TEditView
+Module=D:\Renato\Delphi\POO\Pratico\Prj_Desafio_Final\Regra.PrecoFeriado.pas
+CursorX=30
+CursorY=42
+TopLine=22
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Renato\Delphi\POO\Pratico\Prj_Desafio_Final\Regra.PrecoFeriado.pas
+
+[View6]
+CustomEditViewType=TEditView
+Module=D:\Renato\Delphi\POO\Pratico\Prj_Desafio_Final\Form.Principal.pas
+CursorX=21
+CursorY=43
+TopLine=21
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Renato\Delphi\POO\Pratico\Prj_Desafio_Final\Form.Principal.pas
+
+[View7]
 CustomEditViewType=TEditView
 Module=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Regra.PrecoFeriado.pas
 CursorX=24
@@ -140,23 +189,23 @@ Elisions=
 Bookmarks=
 EditViewName=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Regra.PrecoFeriado.pas
 
-[View5]
+[View8]
 CustomEditViewType=TEditView
 Module=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Regra.PrecoVarejo.pas
-CursorX=21
-CursorY=31
-TopLine=22
+CursorX=28
+CursorY=42
+TopLine=16
 LeftCol=1
 Elisions=
 Bookmarks=
 EditViewName=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Regra.PrecoVarejo.pas
 
-[View6]
+[View9]
 CustomEditViewType=TEditView
 Module=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Regra.PrecoAtacado.pas
 CursorX=26
 CursorY=15
-TopLine=1
+TopLine=10
 LeftCol=1
 Elisions=
 Bookmarks=
@@ -195,22 +244,10 @@ Count=0
 [EmbarcaderoWin64Debugger_AddressBreakpoints]
 Count=0
 
-[EmbarcaderoLinux64Debugger_AddressBreakpoints]
-Count=0
-
-[EmbarcaderoIOS64DeviceDebugger_AddressBreakpoints]
-Count=0
-
 [EmbarcaderoAndroid32Debugger_AddressBreakpoints]
 Count=0
 
 [EmbarcaderoAndroid64Debugger_AddressBreakpoints]
-Count=0
-
-[EmbarcaderoOSXArm64Debugger_AddressBreakpoints]
-Count=0
-
-[EmbarcaderoOSX64Debugger_AddressBreakpoints]
 Count=0
 
 [Main Window]
@@ -319,11 +356,11 @@ State=0
 Left=0
 Top=0
 Width=2000
-Height=6528
+Height=2778
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2000
-ClientHeight=6528
+ClientHeight=2778
 TBDockHeight=5963
 LRDockWidth=2510
 Dockable=1
@@ -335,8 +372,8 @@ Create=1
 Visible=0
 Docked=1
 State=0
-Left=-1528
-Top=260
+Left=0
+Top=0
 Width=276
 Height=361
 MaxLeft=-1
@@ -440,11 +477,11 @@ State=0
 Left=0
 Top=0
 Width=2339
-Height=981
+Height=1222
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2339
-ClientHeight=981
+ClientHeight=1222
 TBDockHeight=2315
 LRDockWidth=2823
 Dockable=1
@@ -505,11 +542,11 @@ State=0
 Left=0
 Top=0
 Width=2000
-Height=6528
+Height=0
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2000
-ClientHeight=6528
+ClientHeight=0
 TBDockHeight=4880
 LRDockWidth=7151
 Dockable=1
@@ -521,8 +558,8 @@ Create=1
 Visible=0
 Docked=1
 State=0
-Left=380
-Top=857
+Left=0
+Top=0
 Width=2854
 Height=3213
 MaxLeft=-1
@@ -540,8 +577,8 @@ Create=1
 Visible=0
 Docked=1
 State=0
-Left=-8
-Top=-124
+Left=0
+Top=0
 Width=1849
 Height=3139
 MaxLeft=-1
@@ -645,11 +682,11 @@ State=0
 Left=0
 Top=0
 Width=2000
-Height=6528
+Height=0
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2000
-ClientHeight=6528
+ClientHeight=0
 TBDockHeight=4880
 LRDockWidth=5307
 Dockable=1
@@ -668,7 +705,7 @@ Height=6176
 MaxLeft=-5
 MaxTop=-9
 ClientWidth=1740
-ClientHeight=5815
+ClientHeight=5806
 TBDockHeight=6176
 LRDockWidth=1823
 Dockable=1
@@ -709,8 +746,8 @@ Create=1
 Visible=0
 Docked=1
 State=0
-Left=0
-Top=28
+Left=8
+Top=8
 Width=3823
 Height=1417
 MaxLeft=-1

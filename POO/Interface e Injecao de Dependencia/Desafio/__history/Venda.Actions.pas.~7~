@@ -1,0 +1,51 @@
+unit Venda.Actions;
+
+interface
+
+uses
+  Venda.Interfaces;
+
+type
+  TVendaActions = class(TInterfacedObject, iVendaActions)
+    private
+      [weak]
+      FParent : iVenda;
+    public
+      constructor Create(Parent : iVenda);
+      destructor Destroy; override;
+      class function New(Parent : iVenda) : iVendaActions;
+      function Vender : iVendaActions;
+      function &End : iVenda;
+  end;
+
+implementation
+
+{ TVendaActions<T> }
+
+function TVendaActions.&End: iVenda;
+begin
+  Result := FParent;
+end;
+
+constructor TVendaActions.Create(Parent : iVenda);
+begin
+  FParent := Parent;
+end;
+
+destructor TVendaActions.Destroy;
+begin
+
+  inherited;
+end;
+
+class function TVendaActions.New(Parent : iVenda): iVendaActions;
+begin
+  Result := Self.Create(Parent);
+end;
+
+function TVendaActions.Vender: iVendaActions;
+begin
+
+end;
+
+end.

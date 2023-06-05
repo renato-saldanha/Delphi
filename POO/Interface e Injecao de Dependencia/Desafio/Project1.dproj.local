@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/01/16 13:50:46.000.996,=C:\Users\thuli\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/03/27 13:38:03.000.251,=C:\Users\thuli\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2021/05/25 16:11:19.000.025,=C:\Users\thuli\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/05/25 16:11:34.000.677,C:\Users\thuli\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\thuli\Desktop\Interfaces e DI\Aula 07\Unit1.pas</Transaction>
+    <Transaction>2021/05/25 16:11:34.000.677,C:\Users\thuli\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\thuli\Desktop\Interfaces e DI\Aula 07\Unit1.dfm</Transaction>
+    <Transaction>2021/05/25 16:11:36.000.610,C:\Users\thuli\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\thuli\Desktop\Interfaces e DI\Aula 07\Project1.dproj</Transaction>
+    <Transaction>2021/05/25 16:12:19.000.733,=C:\Users\thuli\Desktop\Interfaces e DI\Aula 07\Unit2.pas</Transaction>
+    <Transaction>2021/05/25 16:12:26.000.127,C:\Users\thuli\Desktop\Interfaces e DI\Aula 07\Unit2.pas=C:\Users\thuli\Desktop\Interfaces e DI\Aula 07\Venda.pas</Transaction>
+    <Transaction>2021/05/25 16:16:53.000.868,=C:\Users\thuli\Desktop\Interfaces e DI\Aula 07\Unit2.pas</Transaction>
+    <Transaction>2021/05/25 16:17:00.000.511,C:\Users\thuli\Desktop\Interfaces e DI\Aula 07\Unit2.pas=C:\Users\thuli\Desktop\Interfaces e DI\Aula 07\Venda.Interfaces.pas</Transaction>
+    <Transaction>2021/05/25 16:43:09.000.517,=C:\Users\thuli\Desktop\Interfaces e DI\Aula 07\Unit2.pas</Transaction>
+    <Transaction>2021/05/25 16:43:17.000.378,C:\Users\thuli\Desktop\Interfaces e DI\Aula 07\Unit2.pas=C:\Users\thuli\Desktop\Interfaces e DI\Aula 07\Item.Attributes.pas</Transaction>
+    <Transaction>2021/05/26 13:44:18.000.596,=C:\Users\thuli\Desktop\Interfaces e DI\Aula 11\Unit2.pas</Transaction>
+    <Transaction>2021/05/26 13:44:26.000.332,C:\Users\thuli\Desktop\Interfaces e DI\Aula 11\Venda.Actions.pas=C:\Users\thuli\Desktop\Interfaces e DI\Aula 11\Unit2.pas</Transaction>
+    <Transaction>2021/05/26 16:37:42.000.796,=C:\Users\thuli\Desktop\Interfaces e DI\Aula 12\Unit2.pas</Transaction>
+    <Transaction>2021/05/26 16:37:51.000.422,C:\Users\thuli\Desktop\Interfaces e DI\Aula 12\Unit2.pas=C:\Users\thuli\Desktop\Interfaces e DI\Aula 12\Venda.Types.pas</Transaction>
+    <Transaction>2021/05/26 16:40:05.000.511,=C:\Users\thuli\Desktop\Interfaces e DI\Aula 12\Unit2.pas</Transaction>
+    <Transaction>2021/05/26 16:40:17.000.754,C:\Users\thuli\Desktop\Interfaces e DI\Aula 12\Unit2.pas=C:\Users\thuli\Desktop\Interfaces e DI\Aula 12\Venda.Actions.Fechado.pas</Transaction>
+    <Transaction>2021/05/26 16:42:30.000.614,C:\Users\thuli\Desktop\Interfaces e DI\Aula 12\Venda.Actions.pas=C:\Users\thuli\Desktop\Interfaces e DI\Aula 12\Venda.Actions.Aberta.pas</Transaction>
+    <Transaction>2021/05/26 16:42:44.000.319,=C:\Users\thuli\Desktop\Interfaces e DI\Aula 12\Unit2.pas</Transaction>
+    <Transaction>2021/05/26 16:42:53.000.224,C:\Users\thuli\Desktop\Interfaces e DI\Aula 12\Unit2.pas=C:\Users\thuli\Desktop\Interfaces e DI\Aula 12\Venda.Actions.Totalizacao.pas</Transaction>
+    <Transaction>2021/05/26 16:47:07.000.413,=C:\Users\thuli\Desktop\Interfaces e DI\Aula 12\Unit2.pas</Transaction>
+    <Transaction>2021/05/26 16:47:19.000.177,C:\Users\thuli\Desktop\Interfaces e DI\Aula 12\Unit2.pas=C:\Users\thuli\Desktop\Interfaces e DI\Aula 12\Venda.Types.Helpers.pas</Transaction>
+    <Transaction>2023/05/25 09:40:20.796,=D:\Renato\Delphi\POO\Interface e Injecao de Dependencia\Desafio\Unit2.pas</Transaction>
+    <Transaction>2023/05/25 09:41:05.642,D:\Renato\Delphi\POO\Interface e Injecao de Dependencia\Desafio\Venda.Attributes.pas=D:\Renato\Delphi\POO\Interface e Injecao de Dependencia\Desafio\Unit2.pas</Transaction>
+  </Transactions>  <ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="Item.Attributes.pas"/>
+    <File Path="Unit1.pas"/>
+    <File Path="Unit1.dfm"/>
+    <File Path="Venda.pas"/>
+    <File Path="Venda.Actions.Aberta.pas"/>
+    <File Path="Venda.Actions.Fechado.pas"/>
+    <File Path="Venda.Actions.Totalizacao.pas"/>
+    <File Path="Venda.Attributes.pas"/>
+    <File Path="Venda.Interfaces.pas"/>
+    <File Path="Venda.Types.Helpers.pas"/>
+    <File Path="Venda.Types.pas"/>
+  </ProjectSortOrder>
+</BorlandProject>

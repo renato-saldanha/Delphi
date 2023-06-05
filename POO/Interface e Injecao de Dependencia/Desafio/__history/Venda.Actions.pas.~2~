@@ -1,0 +1,16 @@
+unit Venda.Actions;
+
+interface
+
+uses
+  Venda.Interfaces;
+
+type
+  TVendaActions<T : IInterface> = class(TInterfacedObject, iVendaActions<T>)
+    private
+    public
+  end;
+
+implementation
+
+end.

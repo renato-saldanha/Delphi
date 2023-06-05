@@ -1,0 +1,22 @@
+unit Log;
+
+interface
+
+uses
+  System.SysUtils;
+
+type
+  iLog = interface
+    ['{79FB770A-CB7B-444D-A1BC-A9F883386996}']
+    function Msg(aValue: String): iLog;
+    function Salve: iLog;
+  end;
+
+  iLogFactory = interface
+    ['{ED799A47-D0E6-4B59-9F91-AFDBFB68702D}']
+    function Log: iLog;
+  end;
+
+implementation
+
+end.

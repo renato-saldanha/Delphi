@@ -38,6 +38,7 @@ begin
   vDAOPessoa.this.SobreNome   := 'Saldanha';
   vDAOPessoa.Insert;
   vDAOPessoa.Update;
+  vDAOPessoa.Delete;
 end;
 
 procedure TForm1.Button1Click(Sender: TObject);
@@ -51,6 +52,7 @@ begin
   vDAOProduto.this.Valor         := 10.56;
   vDAOProduto.Insert;
   vDAOProduto.Update;
+  vDAOProduto.Delete;
 end;
 
 procedure TForm1.Display(aValue: String);

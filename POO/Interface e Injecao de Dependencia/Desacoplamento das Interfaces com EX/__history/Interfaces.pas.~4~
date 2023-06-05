@@ -1,0 +1,16 @@
+unit Interfaces;
+
+interface
+
+type
+  iDAOInterface<T: class, constructor> = interface
+    ['{9E59DA80-0DC2-4E51-9B74-A498EEC28D2F}']
+
+      procedure Insert(aClass: T);
+      procedure Delete(aClass: T);
+      procedure Update(aClass: T);
+  end;
+
+implementation
+
+end.

@@ -1,0 +1,70 @@
+unit Venda.Actions.Aberta;
+
+interface
+
+uses
+  Venda.Interfaces;
+
+type
+  TVendaActions = class(TInterfacedObject, iVendaActions)
+    private
+      [weak]
+      FParent : iVenda;
+    public
+      constructor Create(Parent : iVenda);
+      destructor Destroy; override;
+      class function New(Parent : iVenda) : iVendaActions;
+      function Vender : iVendaActions;
+      function &End : iVenda;
+  end;
+
+implementation
+
+uses
+  System.SysUtils;
+
+{ TVendaActions<T> }
+
+function TVendaActions.&End: iVenda;
+begin
+  Result := FParent;
+end;
+
+constructor TVendaActions.Create(Parent : iVenda);
+begin
+  FParent := Parent;
+end;
+
+destructor TVendaActions.Destroy;
+begin
+
+  inherited;
+end;
+
+class function TVendaActions.New(Parent : iVenda): iVendaActions;
+begin
+  Result := Self.Create(Parent);
+end;
+
+function TVendaActions.Vender: iVendaActions;
+var
+  I: Integer;
+  Msg : String;
+begin
+  Result := Self;
+  Msg := '';
+  for I := 0 to Pred(FParent.ListItens.Count) do
+  begin
+    Msg := Msg +
+      Format('Produto %d - Preço Unit R$ %f - Qnt %f - Total %f',
+      [
+        FParent.ListItens[I].Codigo,
+        FParent.ListItens[I].PrecoUnitario,
+        FParent.ListItens[I].Qnt,
+        (FParent.ListItens[I].PrecoUnitario * FParent.ListItens[I].Qnt)
+      ]) + #13 + #10;
+  end;
+  FParent.Display()(Msg);
+end;
+
+end.

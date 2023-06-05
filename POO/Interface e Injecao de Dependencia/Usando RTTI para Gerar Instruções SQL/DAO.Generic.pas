@@ -60,7 +60,7 @@ end;
 
 procedure TDAOGeneric<T>.Delete();
 begin
-//  FDisplay(TDAORTTI.getInsertSQL<T>(FEntidade))
+  FDisplay(TDAORTTI.getDeleteSQL<T>(FEntidade))
 end;
 
 procedure TDAOGeneric<T>.Update();

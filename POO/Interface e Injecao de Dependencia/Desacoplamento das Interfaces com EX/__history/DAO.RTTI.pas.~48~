@@ -1,0 +1,143 @@
+unit DAO.RTTI;
+
+interface
+
+uses
+  System.RTTI, System.SysUtils;
+
+type
+  TAttrType = (tpString, tpCurrency);
+
+  TableName = class(TCustomAttribute)
+  private
+    FTableName: string;
+    procedure SetTableName(const Value: string);
+  published
+    constructor Create(aTableName: String);
+    property TableName: string read FTableName write SetTableName;
+  end;
+
+  FieldType = class(TCustomAttribute)
+  private
+    FAttrType: TAttrType;
+    procedure SetAttrType(const Value: TAttrType);
+  published
+    constructor Create(aAttrType: TAttrType);
+    property AttrType: TAttrType read FAttrType write SetAttrType;
+  end;
+
+  TDAORTTI = class
+  private
+  public
+    class function getInsertSQL<T: class>(aEntity: T): String;
+    class function getUpdateSQL<T: class>(aEntity: T): String;
+  end;
+
+implementation
+
+{ TDAORTTI }
+
+class function TDAORTTI.getInsertSQL<T>(aEntity: T): String;
+var
+  ctxRTTI: TRttiContext;
+  typRTTI: TRttiType;
+  propRTTI: TRttiProperty;
+  attrRTTI: TCustomAttribute;
+  LTableName: String;
+begin
+  try
+    ctxRTTI := TRttiContext.Create;
+    typRTTI := ctxRTTI.GetType(aEntity.ClassInfo);
+
+    for attrRTTI in typRTTI.GetAttributes do
+      if attrRTTI is TableName then
+        LTableName := TableName(attrRTTI).TableName;
+
+    Result := 'INSERT INTO ' + LTableName + '(';
+
+    for propRTTI in typRTTI.GetProperties do
+      Result := Result + propRTTI.Name + ', ';
+
+    Result := Copy(Result, 0, Length(Result) - 2) + ') VALUES (';
+
+    for propRTTI in typRTTI.GetProperties do
+    begin
+      for attrRTTI in propRTTI.GetAttributes do
+      begin
+        if (attrRTTI is FieldType) then
+          case FieldType(attrRTTI).AttrType of
+            tpString: Result := Result + QuotedStr(propRTTI.GetValue(Pointer(aEntity)).AsString) + ', ';
+            tpCurrency: Result := Result + CurrToStr(propRTTI.GetValue(Pointer(aEntity)).AsCurrency) + ', ';
+          end;
+      end;
+    end;
+
+    Result := Copy(Result, 0, Length(Result) - 2) + ') ';
+  finally
+    ctxRTTI.Free;
+  end;
+end;
+
+class function TDAORTTI.getUpdateSQL<T>(aEntity: T): String;
+var
+  ctxRTTI: TRttiContext;
+  typRTTI: TRttiType;
+  propRTTI: TRttiProperty;
+  attrRTTI: TCustomAttribute;
+  LTableName: String;
+begin
+  try
+    ctxRTTI := TRttiContext.Create;
+    typRTTI := ctxRTTI.GetType(aEntity.ClassInfo);
+
+    for attrRTTI in typRTTI.GetAttributes do
+      if attrRTTI is TableName then
+        LTableName := TableName(attrRTTI).TableName;
+
+    Result := 'UPDATE ' + LTableName + ' SET ';
+
+    for propRTTI in typRTTI.GetProperties do
+    begin
+      Result := Result + propRTTI.Name + ' = ';
+
+      for attrRTTI in propRTTI.GetAttributes do
+      begin
+        if (attrRTTI is FieldType) then
+          case FieldType(attrRTTI).AttrType of
+            tpString: Result := Result + QuotedStr(propRTTI.GetValue(Pointer(aEntity)).AsString) + ', ';
+            tpCurrency: Result := Result + CurrToStr(propRTTI.GetValue(Pointer(aEntity)).AsCurrency) + ', ';
+          end;
+      end;
+    end;
+
+    Result := Copy(Result, 0, Length(Result) - 2);
+  finally
+    ctxRTTI.Free;
+  end;
+end;
+
+{ TableName }
+
+constructor TableName.Create(aTableName: String);
+begin
+  FTableName := aTableName;
+end;
+
+procedure TableName.SetTableName(const Value: string);
+begin
+  FTableName := Value;
+end;
+
+{ FieldType }
+
+constructor FieldType.Create(aAttrType: TAttrType);
+begin
+  FAttrType := aAttrType;
+end;
+
+procedure FieldType.SetAttrType(const Value: TAttrType);
+begin
+  FAttrType := Value;
+end;
+
+end.

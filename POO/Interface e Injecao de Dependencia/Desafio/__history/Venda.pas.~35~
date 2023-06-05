@@ -1,0 +1,71 @@
+unit Venda;
+
+interface
+
+uses
+  Venda.Interfaces,
+  System.Generics.Collections,
+  System.SysUtils,
+  Venda.Types,
+  Venda.Types.Helpers;
+
+type
+  TVenda = class(TInterfacedObject, iVenda)
+    private
+
+    public
+      constructor Create;
+      destructor Destroy; override;
+      class function New : iVenda;
+
+      function Actions : iVendaActions;
+      function ItemAttributes : iItemAttributes<iVenda>;
+  end;
+
+implementation
+
+uses
+  Item.Attributes,
+  Venda.Actions.Aberta;
+
+{ TVenda }
+
+function TVenda.Actions: iVendaActions;
+begin
+  FActions := FState.this(Self);
+  Result := FActions;
+end;
+
+constructor TVenda.Create;
+begin
+
+end;
+
+destructor TVenda.Destroy;
+begin
+  inherited;
+end;
+
+function TVenda.ItemAttributes: iItemAttributes<iVenda>;
+begin
+  FListItens.Add( TItemAttributes<iVenda>.New(Self) );
+  Result := FListItens.Last;
+end;
+
+function TVenda.ListItens: TList<iItemAttributes<iVenda>>;
+begin
+  Result := FListItens;
+end;
+
+class function TVenda.New: iVenda;
+begin
+  Result := Self.Create;
+end;
+
+function TVenda.State(aValue: TEnumVendaTypes): iVenda;
+begin
+  Result := Self;
+  FState := aValue;
+end;
+
+end.
