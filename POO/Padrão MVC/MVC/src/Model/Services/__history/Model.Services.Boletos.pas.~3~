@@ -1,0 +1,34 @@
+unit Model.Services.Boletos;
+
+interface
+
+uses
+  Model.Services.Interfaces;
+type
+  TModelServicesBoletos = class (TInterfacedObject, IModelServicesBoletos)
+    constructor Create;
+    destructor Destroy;override;
+    class function New: IModelServicesBoletos;
+  end;
+
+implementation
+
+{ TModelServicesBoletos }
+
+constructor TModelServicesBoletos.Create;
+begin
+
+end;
+
+destructor TModelServicesBoletos.Destroy;
+begin
+
+  inherited;
+end;
+
+class function TModelServicesBoletos.New: IModelServicesBoletos;
+begin
+
+end;
+
+end.

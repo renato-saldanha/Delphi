@@ -1,0 +1,59 @@
+unit View.Principal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, Vcl.ExtCtrls, Vcl.DBCtrls, Vcl.Grids, Vcl.DBGrids,
+
+  Controller.Interfaces;
+
+type
+  TPrincipal = class(TForm)
+    DBGrid: TDBGrid;
+    DBNavigator: TDBNavigator;
+    procedure FormCreate(Sender: TObject);
+    procedure FormShow(Sender: TObject);
+  private
+    { Private declarations }
+    FController: IController;
+    FDataSource: TDataSource;
+    procedure DataSourceConfig;
+  public
+    { Public declarations }
+  end;
+
+var
+  Principal: TPrincipal;
+
+implementation
+
+uses
+  Controller;
+
+{$R *.dfm}
+
+procedure TPrincipal.FormCreate(Sender: TObject);
+begin
+  ReportMemoryLeaksOnShutdown   := True;
+  FController                   := TController.New;
+  FController.Connections
+    .FireDac
+    .DataSource(FDataSource)
+    .DBGrid(DBGrid)
+    .DBNavigator(DBNavigator);
+  DataSourceConfig();
+end;
+
+procedure TPrincipal.FormShow(Sender: TObject);
+begin
+//
+end;
+
+procedure TPrincipal.DataSourceConfig;
+begin
+  FController.Connections.FireDac.Open('SELECT * FROM usuarios');
+end;
+
+
+end.

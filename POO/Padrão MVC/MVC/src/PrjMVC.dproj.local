@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/05/31 11:38:52.000.006,=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2023/06/06 14:06:29.000.070,D:\Renato\Delphi\POO\Padrão MVC\MVC\src\Model\Services\Model.Services.Boleto.pas=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2023/06/06 14:10:44.000.309,=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2023/06/06 14:10:56.000.348,D:\Renato\Delphi\POO\Padrão MVC\MVC\src\Model\Services\Model.Services.Interfaces.pas=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2023/06/06 14:11:36.000.829,D:\Renato\Delphi\POO\Padrão MVC\MVC\src\Model\Services\Model.Services.Boletos.pas=D:\Renato\Delphi\POO\Padrão MVC\MVC\src\Model\Services\Model.Services.Boleto.pas</Transaction>
+    <Transaction>2023/06/06 14:12:58.000.978,=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2023/06/06 14:13:06.000.193,D:\Renato\Delphi\POO\Padrão MVC\MVC\src\Model\Services\Model.Services.NFe.pas=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2023/06/06 14:14:20.000.609,=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2023/06/06 14:14:39.000.591,D:\Renato\Delphi\POO\Padrão MVC\MVC\src\Model\Services\Model.Services.NFSe.pas=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2023/06/06 14:15:27.000.080,D:\Renato\Delphi\POO\Padrão MVC\MVC\src\PrjMVC.dproj=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Project3.dproj</Transaction>
+    <Transaction>2023/06/06 14:18:28.000.521,=D:\Renato\Delphi\POO\Padrão MVC\MVC\src\Unit1.pas</Transaction>
+    <Transaction>2023/06/06 14:18:53.000.477,D:\Renato\Delphi\POO\Padrão MVC\MVC\src\Model\Integrations\Model.Integrations.Interfaces.pas=D:\Renato\Delphi\POO\Padrão MVC\MVC\src\Unit1.pas</Transaction>
+    <Transaction>2023/06/06 14:19:16.000.532,=D:\Renato\Delphi\POO\Padrão MVC\MVC\src\Unit1.pas</Transaction>
+    <Transaction>2023/06/06 14:19:31.000.578,D:\Renato\Delphi\POO\Padrão MVC\MVC\src\Model\Integrations\Model.Integrations.MercadoPago.pas=D:\Renato\Delphi\POO\Padrão MVC\MVC\src\Unit1.pas</Transaction>
+    <Transaction>2023/06/06 14:21:04.000.462,=D:\Renato\Delphi\POO\Padrão MVC\MVC\src\Unit1.pas</Transaction>
+    <Transaction>2023/06/06 14:21:10.000.643,=D:\Renato\Delphi\POO\Padrão MVC\MVC\src\Unit1.pas</Transaction>
+    <Transaction>2023/06/06 14:21:26.000.868,D:\Renato\Delphi\POO\Padrão MVC\MVC\src\Model\Integrations\Model.Integrations.MercadoLivre.pas=D:\Renato\Delphi\POO\Padrão MVC\MVC\src\Unit1.pas</Transaction>
+    <Transaction>2023/06/06 14:22:13.000.655,=D:\Renato\Delphi\POO\Padrão MVC\MVC\src\Unit1.pas</Transaction>
+    <Transaction>2023/06/06 14:22:29.000.710,D:\Renato\Delphi\POO\Padrão MVC\MVC\src\Model\Integrations\Model.Integrations.SiteMercado.pas=D:\Renato\Delphi\POO\Padrão MVC\MVC\src\Unit1.pas</Transaction>
+    <Transaction>2023/06/06 14:26:31.000.791,=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2023/06/06 14:27:00.000.262,=D:\Renato\Delphi\POO\Padrão MVC\MVC\src\Unit1.pas</Transaction>
+    <Transaction>2023/06/06 14:35:11.000.355,=D:\Renato\Delphi\POO\Padrão MVC\MVC\src\Unit1.pas</Transaction>
+    <Transaction>2023/06/06 14:36:01.000.783,D:\Renato\Delphi\POO\Padrão MVC\MVC\src\Unit1.pas=D:\Renato\Delphi\POO\Padrão MVC\MVC\src\Model\Integrations\Model.Integrations.pas</Transaction>
+    <Transaction>2023/06/06 14:37:22.000.982,=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2023/06/06 14:49:21.000.859,=D:\Renato\Delphi\POO\Padrão MVC\MVC\src\Unit1.pas</Transaction>
+    <Transaction>2023/06/06 14:49:30.000.235,D:\Renato\Delphi\POO\Padrão MVC\MVC\src\Unit1.pas=D:\Renato\Delphi\POO\Padrão MVC\MVC\src\Model\Model.Interfaces.pas</Transaction>
+    <Transaction>2023/06/06 14:51:03.000.546,=D:\Renato\Delphi\POO\Padrão MVC\MVC\src\Unit1.pas</Transaction>
+    <Transaction>2023/06/06 14:51:32.000.789,D:\Renato\Delphi\POO\Padrão MVC\MVC\src\Unit1.pas=D:\Renato\Delphi\POO\Padrão MVC\MVC\src\Model\Model.pas</Transaction>
+    <Transaction>2023/06/06 14:51:43.000.518,D:\Renato\Delphi\POO\Padrão MVC\MVC\src\View\Form.Principal.dfm=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit2.dfm</Transaction>
+    <Transaction>2023/06/06 14:51:43.000.518,D:\Renato\Delphi\POO\Padrão MVC\MVC\src\View\Form.Principal.pas=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2023/06/06 14:58:20.205,=D:\Renato\Delphi\POO\Padrão MVC\MVC\src\Unit1.pas</Transaction>
+    <Transaction>2023/06/06 14:58:32.801,D:\Renato\Delphi\POO\Padrão MVC\MVC\src\Controller\Controller.Interfaces.pas=D:\Renato\Delphi\POO\Padrão MVC\MVC\src\Unit1.pas</Transaction>
+    <Transaction>2023/06/06 14:59:27.983,=D:\Renato\Delphi\POO\Padrão MVC\MVC\src\Unit1.pas</Transaction>
+    <Transaction>2023/06/06 14:59:38.074,D:\Renato\Delphi\POO\Padrão MVC\MVC\src\Controller\Controller.pas=D:\Renato\Delphi\POO\Padrão MVC\MVC\src\Unit1.pas</Transaction>
+    <Transaction>2023/06/06 15:05:52.000.799,D:\Renato\Delphi\POO\Padrão MVC\MVC\src\View\View.Principal.pas=D:\Renato\Delphi\POO\Padrão MVC\MVC\src\View\Form.Principal.pas</Transaction>
+    <Transaction>2023/06/06 15:05:52.000.799,D:\Renato\Delphi\POO\Padrão MVC\MVC\src\View\View.Principal.dfm=D:\Renato\Delphi\POO\Padrão MVC\MVC\src\View\Form.Principal.dfm</Transaction>
+    <Transaction>2023/06/06 15:06:09.000.017,=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="Controller"/>
+    <File Path="Controller\Controller.Interfaces.pas"/>
+    <File Path="Controller\Controller.pas"/>
+    <File Path="Model"/>
+    <File Path="Model\Integrations"/>
+    <File Path="Model\Integrations\Model.Integrations.Interfaces.pas"/>
+    <File Path="Model\Integrations\Model.Integrations.pas"/>
+    <File Path="Model\Integrations\Model.Integrations.MercadoLivre.pas"/>
+    <File Path="Model\Integrations\Model.Integrations.MercadoPago.pas"/>
+    <File Path="Model\Integrations\Model.Integrations.SiteMercado.pas"/>
+    <File Path="Model\Services"/>
+    <File Path="Model\Services\Model.Services.Interfaces.pas"/>
+    <File Path="Model\Services\Model.Services.pas"/>
+    <File Path="Model\Services\Model.Services.Boletos.pas"/>
+    <File Path="Model\Services\Model.Services.NFe.pas"/>
+    <File Path="Model\Services\Model.Services.NFSe.pas"/>
+    <File Path="Model\Model.Interfaces.pas"/>
+    <File Path="Model\Model.pas"/>
+    <File Path="View"/>
+    <File Path="View\View.Principal.pas"/>
+    <File Path="View\View.Principal.dfm"/>
+  </ProjectSortOrder>
+</BorlandProject>

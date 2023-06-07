@@ -1,0 +1,44 @@
+unit Form.Parametros;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Mask, Vcl.ExtCtrls, Vcl.ComCtrls, Vcl.Buttons, App.Util;
+
+type
+  TParametros = class(TForm)
+    LbeIpServidor: TLabeledEdit;
+    LbeCaminhoBancoConexao: TLabeledEdit;
+    PnlAcoes: TPanel;
+    BtnSalvar: TBitBtn;
+    BtnLimpar: TBitBtn;
+    BtnSair: TBitBtn;
+    StbPrincipal: TStatusBar;
+    procedure BtnLimparClick(Sender: TObject);
+    procedure BtnSairClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Parametros: TParametros;
+
+implementation
+
+{$R *.dfm}
+
+
+procedure TParametros.BtnLimparClick(Sender: TObject);
+begin
+  LimparCampos(Self);
+end;
+
+procedure TParametros.BtnSairClick(Sender: TObject);
+begin
+  Close;
+end;
+
+end.

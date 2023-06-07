@@ -1,0 +1,16 @@
+program PrjAbstracao;
+
+uses
+  Vcl.Forms,
+  Principal in 'Model\Principal.pas' {Form2},
+  Model.Connections.FireDac in 'Model\Connections\Model.Connections.FireDac.pas',
+  Model.Connections.Interfaces in 'Model\Connections\Model.Connections.Interfaces.pas';
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm2, Form2);
+  Application.Run;
+end.

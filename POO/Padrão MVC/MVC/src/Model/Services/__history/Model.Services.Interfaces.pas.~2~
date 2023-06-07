@@ -1,0 +1,11 @@
+unit Model.Services.Interfaces;
+
+interface
+type
+  IModelServicesBoletos = interface
+    ['{E1B34F1B-0781-4904-AB10-E1EF8C7E83B8}']
+  end;
+
+implementation
+
+end.

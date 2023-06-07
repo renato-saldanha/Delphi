@@ -1,0 +1,29 @@
+unit Model.Integrations;
+
+type
+  TModelIntegrations = class(TInterfacedObject, IModelIntegrations)
+    constructor Create;
+    destructor Destroy;override;
+    class function New: IModelIntegrations;
+  end;
+implementation
+
+{ TModelIntegrationsMercadoPago }
+
+constructor TModelIntegrations.Create;
+begin
+
+end;
+
+destructor TModelIntegrations.Destroy;
+begin
+
+  inherited;
+end;
+
+class function TModelIntegrations.New: IModelIntegrations;
+begin
+
+end;
+
+end.

@@ -1,0 +1,16 @@
+unit Model.Services.Interfaces;
+
+interface
+
+type
+  IModelServices = interface
+    ['{E1B34F1B-0781-4904-AB10-E1EF8C7E83B8}']
+  end;
+
+  IServices = interface
+    ['{959C41C8-59EC-4035-B449-09318C95523D}']
+  end;
+
+implementation
+
+end.

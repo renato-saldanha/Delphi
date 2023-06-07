@@ -1,0 +1,46 @@
+unit Fontdata.Util;
+
+interface
+
+uses
+  SysUtils, ShlObj, Winapi.Windows;
+
+function BrowseCallbackProc(hwnd: HWND; uMsg: UINT; lParam: LPARAM; lpData: LPARAM): Integer; stdcall;
+function GetFolderDialog(Handle: Integer; Caption: string; var strFolder: string): Boolean;
+
+implementation
+
+function BrowseCallbackProc(hwnd: HWND; uMsg: UINT; lParam: LPARAM; lpData: LPARAM): Integer; stdcall;
+var
+  PathName: array[0..MAX_PATH] of Char;
+begin
+  if uMsg=BFFM_SELCHANGED then
+  begin
+    SHGetPathFromIDList(PItemIDList(lParam), @PathName);
+    SendMessage(hWnd, BFFM_SETSTATUSTEXT, 0, Longint(PChar(@PathName)));
+    Result := 0;
+  end;
+end;
+
+function GetFolderDialog(Handle: Integer; Caption: string; var strFolder: string): Boolean;
+var
+  IDList: PItemIDList;
+  BrowseInfo: TBrowseInfo;
+  PathName: array[0..MAX_PATH] of char;
+  DisplayName: array[0..MAX_PATH] of char;
+begin
+  BrowseInfo.hwndOwner      := Handle;
+  BrowseInfo.pidlRoot       := SHParseDisplayName();
+  BrowseInfo.pszDisplayName := DisplayName;
+  BrowseInfo.lpszTitle      := PWideChar(Caption);
+  BrowseInfo.ulFlags        := BIF_STATUSTEXT;
+  BrowseInfo.lpfn           := @BrowseCallbackProc;
+  BrowseInfo.lParam         := LongInt(PChar(strFolder));
+  IDList := SHBrowseForFolder(BrowseInfo);
+  SHGetPathFromIDList(IDList, @PathName);
+  strFolder := PathName;
+//  Label4.Caption := BrowseInfo.pszDisplayName;
+  Result := Trim(PathName) <> '';
+end;
+
+end.

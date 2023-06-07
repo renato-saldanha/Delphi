@@ -1,0 +1,84 @@
+unit Cadastro.BackupCliente;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Mask, Vcl.ExtCtrls, Vcl.Buttons, Vcl.StdCtrls, FileCtrl, RxToolEdit;
+
+type
+  TFormCadastroBackupCliente = class(TForm)
+    EdtNomeCliente: TEdit;
+    LbeCodCliente: TLabeledEdit;
+    SpbCaminhoBackup: TSpeedButton;
+    LbeCaminhoBackup: TLabeledEdit;
+    CbxLimiteDias: TComboBox;
+    CbxLimiteTamanho: TComboBox;
+    Label1: TLabel;
+    Label2: TLabel;
+    PnlAcoes: TPanel;
+    BtnSalvar: TBitBtn;
+    BtnExcluir: TBitBtn;
+    BtnLimpar: TBitBtn;
+    BtnSair: TBitBtn;
+    SpbCodCliente: TSpeedButton;
+    dlgOpenCaminhoBackup: TOpenDialog;
+    DirectoryEdit1: TDirectoryEdit;
+    procedure LbeCodClienteKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
+    procedure SpbCodClienteClick(Sender: TObject);
+    procedure SpbCaminhoBackupClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FormCadastroBackupCliente: TFormCadastroBackupCliente;
+
+implementation
+
+uses
+  BibPesquisa, Fontdata.Util;
+
+{$R *.dfm}
+
+procedure TFormCadastroBackupCliente.LbeCodClienteKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
+begin
+  case Key of
+    VK_F8: SpbCodClienteClick(nil);
+  end;
+end;
+
+procedure TFormCadastroBackupCliente.SpbCaminhoBackupClick(Sender: TObject);
+var
+  LDir: String;
+begin
+//  dlgOpenCaminhoBackup.InitialDir := '\\192.168.0.100\importacao\';;
+//  if (dlgOpenCaminhoBackup.Execute) then
+//  begin
+//    LbeCaminhoBackup.Text := ExtractFilePath(dlgOpenCaminhoBackup.FileName);
+//
+//  end;
+  LDir := '\\192.168.0.100\importacao\';
+//  if Fontdata.Util.GetFolderDialog(Application.Handle, 'Selecione um diretório', LDir) then
+
+
+  if SelectDirectory(LDir, [sdAllowCreate, sdPerformCreate, sdPrompt], 2000) then
+    LbeCaminhoBackup.Text := LDir;
+end;
+
+procedure TFormCadastroBackupCliente.SpbCodClienteClick(Sender: TObject);
+begin
+  Pesquisa2('Clientes',
+            'CLIENTES',
+            ['clientes.codigo', 'clientes.nome', 'clientes.ativo'],
+            ['Codigo'         , 'Nome'         , 'Ativo'],
+             '',
+             'clientes.ativo = ''S'' ',
+            ['clientes.nome'],
+            ['CODIGO', 'NOME'],
+            [LbeCodCliente, EdtNomeCliente],'');
+end;
+
+end.

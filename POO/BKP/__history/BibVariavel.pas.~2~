@@ -1,0 +1,12 @@
+unit BibVariavel;
+
+interface
+
+var
+  Relatorio_Email,
+  Relatorio_Exporta,
+  VPWeb: Boolean;
+
+implementation
+
+end.

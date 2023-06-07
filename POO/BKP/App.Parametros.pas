@@ -1,0 +1,194 @@
+unit App.Parametros;
+
+interface
+
+uses
+  App.Interfaces, System.SysUtils;
+
+type
+  TBackupParametros = class(TInterfacedObject, iBackupParametros)
+  private
+  public
+    [weak]
+    FParent: iBackupController;
+    FQtdeNormal: Integer;
+    FQtdeAtrasado: Integer;
+    FQtdeTamanhoDiferente: Integer;
+    FTotalGeral: Integer;
+    FDisplayQtdeNormal: TProc<String>;
+    FDisplayQtdeAtrasado: TProc<String>;
+    FDisplayQtdeTamanhoDiferente: TProc<String>;
+    FDisplayTotalGeral: TProc<String>;
+
+    class function New(aParent : iBackupController): iBackupParametros;
+    constructor Create(aParent: iBackupController);
+    destructor Destroy; override;
+
+    function DisplayQtdeNormal(aValue: TProc<String>): iBackupParametros; overload;
+    function DisplayQtdeNormal: TProc<String>; overload;
+
+    function DisplayQtdeAtrasado(aValue: TProc<String>): iBackupParametros; overload;
+    function DisplayQtdeAtrasado: TProc<String>; overload;
+
+    function DisplayQtdeTamanhoDiferente(aValue: TProc<String>): iBackupParametros; overload;
+    function DisplayQtdeTamanhoDiferente: TProc<String>; overload;
+
+    function DisplayTotalGeral(aValue: TProc<String>): iBackupParametros; overload;
+    function DisplayTotalGeral: TProc<String>; overload;
+
+    function QtdeNormal(aValue: Integer): iBackupParametros; overload;
+    function QtdeNormal: String; overload;
+
+    function QtdeAtrasado(aValue: Integer): iBackupParametros; overload;
+    function QtdeAtrasado: String; overload;
+
+    function QtdeTamanhoDiferente(aValue: Integer): iBackupParametros; overload;
+    function QtdeTamanhoDiferente: String; overload;
+
+    function TotalGeral(aValue: Integer): iBackupParametros; overload;
+    function TotalGeral: String; overload;
+
+    function ZerarValores: iBackupParametros;
+    function DisplaysValidos :Boolean;
+    function &End: iBackupController;
+  end;
+
+implementation
+
+{ TBackupParametros }
+
+class function TBackupParametros.New(aParent: iBackupController): iBackupParametros;
+begin
+  Result := Self.Create(aParent);
+end;
+
+function TBackupParametros.&End: iBackupController;
+begin
+  Result := FParent;
+end;
+
+constructor TBackupParametros.Create(aParent: iBackupController);
+begin
+  FParent := aParent;
+end;
+
+destructor TBackupParametros.Destroy;
+begin
+
+  inherited;
+end;
+
+function TBackupParametros.TotalGeral(aValue: Integer): iBackupParametros;
+begin
+  Result      := Self;
+  FTotalGeral := aValue;
+end;
+
+function TBackupParametros.QtdeAtrasado(aValue: Integer): iBackupParametros;
+begin
+  Result        := Self;
+  FQtdeAtrasado := aValue;
+end;
+
+function TBackupParametros.QtdeTamanhoDiferente(aValue: Integer): iBackupParametros;
+begin
+  Result                := Self;
+  FQtdeTamanhoDiferente := aValue;
+end;
+
+function TBackupParametros.QtdeNormal(aValue: Integer): iBackupParametros;
+begin
+  Result      := Self;
+  FQtdeNormal := aValue;
+end;
+
+function TBackupParametros.TotalGeral: String;
+begin
+  Result := CurrToStr(FTotalGeral);
+end;
+
+function TBackupParametros.ZerarValores: iBackupParametros;
+begin
+  Result := Self;
+  QtdeNormal(0);
+  QtdeAtrasado(0);
+  QtdeTamanhoDiferente(0);
+  TotalGeral(0);
+
+  if (FParent.Parametros.DisplaysValidos) then
+  begin
+    FParent.Parametros.DisplayQtdeNormal()(IntToStr(FQtdeNormal));
+    FParent.Parametros.DisplayQtdeAtrasado()(IntToStr(FQtdeAtrasado));
+    FParent.Parametros.DisplayQtdeTamanhoDiferente()(IntToStr(FQtdeTamanhoDiferente));
+    FParent.Parametros.DisplayTotalGeral()(IntToStr(FTotalGeral));
+  end;
+end;
+
+function TBackupParametros.QtdeAtrasado: String;
+begin
+  Result := CurrToStr(FQtdeAtrasado);
+end;
+
+function TBackupParametros.QtdeTamanhoDiferente: String;
+begin
+  Result := CurrToStr(FQtdeTamanhoDiferente);
+end;
+
+function TBackupParametros.QtdeNormal: String;
+begin
+  Result := CurrToStr(FQtdeNormal);
+end;
+
+function TBackupParametros.DisplayQtdeNormal: TProc<String>;
+begin
+  Result := FDisplayQtdeNormal;
+end;
+
+function TBackupParametros.DisplayQtdeNormal(aValue: TProc<String>): iBackupParametros;
+begin
+  Result             := Self;
+  FDisplayQtdeNormal := aValue;
+end;
+
+function TBackupParametros.DisplayQtdeAtrasado: TProc<String>;
+begin
+  Result := FDisplayQtdeAtrasado;
+end;
+
+function TBackupParametros.DisplayQtdeAtrasado(aValue: TProc<String>): iBackupParametros;
+begin
+  Result               := Self;
+  FDisplayQtdeAtrasado := aValue;
+end;
+
+function TBackupParametros.DisplayQtdeTamanhoDiferente(aValue: TProc<String>): iBackupParametros;
+begin
+  Result                       := Self;
+  FDisplayQtdeTamanhoDiferente := aValue;
+end;
+
+function TBackupParametros.DisplayQtdeTamanhoDiferente: TProc<String>;
+begin
+  Result := FDisplayQtdeTamanhoDiferente;
+end;
+
+function TBackupParametros.DisplaysValidos: Boolean;
+begin
+  Result :=  (Assigned(FParent.Parametros.DisplayQtdeNormal) and
+              Assigned(FParent.Parametros.DisplayQtdeAtrasado) and
+              Assigned(FParent.Parametros.DisplayQtdeTamanhoDiferente) and
+              Assigned(FParent.Parametros.DisplayTotalGeral));
+end;
+
+function TBackupParametros.DisplayTotalGeral(aValue: TProc<String>): iBackupParametros;
+begin
+  Result             := Self;
+  FDisplayTotalGeral := aValue;
+end;
+
+function TBackupParametros.DisplayTotalGeral: TProc<String>;
+begin
+  Result := FDisplayTotalGeral;
+end;
+
+end.

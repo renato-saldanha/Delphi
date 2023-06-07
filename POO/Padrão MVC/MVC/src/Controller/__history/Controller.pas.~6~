@@ -1,0 +1,50 @@
+unit Controller;
+
+interface
+
+uses
+  Controller.Interfaces, Model.Integrations.Interfaces,
+  Model.Services.Interfaces;
+type
+  TController = class(TInterfacedObject, IController)
+    private
+    public
+    constructor Create;
+    destructor Destroy;override;
+    class function New: IController;
+
+    function Integrations: IModelIntegrations;
+    function Services: IModelServices;
+  end;
+
+implementation
+
+{ TController }
+
+constructor TController.Create;
+begin
+
+end;
+
+destructor TController.Destroy;
+begin
+
+  inherited;
+end;
+
+class function TController.New: IController;
+begin
+  Result := Self.Create;
+end;
+
+function TController.Services: IModelServices;
+begin
+  Result := TModelServices.New;
+end;
+
+function TController.Integrations: IModelIntegrations;
+begin
+  Result := TModelIntegrations.New;
+end;
+
+end.

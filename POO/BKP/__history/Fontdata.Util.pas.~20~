@@ -1,0 +1,30 @@
+unit Fontdata.Util;
+
+interface
+
+uses
+  SysUtils, ShlObj, Winapi.Windows, System.Classes;
+
+function BrowseCallbackProc(hwnd: HWND; uMsg: UINT; lParam: LPARAM; lpData: LPARAM): Integer; stdcall;
+function RemoverPrefixoComponente(aComponent : TComponent): String;
+
+implementation
+
+function BrowseCallbackProc(hwnd: HWND; uMsg: UINT; lParam: LPARAM; lpData: LPARAM): Integer; stdcall;
+var
+  PathName: array[0..MAX_PATH] of Char;
+begin
+  if uMsg=BFFM_SELCHANGED then
+  begin
+    SHGetPathFromIDList(PItemIDList(lParam), @PathName);
+    SendMessage(hWnd, BFFM_SETSTATUSTEXT, 0, Longint(PChar(@PathName)));
+    Result := 0;
+  end;
+end;
+
+function RemoverPrefixoComponente(aComponent : TComponent): String;
+begin
+  Result := Delete(aComponent.Name, 1, 3);
+end;
+
+end.

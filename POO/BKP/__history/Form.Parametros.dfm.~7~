@@ -1,0 +1,121 @@
+object FormParametros: TFormParametros
+  Left = 0
+  Top = 0
+  Caption = 'FormParametros'
+  ClientHeight = 185
+  ClientWidth = 314
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  OnCreate = FormCreate
+  TextHeight = 15
+  object LbeIpServidor: TLabeledEdit
+    Left = 24
+    Top = 32
+    Width = 268
+    Height = 23
+    EditLabel.Width = 56
+    EditLabel.Height = 15
+    EditLabel.Caption = 'IP Servidor'
+    TabOrder = 0
+    Text = ''
+  end
+  object LbeNomeBancoServidor: TLabeledEdit
+    Left = 24
+    Top = 85
+    Width = 268
+    Height = 23
+    EditLabel.Width = 115
+    EditLabel.Height = 15
+    EditLabel.Caption = 'Nome Banco Servidor'
+    TabOrder = 1
+    Text = ''
+  end
+  object PnlAcoes: TPanel
+    Left = 0
+    Top = 124
+    Width = 314
+    Height = 42
+    Align = alBottom
+    BevelOuter = bvNone
+    TabOrder = 2
+    object BtnSalvar: TBitBtn
+      AlignWithMargins = True
+      Left = 6
+      Top = 3
+      Width = 73
+      Height = 36
+      Cursor = crHandPoint
+      Hint = 'Salvar Registro'
+      Margins.Left = 6
+      Align = alLeft
+      Caption = '&Salvar'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 0
+      OnClick = BtnSalvarClick
+    end
+    object BtnLimpar: TBitBtn
+      AlignWithMargins = True
+      Left = 82
+      Top = 3
+      Width = 73
+      Height = 36
+      Cursor = crHandPoint
+      Hint = 'Limpar Tela'
+      Margins.Left = 0
+      Align = alLeft
+      Caption = '&Limpar'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 1
+      OnClick = BtnLimparClick
+    end
+    object BtnSair: TBitBtn
+      AlignWithMargins = True
+      Left = 158
+      Top = 3
+      Width = 73
+      Height = 36
+      Cursor = crHandPoint
+      Hint = 'Sair'
+      Margins.Left = 0
+      Align = alLeft
+      Cancel = True
+      Caption = 'Sai&r'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ModalResult = 2
+      ParentFont = False
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 2
+      OnClick = BtnSairClick
+    end
+  end
+  object StbPrincipal: TStatusBar
+    Left = 0
+    Top = 166
+    Width = 314
+    Height = 19
+    Panels = <>
+  end
+end

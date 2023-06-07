@@ -1,0 +1,66 @@
+unit App.Controller;
+
+interface
+
+uses
+   App.Enums, Vcl.Dialogs, Fontdata.BindForm, Vcl.Forms, Vcl.StdCtrls, System.SysUtils,
+   App.Interfaces, BibPesquisa, BibMarco, App.Util,
+   App.Operacoes,
+   App.Parametros;
+
+type
+  TBackupController = class(TInterfacedObject, iBackupController)
+  private
+    FOperacoes : iBackupOperacoes;
+    FParametros: iBackupParametros;
+  public
+    class function New: iBackupController;
+    constructor Create;
+    destructor Destroy; override;
+
+    function Operacoes: iBackupOperacoes;
+    function Parametros: iBackupParametros;
+    function &End: iBackupController;
+  end;
+
+implementation
+
+uses
+  Fontdata.Utils, Model.ClienteBackup;
+
+var
+  FBackupController : iBackupController;
+  FClienteBackup : TBackupController;
+
+{ TBackupController }
+
+class function TBackupController.New: iBackupController;
+begin
+  Result := Self.Create;
+end;
+
+constructor TBackupController.Create;
+begin
+  FClienteBackup := TBackupController.Create;
+end;
+
+function TBackupController.Operacoes: iBackupOperacoes;
+begin
+  if not Assigned(FOperacoes) then
+    FOperacoes := TBackupOperacoes.Create(Self);
+  Result := FOperacoes;
+end;
+
+function TBackupController.Parametros: iBackupParametros;
+begin
+  if not Assigned(FParametros) then
+    FParametros := TBackupParametros.Create(Self);
+  Result:= FParametros;
+end;
+
+function TBackupController.&End: iBackupController;
+begin
+  Result := Self;
+end;
+
+end.

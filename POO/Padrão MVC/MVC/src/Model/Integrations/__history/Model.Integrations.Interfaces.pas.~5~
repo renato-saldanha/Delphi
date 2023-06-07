@@ -1,0 +1,13 @@
+﻿unit Model.Integrations.Interfaces;
+
+interface
+
+type
+  IModelIntegrations = interface
+    ['{3C658327-1F34-472F-9C54-5C922BC41BEA}']
+//    function MercadoPago:
+  end;
+
+implementation
+
+end.

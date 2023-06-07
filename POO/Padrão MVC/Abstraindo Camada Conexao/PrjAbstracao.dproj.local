@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/05/31 11:38:52.000.006,=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2023/06/06 14:16:24.000.687,=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2023/06/06 14:21:24.000.433,C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit2.dfm=D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Principal.dfm</Transaction>
+    <Transaction>2023/06/06 14:21:24.000.433,C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit2.pas=D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Principal.pas</Transaction>
+    <Transaction>2023/06/06 14:21:33.000.891,C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Project3.dproj=D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\PrjAbstracao.dproj</Transaction>
+    <Transaction>2023/06/06 14:21:38.000.117,=D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Unit1.pas</Transaction>
+    <Transaction>2023/06/06 14:23:06.000.498,D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Unit1.pas=D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Model\Connections\Model.Connections.pas</Transaction>
+    <Transaction>2023/06/06 14:23:21.000.779,=D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Unit1.pas</Transaction>
+    <Transaction>2023/06/06 14:23:35.000.366,D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Unit1.pas=D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Model\Connections\Model.Connections.Interfaces.pas</Transaction>
+    <Transaction>2023/06/06 14:24:29.000.629,D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Model\Connections\Model.Connections.pas=D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Model\Connections\Model.Connections.FireDac.pas</Transaction>
+    <Transaction>2023/06/06 14:26:31.000.791,=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2023/06/06 14:27:52.000.859,=D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\View\View.Principal.pas</Transaction>
+    <Transaction>2023/06/07 14:52:21.493,=D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Unit1.pas</Transaction>
+    <Transaction>2023/06/07 14:52:35.898,D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Model\Connections\Model.Connections.pas=D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Unit1.pas</Transaction>
+    <Transaction>2023/06/07 14:57:24.029,=D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Unit1.pas</Transaction>
+    <Transaction>2023/06/07 14:57:34.591,D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Controller\Controller.Interfaces.pas=D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Unit1.pas</Transaction>
+    <Transaction>2023/06/07 14:58:45.323,=D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Unit1.pas</Transaction>
+    <Transaction>2023/06/07 14:58:53.547,D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Controller\Controller.pas=D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Unit1.pas</Transaction>
+    <Transaction>2023/06/07 15:03:30.823,=D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Unit1.pas</Transaction>
+    <Transaction>2023/06/07 15:03:38.635,D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Model\Model.pas=D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Unit1.pas</Transaction>
+    <Transaction>2023/06/07 15:04:28.213,D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Model\Model.Interfaces.pas=D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Model\Model.pas</Transaction>
+    <Transaction>2023/06/07 15:04:46.729,=D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Unit1.pas</Transaction>
+    <Transaction>2023/06/07 15:04:52.189,D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Model\Model.pas=D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Unit1.pas</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="Model"/>
+    <File Path="Model\Connections"/>
+    <File Path="Model\Connections\Model.Connections.Interfaces.pas"/>
+    <File Path="Model\Connections\Model.Connections.pas"/>
+    <File Path="Model\Connections\Model.Connections.FireDac.pas"/>
+    <File Path="Model\Model.Interfaces.pas"/>
+    <File Path="Model\Model.pas"/>
+    <File Path="View"/>
+    <File Path="View\View.Principal.pas"/>
+    <File Path="View\View.Principal.dfm"/>
+    <File Path="Controller"/>
+    <File Path="Controller\Controller.Interfaces.pas"/>
+    <File Path="Controller\Controller.pas"/>
+  </ProjectSortOrder>
+</BorlandProject>

@@ -1,0 +1,44 @@
+unit Model.Connections;
+
+interface
+
+uses
+  Model.Connections.Interfaces, Model.Connections.FireDac;
+
+type
+  TModelConnections = class(TInterfacedObject, IModelConnections)
+  private
+  public
+    constructor Create;
+    destructor destroy; override;
+    class function New: IModelConnections;
+
+    function FireDac: IModelConnectionsGeneric;
+  end;
+
+implementation
+
+{ TModelConnections }
+
+constructor TModelConnections.Create;
+begin
+
+end;
+
+destructor TModelConnections.destroy;
+begin
+
+  inherited;
+end;
+
+function TModelConnections.FireDac: IModelConnectionsGeneric;
+begin
+  Result := TModelConnectionsFireDac.New;
+end;
+
+class function TModelConnections.New: IModelConnections;
+begin
+  Result := Self.Create;
+end;
+
+end.

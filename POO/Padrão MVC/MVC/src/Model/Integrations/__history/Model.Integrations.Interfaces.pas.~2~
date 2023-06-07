@@ -1,0 +1,12 @@
+unit Model.Integrations.Interfaces;
+
+interface
+
+type
+  IModelIntegraions = interface
+    ['{3C658327-1F34-472F-9C54-5C922BC41BEA}']
+  end;
+
+implementation
+
+end.

@@ -1,0 +1,32 @@
+unit Model.Services;
+
+interface
+
+type
+  TModelServices = class (TInterfacedObject, IModelServices)
+    constructor Create;
+    destructor Destroy;override;
+    class function New: IModelServices;
+  end;
+
+implementation
+
+{ TModelServicesBoletos }
+
+constructor TModelServices.Create;
+begin
+
+end;
+
+destructor TModelServices.Destroy;
+begin
+
+  inherited;
+end;
+
+class function TModelServices.New: IModelServices;
+begin
+
+end;
+
+end.

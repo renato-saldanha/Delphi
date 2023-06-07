@@ -1,0 +1,35 @@
+unit Model.Services.NFe;
+
+interface
+
+uses
+  Model.Services.Interfaces;
+type
+  TModelServicesNFe = class (TInterfacedObject, IModelServices)
+    constructor Create;
+    destructor Destroy;override;
+    class function New: IModelServices;
+  end;
+
+implementation
+
+{ TModelServicesBoletos }
+
+constructor TModelServicesNFe.Create;
+begin
+
+end;
+
+destructor TModelServicesBoletos.Destroy;
+begin
+
+  inherited;
+end;
+
+class function TModelServicesBoletos.New: IModelServices;
+begin
+
+end;
+
+end.
+
