@@ -1,0 +1,34 @@
+unit Model.Connections.Interfaces;
+
+interface
+
+uses
+  Data.DB, System.Classes, Vcl.DBCtrls, Vcl.DBGrids;
+
+
+
+type
+  IModelConnectionsGeneric = interface
+    ['{92B44097-0E9C-402C-AB0F-80DAD08A79DC}']
+
+    procedure Close;
+    function Connection: TCustomConnection;
+    function GetDataSet: TDataSet;
+    function ParamByName(AValue: String): TCollectionItem;
+    function FieldByName(AValue: String): TField;
+    function SQL: TStrings;
+    function Open: IModelConnectionsGeneric ; overload;
+    function Open(AValue: String): IModelConnectionsGeneric ; overload;
+    function DBNavigator(const ADBNavigator: TDBNavigator): IModelConnectionsGeneric;
+    function DBGrid(const ADBGrid: TDBGrid): IModelConnectionsGeneric;
+  end;
+
+   IModelConnections = interface
+    ['{2377BB56-A36B-4A7F-A5C8-2FABA18BFCF2}']
+    function FireDac: IModelConnectionsGeneric;
+    function DBExpress: IModelConnectionsGeneric;
+  end;
+
+implementation
+
+end.

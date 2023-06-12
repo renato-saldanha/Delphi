@@ -3,18 +3,20 @@ unit Model;
 interface
 
 uses
-  Model.Interfaces, Model.Connection.Interfaces, Model.Connection.FireDac, Model.Connection.DBExpress, Data.DB;
+  Model.Connections.Interfaces, Model.Interfaces, Model.Connections;
+
+
 
 type
-  TModel<T: class> = class(TInterfacedObject, IModel)
+  TModel = class(TInterfacedObject, IModel)
   private
-    FDataSet: IModelConnectionsGeneric;
+    FConnections: IModelConnections;
   public
     constructor Create;
     destructor Destroy; override;
     class function New: IModel;
 
-    function DataSet: IModelConnectionsGeneric;
+    function Connections: IModelConnections;
   end;
 
 implementation
@@ -22,29 +24,25 @@ implementation
 
 { TModel }
 
-constructor TModel<T>.Create;
+constructor TModel.Create;
 begin
-  if (T = TModelConnectionFireDac) then
-    FDataSet := TModelConnectionFireDac.New;
-
-  if (T = TModelConnectionDBExpress) then
-    FDataSet := TModelConnectionDBExpress.New;
+  FConnections := TModelConnections.New;
 end;
 
-destructor TModel<T>.Destroy;
+destructor TModel.Destroy;
 begin
 
   inherited;
 end;
 
-class function TModel<T>.New: IModel;
+class function TModel.New: IModel;
 begin
   Result := Self.Create;
 end;
 
-function TModel<T>.DataSet: IModelConnectionsGeneric;
+function TModel.Connections: IModelConnections;
 begin
-  Result :=  FDataSet;
+  Result :=  FConnections;
 end;
 
 end.

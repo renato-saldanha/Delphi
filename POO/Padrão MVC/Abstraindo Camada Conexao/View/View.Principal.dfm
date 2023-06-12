@@ -11,13 +11,12 @@ object FormPrincipal: TFormPrincipal
   Font.Name = 'Segoe UI'
   Font.Style = []
   OnCreate = FormCreate
-  OnShow = FormShow
   TextHeight = 15
   object Label1: TLabel
     Left = 424
     Top = 8
     Width = 50
-    Height = 24
+    Height = 20
     Caption = 'FireDac'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -66,7 +65,6 @@ object FormPrincipal: TFormPrincipal
     Margins.Bottom = 5
     Align = alBottom
     TabOrder = 1
-    ExplicitTop = 181
   end
   object BtnAbrirDBExpress: TButton
     Left = 167

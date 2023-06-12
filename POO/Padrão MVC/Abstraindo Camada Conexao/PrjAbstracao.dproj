@@ -98,8 +98,8 @@
         <DelphiCompile Include="$(MainSource)">
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
-        <DCCReference Include="Model\Connections\Model.Connection.FireDac.pas"/>
-        <DCCReference Include="Model\Connections\Model.Connection.Interfaces.pas"/>
+        <DCCReference Include="Model\Connections\Model.Connections.FireDac.pas"/>
+        <DCCReference Include="Model\Connections\Model.Connections.Interfaces.pas"/>
         <DCCReference Include="View\View.Principal.pas">
             <Form>FormPrincipal</Form>
             <FormType>dfm</FormType>
@@ -108,7 +108,8 @@
         <DCCReference Include="Model\Model.pas"/>
         <DCCReference Include="Controller\Controller.Interfaces.pas"/>
         <DCCReference Include="Controller\Controller.pas"/>
-        <DCCReference Include="Model\Connections\Model.Connection.DBExpress.pas"/>
+        <DCCReference Include="Model\Connections\Model.Connections.DBExpress.pas"/>
+        <DCCReference Include="Model\Connections\Model.Connections.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
