@@ -1,0 +1,33 @@
+unit Model.Connections.Interfaces;
+
+interface
+
+uses
+  FireDAC.Comp.Client, System.Classes, FireDAC.Stan.Param, Data.DB,
+  Vcl.DBCtrls, Vcl.DBGrids, System.TypInfo;
+
+type
+  IModelConnectionsGeneric<T> = interface
+    ['{92B44097-0E9C-402C-AB0F-80DAD08A79DC}']
+
+    procedure Close;
+    function Connection: TCustomConnection;
+    function GetDataSet: TDataSet;
+    function ParamByName(AValue: String): TCollectionItem;
+    function FieldByName(AValue: String): TField;
+    function SQL: TStrings;
+    function Open: IModelConnectionsGeneric<T> ; overload;
+    function Open(AValue: String): IModelConnectionsGeneric<T> ; overload;
+    function DBNavigator(const ADBNavigator: TDBNavigator): IModelConnectionsGeneric<T>;
+    function DBGrid(const ADBGrid: TDBGrid): IModelConnectionsGeneric<T>;
+  end;
+
+  IModelConnections<T> = interface
+    ['{2377BB56-A36B-4A7F-A5C8-2FABA18BFCF2}']
+    function FireDac: IModelConnections<T>;
+    function DBExpress: IModelConnections<T>;
+  end;
+
+implementation
+
+end.

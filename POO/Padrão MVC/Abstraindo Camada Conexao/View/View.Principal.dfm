@@ -1,8 +1,8 @@
-object Principal: TPrincipal
+object FormPrincipal: TFormPrincipal
   Left = 0
   Top = 0
-  Caption = 'Principal'
-  ClientHeight = 211
+  Caption = 'FormPrincipal'
+  ClientHeight = 288
   ClientWidth = 584
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -13,16 +13,41 @@ object Principal: TPrincipal
   OnCreate = FormCreate
   OnShow = FormShow
   TextHeight = 15
-  object DBGrid: TDBGrid
+  object Label1: TLabel
+    Left = 424
+    Top = 8
+    Width = 50
+    Height = 24
+    Caption = 'FireDac'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 104
+    Top = 8
+    Width = 69
+    Height = 20
+    Caption = 'DBExpress'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+  end
+  object DbgDBExpress: TDBGrid
     AlignWithMargins = True
-    Left = 5
-    Top = 10
-    Width = 574
-    Height = 165
+    Left = 7
+    Top = 45
+    Width = 281
+    Height = 175
     Margins.Left = 5
     Margins.Top = 10
     Margins.Right = 5
-    Align = alClient
     TabOrder = 0
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
@@ -33,7 +58,7 @@ object Principal: TPrincipal
   object DBNavigator: TDBNavigator
     AlignWithMargins = True
     Left = 5
-    Top = 181
+    Top = 258
     Width = 574
     Height = 25
     Margins.Left = 5
@@ -41,5 +66,40 @@ object Principal: TPrincipal
     Margins.Bottom = 5
     Align = alBottom
     TabOrder = 1
+    ExplicitTop = 181
+  end
+  object BtnAbrirDBExpress: TButton
+    Left = 167
+    Top = 226
+    Width = 121
+    Height = 25
+    Caption = 'DBExpress'
+    TabOrder = 2
+    OnClick = BtnAbrirDBExpressClick
+  end
+  object BtnAbrirFireDac: TButton
+    Left = 296
+    Top = 226
+    Width = 121
+    Height = 25
+    Caption = 'FireDac'
+    TabOrder = 3
+    OnClick = BtnAbrirFireDacClick
+  end
+  object DbgFireDac: TDBGrid
+    AlignWithMargins = True
+    Left = 296
+    Top = 45
+    Width = 283
+    Height = 175
+    Margins.Left = 5
+    Margins.Top = 10
+    Margins.Right = 5
+    TabOrder = 4
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -12
+    TitleFont.Name = 'Segoe UI'
+    TitleFont.Style = []
   end
 end

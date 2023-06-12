@@ -1,0 +1,138 @@
+unit Model.Connections.FireDac;
+
+interface
+
+uses
+  FireDac.Stan.Intf, FireDac.Stan.Option, FireDac.Stan.Error,
+  FireDac.UI.Intf, FireDac.Phys.Intf, FireDac.Stan.Def, FireDac.Stan.Pool, FireDac.Stan.Async, FireDac.Phys,
+  FireDac.VCLUI.Wait, FireDac.DatS, FireDac.DApt.Intf, FireDac.DApt, FireDac.Comp.DataSet,
+  FireDac.Comp.Client, FireDAC.Phys.FBDef, FireDAC.Phys.IBBase, FireDAC.Phys.FB,
+  Model.Connections.Interfaces, System.Classes, FireDAC.Stan.Param,
+  Vcl.DBCtrls, Vcl.DBGrids, Data.DB;
+
+type
+  TModelConnectionsFireDac = class(TInterfacedObject, IModelConnectionsGeneric)
+  private
+    FConnection: TFDConnection;
+    FPhysDriverFB: TFDPhysFBDriverLink;
+    FQry: TFDQuery;
+    FDataSource: TDataSource;
+    procedure ConnectionConfig;
+  public
+    constructor Create;
+    destructor Destroy; override;
+    class function New: IModelConnectionsGeneric<T>;
+
+    procedure Close;
+    function Connection: TCustomConnection;
+    function GetDataSet: TDataSet;
+    function ParamByName(AValue: String) : TCollectionItem;
+    function FieldByName(AValue: String) : TField;
+    function SQL: TStrings;
+    function Open: IModelConnectionsGeneric<TCustomConnection>; overload;
+    function Open(AValue: String): IModelConnectionsGeneric<TCustomConnection>; overload;
+    function DBNavigator(const ADBNavigator: TDBNavigator): IModelConnectionsGeneric<TCustomConnection>;
+    function DBGrid(const ADBGrid: TDBGrid): IModelConnectionsGeneric<TCustomConnection>;
+  end;
+
+implementation
+
+uses
+  System.SysUtils;
+
+{ TModelConnectionsFireDac }
+
+function TModelConnectionsFireDac.Connection: TCustomConnection;
+begin
+  Result := Self.FConnection;
+end;
+
+procedure TModelConnectionsFireDac.ConnectionConfig;
+begin
+  try
+    FConnection.Connected             := False;
+    FConnection.DriverName            := 'FB';
+    FConnection.LoginPrompt           := False;
+    FConnection.Params.Database       := 'D:\Renato\ReactNative\AutRemotaBackEnd\DB\DB.FDB';
+    FConnection.Params.UserName       := 'SYSDBA';
+    FConnection.Params.Password       := 'masterkey';
+    FConnection.Connected             := True;
+  except on E: Exception do
+    raise Exception.Create(E.Message);
+  end;
+end;
+
+constructor TModelConnectionsFireDac.Create;
+begin
+  FConnection         := TFDConnection.Create(nil);
+  FPhysDriverFB       := TFDPhysFBDriverLink.Create(FConnection);
+  ConnectionConfig();
+  FQry                := TFDQuery.Create(FConnection);
+  FQry.Connection     := FConnection;
+  FDataSource         := TDataSource.Create(FConnection);
+  FDataSource.DataSet := FQry;
+end;
+
+destructor TModelConnectionsFireDac.Destroy;
+begin
+  inherited;
+  FreeAndNil(FQry);
+  FreeAndNil(FPhysDriverFB);
+  FreeAndNil(FConnection);
+end;
+
+function TModelConnectionsFireDac.GetDataSet: TDataSet;
+begin
+  Result := FQry;
+end;
+
+class function TModelConnectionsFireDac.New: IModelConnectionsGeneric<TCustomConnection>;
+begin
+  Result := Self.Create;
+end;
+
+function TModelConnectionsFireDac.Open: IModelConnectionsGeneric<TCustomConnection>;
+begin
+  Result:= Self;
+  FQry.Open;
+end;
+
+function TModelConnectionsFireDac.Open(AValue: String): IModelConnectionsGeneric<TCustomConnection>;
+begin
+  Result:= Self;
+  FQry.Open(AValue);
+end;
+
+procedure TModelConnectionsFireDac.Close;
+begin
+  FQry.Close;
+end;
+
+function TModelConnectionsFireDac.ParamByName(AValue: String): TCollectionItem;
+begin
+  Result := FQry.ParamByName(AValue);
+end;
+
+function TModelConnectionsFireDac.FieldByName(AValue: String) : TField;
+begin
+  Result := FQry.FieldByName(AValue);
+end;
+
+function TModelConnectionsFireDac.SQL: TStrings;
+begin
+  Result := FQry.SQL;
+end;
+
+function TModelConnectionsFireDac.DBGrid(const ADBGrid: TDBGrid): IModelConnectionsGeneric<TCustomConnection>;
+begin
+  Result := Self;
+  ADBGrid.DataSource := FDataSource;
+end;
+
+function TModelConnectionsFireDac.DBNavigator(const ADBNavigator: TDBNavigator): IModelConnectionsGeneric<TCustomConnection>;
+begin
+  Result := Self;
+  ADBNavigator.DataSource:= FDataSource;
+end;
+
+end.

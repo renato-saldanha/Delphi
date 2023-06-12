@@ -1,0 +1,139 @@
+unit Model.Connection.FireDac;
+
+interface
+
+uses
+  FireDac.Stan.Intf, FireDac.Stan.Option, FireDac.Stan.Error,
+  FireDac.UI.Intf, FireDac.Phys.Intf, FireDac.Stan.Def, FireDac.Stan.Pool, FireDac.Stan.Async, FireDac.Phys,
+  FireDac.VCLUI.Wait, FireDac.DatS, FireDac.DApt.Intf, FireDac.DApt, FireDac.Comp.DataSet,
+  FireDac.Comp.Client, FireDAC.Phys.FBDef, FireDAC.Phys.IBBase, FireDAC.Phys.FB,
+  Model.Connection.Interfaces, System.Classes, FireDAC.Stan.Param,
+  Vcl.DBCtrls, Vcl.DBGrids, Data.DB;
+
+type
+  TModelConnectionFireDac = class(TInterfacedObject, IModelConnectionsGeneric)
+  private
+    FConnection: TFDConnection;
+    FPhysDriverFB: TFDPhysFBDriverLink;
+    FQry: TFDQuery;
+    FDataSource: TDataSource;
+    procedure ConnectionConfig;
+  public
+    constructor Create;
+    destructor Destroy; override;
+    class function New: IModelConnectionsGeneric;
+
+    procedure Close;
+    function Connection: TCustomConnection;
+    function GetDataSet: TDataSet;
+    function ParamByName(AValue: String) : TCollectionItem;
+    function FieldByName(AValue: String) : TField;
+    function SQL: TStrings;
+    function Open: IModelConnectionsGeneric; overload;
+    function Open(AValue: String): IModelConnectionsGeneric; overload;
+    function DBNavigator(const ADBNavigator: TDBNavigator): IModelConnectionsGeneric;
+    function DBGrid(const ADBGrid: TDBGrid): IModelConnectionsGeneric;
+  end;
+
+implementation
+
+uses
+  System.SysUtils;
+
+{ TModelConnectionsFireDac }
+
+function TModelConnectionFireDac.Connection: TCustomConnection;
+begin
+  Result := Self.FConnection;
+end;
+
+procedure TModelConnectionFireDac.ConnectionConfig;
+begin
+  try
+    FConnection.Connected             := False;
+    FConnection.DriverName            := 'FB';
+    FConnection.LoginPrompt           := False;
+    FConnection.Params.Database       := 'D:\Renato\ReactNative\AutRemotaBackEnd\DB\DB.FDB';
+    FConnection.Params.UserName       := 'SYSDBA';
+    FConnection.Params.Password       := 'masterkey';
+    FConnection.Connected             := True;
+  except on E: Exception do
+    raise Exception.Create(E.Message);
+  end;
+end;
+
+constructor TModelConnectionFireDac.Create;
+begin
+  FConnection         := TFDConnection.Create(nil);
+  FPhysDriverFB       := TFDPhysFBDriverLink.Create(FConnection);
+  ConnectionConfig();
+  FQry                := TFDQuery.Create(FConnection);
+  FQry.Connection     := FConnection;
+  FDataSource         := TDataSource.Create(FConnection);
+  FDataSource.DataSet := FQry;
+end;
+
+destructor TModelConnectionFireDac.Destroy;
+begin
+  inherited;
+  FQry.Free;
+  FPhysDriverFB.Free;
+  FConnection.Free;
+//  FDataSource.Free;
+end;
+
+function TModelConnectionFireDac.GetDataSet: TDataSet;
+begin
+  Result := FQry;
+end;
+
+class function TModelConnectionFireDac.New: IModelConnectionsGeneric;
+begin
+  Result := Self.Create;
+end;
+
+function TModelConnectionFireDac.Open: IModelConnectionsGeneric;
+begin
+  Result:= Self;
+  FQry.Open;
+end;
+
+function TModelConnectionFireDac.Open(AValue: String): IModelConnectionsGeneric;
+begin
+  Result:= Self;
+  FQry.Open(AValue);
+end;
+
+procedure TModelConnectionFireDac.Close;
+begin
+  FQry.Close;
+end;
+
+function TModelConnectionFireDac.ParamByName(AValue: String): TCollectionItem;
+begin
+  Result := FQry.ParamByName(AValue);
+end;
+
+function TModelConnectionFireDac.FieldByName(AValue: String) : TField;
+begin
+  Result := FQry.FieldByName(AValue);
+end;
+
+function TModelConnectionFireDac.SQL: TStrings;
+begin
+  Result := FQry.SQL;
+end;
+
+function TModelConnectionFireDac.DBGrid(const ADBGrid: TDBGrid): IModelConnectionsGeneric;
+begin
+  Result := Self;
+  ADBGrid.DataSource := FDataSource;
+end;
+
+function TModelConnectionFireDac.DBNavigator(const ADBNavigator: TDBNavigator): IModelConnectionsGeneric;
+begin
+  Result := Self;
+  ADBNavigator.DataSource:= FDataSource;
+end;
+
+end.

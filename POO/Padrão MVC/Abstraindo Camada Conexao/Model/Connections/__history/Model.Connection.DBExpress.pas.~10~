@@ -1,0 +1,147 @@
+unit Model.Connection.DBExpress;
+
+interface
+
+uses
+  System.SysUtils, Data.SqlExpr, Model.Connection.Interfaces, Datasnap.Provider,
+  System.Classes, Vcl.DBCtrls, Vcl.DBGrids, Data.DB, Datasnap.DBClient;
+
+
+
+type
+  TModelConnectionDBExpress = class(TInterfacedObject, IModelConnectionsGeneric)
+  private
+    FConnection: TSQLConnection;
+    FQry: TSQLQuery;
+    FDataSetProvider : TDataSetProvider;
+    FClientDataSet: TClientDataSet;
+    FDataSource: TDataSource;
+    procedure ConnectionConfig;
+  public
+    constructor Create;
+    destructor Destroy; override;
+    class function New: IModelConnectionsGeneric;
+
+    procedure Close;
+    function Connection: TCustomConnection;
+    function GetDataSet: TDataSet;
+    function ParamByName(AValue: String): TCollectionItem;
+    function FieldByName(AValue: String): TField;
+    function SQL: TStrings;
+    function Open: IModelConnectionsGeneric ; overload;
+    function Open(AValue: String): IModelConnectionsGeneric ; overload;
+    function DBNavigator(const ADBNavigator: TDBNavigator): IModelConnectionsGeneric;
+    function DBGrid(const ADBGrid: TDBGrid): IModelConnectionsGeneric;
+  end;
+
+implementation
+
+
+{ TModelConnectionsFireDac }
+
+function TModelConnectionDBExpress.Connection: TCustomConnection;
+begin
+  Result := Self.FConnection;
+end;
+
+procedure TModelConnectionDBExpress.ConnectionConfig;
+begin
+  try
+    FConnection.Connected             := False;
+    FConnection.DriverName            := 'Firebird';
+    FConnection.LoginPrompt           := False;
+    FConnection.Params.Add('database=D:\Renato\ReactNative\AutRemotaBackEnd\DB\DB.FDB');
+    FConnection.Params.Add('UserName=SYSDBA');
+    FConnection.Params.Add('Password=masterkey');
+    FConnection.Connected             := True;
+  except on E: Exception do
+    raise Exception.Create(E.Message);
+  end;
+end;
+
+constructor TModelConnectionDBExpress.Create;
+begin
+  FConnection                 := TSQLConnection.Create(nil);
+  ConnectionConfig();
+  FQry                            := TSQLQuery.Create(FConnection);
+  FQry.SQLConnection              := FConnection;
+  FDataSetProvider                := TDataSetProvider.Create(FConnection);
+  FDataSetProvider.DataSet        := FQry;
+  FDataSetProvider.UpdateMode     := upWhereKeyOnly;
+  FDataSetProvider.Constraints    := True;
+  FDataSetProvider.Exported       := True;
+  FDataSetProvider.Options        := [poAllowCommandText, poUseQuoteChar];
+  FClientDataSet                  := TClientDataSet.Create(FConnection);
+  FClientDataSet.ProviderName     := 'FDataSetProvider';
+  FDataSource                     := TDataSource.Create(FConnection);
+  FDataSource.DataSet             := FClientDataSet;
+end;
+
+destructor TModelConnectionDBExpress.Destroy;
+begin
+  inherited;
+  FreeAndNil(FQry);
+  FreeAndNil(FConnection);
+  FreeAndNIl(FDataSource);
+  FreeAndNIl(FDataSetProvider);
+  FreeAndNIl(FClientDataSet);
+end;
+
+function TModelConnectionDBExpress.GetDataSet: TDataSet;
+begin
+  Result := FClientDataSet;
+end;
+
+class function TModelConnectionDBExpress.New: IModelConnectionsGeneric;
+begin
+  Result := Self.Create;
+end;
+
+function TModelConnectionDBExpress.Open: IModelConnectionsGeneric;
+begin
+  Result:= Self;
+  FClientDataSet.Open;
+end;
+
+function TModelConnectionDBExpress.Open(AValue: String): IModelConnectionsGeneric;
+begin
+  Result:= Self;
+  FClientDataSet.Close;
+  FClientDataSet.CommandText := AValue;
+  FClientDataSet.Open;
+end;
+
+procedure TModelConnectionDBExpress.Close;
+begin
+  FClientDataSet.Close;
+end;
+
+function TModelConnectionDBExpress.ParamByName(AValue: String) : TCollectionItem;
+begin
+  Result := FQry.ParamByName(AValue);
+end;
+
+function TModelConnectionDBExpress.FieldByName(AValue: String) : TField;
+begin
+  Result := FQry.FieldByName(AValue);
+end;
+
+function TModelConnectionDBExpress.SQL: TStrings;
+begin
+  Result := FQry.SQL;
+end;
+
+function TModelConnectionDBExpress.DBGrid(const ADBGrid: TDBGrid): IModelConnectionsGeneric;
+begin
+  Result := Self;
+  ADBGrid.DataSource := FDataSource;
+end;
+
+function TModelConnectionDBExpress.DBNavigator(const ADBNavigator: TDBNavigator): IModelConnectionsGeneric;
+begin
+  Result := Self;
+  ADBNavigator.DataSource:= FDataSource;
+end;
+
+end.
+

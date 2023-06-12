@@ -1,42 +1,61 @@
 ﻿[Closed Files]
-File_0=TSourceModule,'c:\program files (x86)\embarcadero\studio\22.0\source\data\firedac\FireDAC.Comp.Client.pas',0,1,4203,1,4222,0,0,,
-File_1=TSourceModule,'D:\Renato\Delphi\POO\Padrão MVC\MVC\src\View\View.Principal.pas',0,1,10,63,20,0,0,,
-File_2=TSourceModule,'D:\Renato\Delphi\POO\Padrão MVC\MVC\src\Controller\Controller.pas',0,1,4,31,17,0,0,,
-File_3=TSourceModule,'D:\Renato\Delphi\POO\Padrão MVC\MVC\src\Controller\Controller.Interfaces.pas',0,1,1,50,10,0,0,,
-File_4=TSourceModule,'D:\Renato\Delphi\POO\Padrão MVC\MVC\src\Model\Model.Interfaces.pas',0,1,1,52,10,0,0,,
-File_5=TSourceModule,'D:\Renato\Delphi\POO\Padrão MVC\MVC\src\Model\Integrations\Model.Integrations.Interfaces.pas',0,1,1,56,16,0,0,,
-File_6=TSourceModule,'D:\Renato\Delphi\POO\Padrão MVC\MVC\src\Model\Integrations\Model.Integrations.pas',0,1,9,51,9,0,0,,
-File_7=TSourceModule,'D:\Renato\Delphi\POO\Padrão MVC\MVC\src\Model\Services\Model.Services.Boletos.pas',0,1,1,5,34,0,0,,
-File_8=TSourceModule,'D:\Renato\Delphi\POO\Padrão MVC\MVC\src\Model\Services\Model.Services.pas',0,1,19,20,27,0,0,,
-File_9=TSourceModule,'D:\Renato\Delphi\POO\Padrão MVC\MVC\src\Model\Model.pas',0,1,13,54,37,0,0,,
-File_10=TSourceModule,'D:\Renato\Delphi\POO\Padrão MVC\MVC\src\Model\Integrations\Model.Integrations.MercadoPago.pas',0,1,1,45,28,0,0,,
-File_11=TSourceModule,'D:\Renato\Delphi\POO\Padrão MVC\MVC\src\Model\Integrations\Model.Integrations.MercadoLivre.pas',0,1,1,25,30,0,0,,
-File_12=TSourceModule,'D:\Renato\Delphi\POO\Padrão MVC\MVC\src\Model\Integrations\Model.Integrations.SiteMercado.pas',0,1,1,25,30,0,0,,
-File_13=TSourceModule,'D:\Renato\Delphi\POO\Padrão MVC\MVC\src\Model\Services\Model.Services.Interfaces.pas',0,1,1,1,12,0,0,,
-File_14=TSourceModule,'D:\Renato\Delphi\POO\SOLID\dip\src\Feito\Dispositivo.Computador.pas',0,1,25,54,49,0,0,,
+File_0=TSourceModule,'D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Model\Model.Interfaces.pas',0,1,1,11,9,0,0,,
+File_1=TSourceModule,'D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Model\Connections\Model.Connections.Interfaces.pas',0,1,1,49,28,0,0,,
+File_2=TSourceModule,'D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\View\View.Secundario.pas',0,1,1,35,11,0,0,,
+File_3=TSourceModule,'c:\program files (x86)\embarcadero\studio\22.0\source\data\firedac\FireDAC.Stan.Param.pas',0,1,101,35,121,0,0,,
+File_4=TSourceModule,'c:\program files (x86)\embarcadero\studio\22.0\source\data\firedac\FireDAC.Comp.DataSet.pas',0,1,1655,58,1675,0,0,,
+File_5=TSourceModule,'c:\program files (x86)\embarcadero\studio\22.0\source\rtl\common\System.Classes.pas',0,1,423,26,443,0,0,,
+File_6=TSourceModule,'c:\program files (x86)\embarcadero\studio\22.0\SOURCE\RTL\SYS\System.pas',0,1,4298,1,4337,0,0,,
+File_7=TSourceModule,'c:\program files (x86)\embarcadero\studio\22.0\SOURCE\VCL\Vcl.Forms.pas',0,1,4143,1,4162,0,0,{{1990,4}
+File_8=TSourceModule,'c:\program files (x86)\embarcadero\studio\22.0\source\data\firedac\FireDAC.Comp.Client.pas',0,1,4203,1,4222,0,0,,
+File_9=TSourceModule,'D:\Renato\Delphi\POO\Padrão MVC\MVC\src\View\View.Principal.pas',0,1,10,63,20,0,0,,
+File_10=TSourceModule,'D:\Renato\Delphi\POO\Padrão MVC\MVC\src\Controller\Controller.pas',0,1,4,31,17,0,0,,
+File_11=TSourceModule,'D:\Renato\Delphi\POO\Padrão MVC\MVC\src\Controller\Controller.Interfaces.pas',0,1,1,50,10,0,0,,
+File_12=TSourceModule,'D:\Renato\Delphi\POO\Padrão MVC\MVC\src\Model\Model.Interfaces.pas',0,1,1,52,10,0,0,,
+File_13=TSourceModule,'D:\Renato\Delphi\POO\Padrão MVC\MVC\src\Model\Integrations\Model.Integrations.Interfaces.pas',0,1,1,56,16,0,0,,
 
 [Modules]
-Module0=D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Model\Connections\Model.Connections.FireDac.pas
-Module1=D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Model\Connections\Model.Connections.Interfaces.pas
-Module2=D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\View\View.Principal.pas
-Count=3
+Module0=D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Controller\Controller.pas
+Module1=D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\View\View.Principal.pas
+Module2=D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Model\Model.pas
+Module3=D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Model\Connections\Model.Connections.pas
+Module4=D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Model\Connections\Model.Connections.DBExpress.pas
+Module5=D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Controller\Controller.Interfaces.pas
+Module6=D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Model\Connections\Model.Connections.FireDac.pas
+Count=7
 EditWindowCount=1
 
-[D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Model\Connections\Model.Connections.FireDac.pas]
-ModuleType=TSourceModule
-
-[D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Model\Connections\Model.Connections.Interfaces.pas]
+[D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Controller\Controller.pas]
 ModuleType=TSourceModule
 
 [D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\View\View.Principal.pas]
 ModuleType=TSourceModule
 
+[D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Model\Model.pas]
+ModuleType=TSourceModule
+
+[D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Model\Connections\Model.Connections.pas]
+ModuleType=TSourceModule
+
+[D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Model\Connections\Model.Connections.DBExpress.pas]
+ModuleType=TSourceModule
+
+[D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Controller\Controller.Interfaces.pas]
+ModuleType=TSourceModule
+
+[D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Model\Connections\Model.Connections.FireDac.pas]
+ModuleType=TSourceModule
+
 [EditWindow0]
-ViewCount=3
-CurrentEditView=D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Model\Connections\Model.Connections.FireDac.pas
+ViewCount=7
+CurrentEditView=D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Controller\Controller.pas
 View0=0
 View1=1
 View2=2
+View3=3
+View4=4
+View5=5
+View6=6
 PercentageSizes=1
 Create=1
 Visible=1
@@ -69,9 +88,9 @@ BottomMiddelPanelData=0000080001020200000009000000446F636B5369746530100000004772
 [View0]
 CustomEditViewType=TEditView
 Module=D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\View\View.Principal.pas
-CursorX=96
-CursorY=45
-TopLine=15
+CursorX=65
+CursorY=41
+TopLine=10
 LeftCol=1
 Elisions=
 Bookmarks=
@@ -79,25 +98,69 @@ EditViewName=D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\View\Vie
 
 [View1]
 CustomEditViewType=TEditView
+Module=D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Controller\Controller.pas
+CursorX=66
+CursorY=32
+TopLine=4
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Controller\Controller.pas
+
+[View2]
+CustomEditViewType=TEditView
+Module=D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Model\Model.pas
+CursorX=1
+CursorY=46
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Model\Model.pas
+
+[View3]
+CustomEditViewType=TEditView
+Module=D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Model\Connections\Model.Connections.pas
+CursorX=48
+CursorY=48
+TopLine=7
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Model\Connections\Model.Connections.pas
+
+[View4]
+CustomEditViewType=TEditView
 Module=D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Model\Connections\Model.Connections.FireDac.pas
-CursorX=60
-CursorY=39
-TopLine=10
+CursorX=67
+CursorY=110
+TopLine=27
 LeftCol=1
 Elisions=
 Bookmarks=
 EditViewName=D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Model\Connections\Model.Connections.FireDac.pas
 
-[View2]
+[View5]
 CustomEditViewType=TEditView
-Module=D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Model\Connections\Model.Connections.Interfaces.pas
-CursorX=1
-CursorY=13
+Module=D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Controller\Controller.Interfaces.pas
+CursorX=50
+CursorY=11
 TopLine=1
 LeftCol=1
 Elisions=
 Bookmarks=
-EditViewName=D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Model\Connections\Model.Connections.Interfaces.pas
+EditViewName=D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Controller\Controller.Interfaces.pas
+
+[View6]
+CustomEditViewType=TEditView
+Module=D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Model\Connections\Model.Connections.DBExpress.pas
+CursorX=108
+CursorY=128
+TopLine=89
+LeftCol=2
+Elisions=
+Bookmarks=
+EditViewName=D:\Renato\Delphi\POO\Padrão MVC\Abstraindo Camada Conexao\Model\Connections\Model.Connections.DBExpress.pas
 
 [Watches]
 Count=0
@@ -233,7 +296,7 @@ TBDockHeight=8778
 LRDockWidth=1896
 Dockable=1
 StayOnTop=0
-SplitPos=111
+SplitPos=116
 
 [frmDesignPreview]
 PercentageSizes=1
@@ -244,11 +307,11 @@ State=0
 Left=0
 Top=0
 Width=2000
-Height=8519
+Height=6528
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2000
-ClientHeight=8519
+ClientHeight=6528
 TBDockHeight=5963
 LRDockWidth=2510
 Dockable=1
@@ -365,11 +428,11 @@ State=0
 Left=0
 Top=0
 Width=2339
-Height=1222
+Height=981
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2339
-ClientHeight=1222
+ClientHeight=981
 TBDockHeight=2315
 LRDockWidth=2823
 Dockable=1
@@ -403,11 +466,11 @@ State=0
 Left=0
 Top=0
 Width=2339
-Height=3250
+Height=1222
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2339
-ClientHeight=3250
+ClientHeight=1222
 TBDockHeight=1157
 LRDockWidth=3677
 Dockable=1
@@ -430,11 +493,11 @@ State=0
 Left=0
 Top=0
 Width=2000
-Height=8519
+Height=6528
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2000
-ClientHeight=8519
+ClientHeight=6528
 TBDockHeight=4880
 LRDockWidth=7151
 Dockable=1
@@ -506,11 +569,11 @@ State=0
 Left=0
 Top=0
 Width=2339
-Height=3250
+Height=1222
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2339
-ClientHeight=3250
+ClientHeight=1222
 TBDockHeight=4833
 LRDockWidth=3562
 Dockable=1
@@ -561,6 +624,27 @@ LRDockWidth=1896
 Dockable=1
 StayOnTop=0
 
+[CnBookmarkForm]
+PercentageSizes=1
+Create=1
+Visible=0
+Docked=0
+State=0
+Left=0
+Top=0
+Width=1089
+Height=1120
+MaxLeft=-5
+MaxTop=-9
+ClientWidth=1005
+ClientHeight=759
+TBDockHeight=1120
+LRDockWidth=1089
+Dockable=1
+StayOnTop=0
+EditHeight=100
+ColumnWidth=100,60,60,270
+
 [ModelViewTool]
 PercentageSizes=1
 Create=1
@@ -570,11 +654,11 @@ State=0
 Left=0
 Top=0
 Width=2000
-Height=8519
+Height=6528
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2000
-ClientHeight=8519
+ClientHeight=6528
 TBDockHeight=4880
 LRDockWidth=5307
 Dockable=1
@@ -610,8 +694,8 @@ Create=1
 Visible=0
 Docked=1
 State=0
-Left=0
-Top=28
+Left=8
+Top=8
 Width=2339
 Height=1481
 MaxLeft=-1
@@ -623,7 +707,8 @@ LRDockWidth=2339
 Dockable=1
 StayOnTop=0
 TabPosition=1
-TabDockClients=QAView,MetricsView,ToDo List,FindReferencsForm,RefactoringForm
+ActiveTabID=RefactoringForm
+TabDockClients=RefactoringForm,FindReferencsForm,ToDo List,MetricsView,QAView
 
 [DockSite1]
 HostDockSite=DockBottomPanel

@@ -1,0 +1,53 @@
+unit Model;
+
+interface
+
+uses
+  Model.Interfaces, Model.Connection.Interfaces, Model.Connection.FireDac, Model.Connection.DBExpress, Data.DB;
+
+type
+  TModel<T: class> = class(TInterfacedObject, IModel)
+  private
+
+  public
+    constructor Create;
+    destructor Destroy; override;
+    class function New: IModel;
+
+    function Connection: TCustomConnection;
+  end;
+
+var
+    FConnection: TCustomConnection;
+
+implementation
+
+
+{ TModel }
+
+constructor TModel<T>.Create;
+begin
+  if (T = TModelConnectionFireDac) then
+    FConnection := TModelConnectionFireDac.New.Connection;
+
+  if (T = TModelConnectionDBExpress) then
+    FConnection := TModelConnectionDBExpress.New.Connection;
+end;
+
+destructor TModel<T>.Destroy;
+begin
+
+  inherited;
+end;
+
+class function TModel<T>.New: IModel;
+begin
+  Result := Self.Create;
+end;
+
+function TModel<T>.Connection: TCustomConnection;
+begin
+    Result := FConnection;
+end;
+
+end.

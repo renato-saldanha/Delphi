@@ -1,0 +1,127 @@
+unit Model.Connections;
+
+interface
+
+uses
+  Model.Connections.Interfaces, Model.Connections.FireDac, Data.DB,
+  System.Classes, Vcl.DBCtrls, Vcl.DBGrids;
+
+type
+  TModelConnections<T: class> = class(TInterfacedObject, IModelConnectionsGeneric)
+  private
+
+  public
+    constructor Create;
+    destructor Destroy; override;
+    class function New: IModelConnectionsGeneric;
+
+    procedure Close;
+    function Connection: TCustomConnection;
+    function GetDataSet: TDataSet;
+    function ParamByName(AValue: String): TCollectionItem;
+    function FieldByName(AValue: String): TField;
+    function SQL: TStrings;
+    function Open: IModelConnectionsGeneric ; overload;
+    function Open(AValue: String): IModelConnectionsGeneric ; overload;
+    function DBNavigator(const ADBNavigator: TDBNavigator): IModelConnectionsGeneric;
+    function DBGrid(const ADBGrid: TDBGrid): IModelConnectionsGeneric;
+  end;
+
+var
+  FConnection: IModelConnectionsGeneric;
+
+implementation
+
+uses
+  Model.Connections.DBExpress;
+
+{ TModelConnections }
+
+constructor TModelConnections<T>.Create;
+begin
+
+end;
+
+destructor TModelConnections<T>.Destroy;
+begin
+
+  inherited;
+end;
+
+class function TModelConnections<T>.New: IModelConnectionsGeneric;
+begin
+  if (not Assigned(FConnection)) then
+  begin
+    if T = TModelConnectionsFireDac then
+     FConnection := TModelConnectionsFireDac.New;
+
+    if T = TModelConnectionsDBExpress then
+     FConnection := TModelConnectionsDBExpress.New;
+   Result := FConnection;
+  end;
+end;
+
+function TModelConnections<T>.Open: IModelConnectionsGeneric;
+begin
+
+end;
+
+function TModelConnections<T>.Open(AValue: String): IModelConnectionsGeneric;
+begin
+
+end;
+
+function TModelConnections<T>.ParamByName(AValue: String): TCollectionItem;
+begin
+
+end;
+
+function TModelConnections<T>.SQL: TStrings;
+begin
+
+end;
+
+procedure TModelConnections<T>.Close;
+begin
+
+end;
+
+function TModelConnections<T>.Connection: TCustomConnection;
+begin
+
+end;
+
+function TModelConnections<T>.DBGrid(const ADBGrid: TDBGrid): IModelConnectionsGeneric;
+begin
+
+end;
+
+function TModelConnections<T>.DBNavigator(const ADBNavigator: TDBNavigator): IModelConnectionsGeneric;
+begin
+
+end;
+
+function TModelConnections<T>.FieldByName(AValue: String): TField;
+begin
+
+end;
+
+function TModelConnections<T>.GetDataSet: TDataSet;
+begin
+
+end;
+
+//function TModelConnections<T>.FireDac: IModelConnectionsGeneric;
+//begin
+//  if (not Assigned(FConnection)) then
+//    FConnection := TModelConnectionsFireDac.New;
+//  Result := FConnection;
+//end;
+//
+//function TModelConnections<T>.DBExpress: IModelConnectionsGeneric;
+//begin
+//  if (not Assigned(FConnection)) then
+//    FConnection := TModelConnectionsDBExpress.New;
+//  Result := FConnection;
+//end;
+end.

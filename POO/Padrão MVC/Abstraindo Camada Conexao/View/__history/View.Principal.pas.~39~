@@ -1,0 +1,70 @@
+unit View.Principal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, Vcl.ExtCtrls, Vcl.DBCtrls, Vcl.Grids, Vcl.DBGrids,
+
+  Controller.Interfaces, Vcl.StdCtrls, Model.Connections.DBExpress;
+
+type
+  TPrincipal = class(TForm)
+    DbgDBExpress: TDBGrid;
+    DBNavigator: TDBNavigator;
+    BtnAbrirDBExpress: TButton;
+    BtnAbrirFireDac: TButton;
+    DbgFireDac: TDBGrid;
+    Label1: TLabel;
+    Label2: TLabel;
+    procedure FormCreate(Sender: TObject);
+    procedure FormShow(Sender: TObject);
+    procedure BtnAbrirDBExpressClick(Sender: TObject);
+    procedure BtnAbrirFireDacClick(Sender: TObject);
+  private
+    { Private declarations }
+    FController: IController;
+  public
+    { Public declarations }
+  end;
+
+var
+  Principal: TPrincipal;
+
+implementation
+
+uses
+  Controller, Model.Connections.FireDac;
+
+{$R *.dfm}
+
+procedure TPrincipal.BtnAbrirDBExpressClick(Sender: TObject);
+begin
+  FController                   := TController<TModelConnectionsDBExpress>.New;
+  FController.DataSet
+    .DBGrid(DBgDBExpress)
+    .DBNavigator(DBNavigator)
+    .Open('SELECT * FROM usuarios');
+end;
+
+procedure TPrincipal.BtnAbrirFireDacClick(Sender: TObject);
+begin
+  FController                   := TController<TModelConnectionsFireDac>.New;
+  FController.DataSet
+    .DBGrid(DBgFireDac)
+    .DBNavigator(DBNavigator)
+    .Open('SELECT * FROM usuarios');
+end;
+
+procedure TPrincipal.FormCreate(Sender: TObject);
+begin
+  ReportMemoryLeaksOnShutdown   := True;
+  
+end;
+
+procedure TPrincipal.FormShow(Sender: TObject);
+begin
+//
+end;
+
+end.

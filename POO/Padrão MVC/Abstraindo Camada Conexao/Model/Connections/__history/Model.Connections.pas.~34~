@@ -1,0 +1,58 @@
+unit Model.Connections;
+
+interface
+
+uses
+  Model.Connections.Interfaces, Model.Connections.FireDac, Data.DB;
+
+type
+  TModelConnections<T: class> = class(TInterfacedObject, IModelConnections<TCustomConnection>)
+  private
+    FConnection:IModelConnectionsGeneric;
+  public
+    constructor Create;
+    destructor Destroy; override;
+    class function New: IModelConnections<TCustomConnection>;
+
+//    function FireDac: IModelConnectionsGeneric;
+//    function DBExpress: IModelConnectionsGeneric;
+  end;
+
+
+implementation
+
+uses
+  Model.Connections.DBExpress;
+
+{ TModelConnections }
+
+constructor TModelConnections<T>.Create;
+begin
+
+end;
+
+destructor TModelConnections<T>.Destroy;
+begin
+
+  inherited;
+end;
+
+class function TModelConnections<T>.New: IModelConnections<TCustomConnection>;
+begin
+  Result := Self.Create;
+end;
+
+function TModelConnections<T>.FireDac: IModelConnectionsGeneric;
+begin
+  if (not Assigned(FConnection)) then
+    FConnection := TModelConnectionsFireDac.New;
+  Result := FConnection;
+end;
+
+function TModelConnections<T>.DBExpress: IModelConnectionsGeneric;
+begin
+  if (not Assigned(FConnection)) then
+    FConnection := TModelConnectionsDBExpress.New;
+  Result := FConnection;
+end;
+end.

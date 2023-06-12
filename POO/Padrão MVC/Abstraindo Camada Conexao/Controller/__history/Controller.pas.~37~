@@ -1,0 +1,48 @@
+unit Controller;
+
+interface
+
+uses
+  Model.Connection.Interfaces, Controller.Interfaces, Data.DB, Model, Model.Connection.FireDac,
+  Model.Connection.DBExpress;
+
+type
+  TController<T: class> = class(TInterfacedObject, IController)
+  private
+    FDataSet: IModelConnectionsGeneric;
+  public
+    constructor Create;
+    destructor Destroy; override;
+    class function New: IController;
+    function DataSet: IModelConnectionsGeneric;
+  end;
+
+implementation
+
+{ TController }
+
+
+constructor TController<T>.Create;
+begin
+  if (not Assigned(FDataSet)) then
+    FDataSet := TModel<T>.New.DataSet;
+
+end;
+
+destructor TController<T>.Destroy;
+begin
+
+  inherited;
+end;
+
+class function TController<T>.New: IController;
+begin
+  Result := TController<T>.Create;
+end;
+
+function TController<T>.DataSet: IModelConnectionsGeneric;
+begin
+  Result := FDataSet;
+end;
+
+end.
