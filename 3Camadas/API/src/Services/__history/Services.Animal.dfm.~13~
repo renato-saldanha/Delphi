@@ -1,0 +1,34 @@
+inherited ServiceAnimal: TServiceAnimal
+  inherited DBConnection: TFDConnection
+    Connected = True
+  end
+  object QryAnimal: TFDQuery
+    Connection = DBConnection
+    SQL.Strings = (
+      'select * from animals')
+    Left = 152
+    Top = 96
+    object QryAnimalNAME: TStringField
+      FieldName = 'NAME'
+      Origin = 'NAME'
+      Size = 10
+    end
+    object QryAnimalSIZE: TSmallintField
+      FieldName = 'SIZE'
+      Origin = 'SIZE'
+    end
+    object QryAnimalWEIGHT: TSmallintField
+      FieldName = 'WEIGHT'
+      Origin = 'WEIGHT'
+    end
+    object QryAnimalAREA: TStringField
+      FieldName = 'AREA'
+      Origin = 'AREA'
+    end
+    object QryAnimalBMP: TMemoField
+      FieldName = 'BMP'
+      Origin = 'BMP'
+      BlobType = ftMemo
+    end
+  end
+end

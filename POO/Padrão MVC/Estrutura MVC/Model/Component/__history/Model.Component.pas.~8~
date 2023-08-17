@@ -1,0 +1,23 @@
+unit Model.Component;
+
+interface
+
+uses
+   Model.Component.Interfaces;
+
+type
+  TModelComponent<T: IInterface> = class(TINterfacedObject, IModelComponent<T>)
+  private
+    [Weak]
+    FParent: T;
+  public
+    class function New(AParent: T): IModelComponent<T>;
+    constructor Create(AParent: T);
+    destructor Destroy; override;
+
+    function Component(): IModelComponent<T>;
+    function &End: T;
+  end;
+implementation
+
+end.

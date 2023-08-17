@@ -1,0 +1,45 @@
+unit Controller.NFe;
+
+interface
+
+uses
+  Controller.NFe.Interfaces, Model.NFe.Interfaces;
+type
+  TControllerNFe = class(TInterfacedObject, IControllerNFe)
+  private
+  public
+    class function New: IControllerNFe;
+    constructor Create;
+    destructor Destroy; override;
+
+    function NFe: IModelNFe;
+  end;
+implementation
+
+uses
+  Model.NFe;
+
+{ TControllerNFe }
+
+constructor TControllerNFe.Create;
+begin
+
+end;
+
+destructor TControllerNFe.Destroy;
+begin
+
+  inherited;
+end;
+
+class function TControllerNFe.New: IControllerNFe;
+begin
+  Result:= Self.Create;
+end;
+
+function TControllerNFe.NFe: IModelNFe;
+begin
+  Result:= TModelNFe.Create;
+end;
+
+end.

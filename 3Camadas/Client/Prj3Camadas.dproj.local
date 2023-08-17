@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/07/03 14:33:31.000.964,=D:\Renato\Delphi\3Camadas\Client\src\Controller\Controller.Conexao.pas</Transaction>
+    <Transaction>2023/07/03 14:34:28.000.679,=D:\Renato\Delphi\3Camadas\Client\Unit2.pas</Transaction>
+    <Transaction>2023/07/03 14:35:30.000.760,D:\Renato\Delphi\3Camadas\Client\src\Controller\Controller.Interfaces.pas=D:\Renato\Delphi\3Camadas\Client\Unit2.pas</Transaction>
+    <Transaction>2023/07/03 14:36:09.000.186,D:\Renato\Delphi\3Camadas\Client\src\Controller\Controller.Conexao.Interfaces.pas=D:\Renato\Delphi\3Camadas\Client\src\Controller\Controller.Interfaces.pas</Transaction>
+    <Transaction>2023/07/03 14:43:06.000.531,=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2023/07/03 14:43:14.000.820,C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Project3.dproj=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Client.dproj</Transaction>
+    <Transaction>2023/07/03 14:44:40.000.440,C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit2.dfm=D:\Renato\Delphi\Client\View\View.Principal.dfm</Transaction>
+    <Transaction>2023/07/03 14:44:40.000.440,C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit2.pas=D:\Renato\Delphi\Client\View\View.Principal.pas</Transaction>
+    <Transaction>2023/07/03 14:45:03.000.494,C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Client.dproj=D:\Renato\Delphi\Prj3Camadas.dproj</Transaction>
+    <Transaction>2023/07/03 14:53:10.000.912,=D:\Renato\Delphi\3Camadas\Client\Unit1.pas</Transaction>
+    <Transaction>2023/07/03 14:53:43.000.852,=D:\Renato\Delphi\3Camadas\Client\View\View.Principal.pas</Transaction>
+    <Transaction>2023/07/03 15:09:42.000.978,=D:\Renato\Delphi\3Camadas\Client\Unit1.pas</Transaction>
+    <Transaction>2023/07/03 15:13:12.000.246,D:\Renato\Delphi\3Camadas\Client\Unit1.pas=D:\Renato\Delphi\3Camadas\Client\src\View\View.Cadastro.pas</Transaction>
+    <Transaction>2023/07/03 15:13:12.000.246,D:\Renato\Delphi\3Camadas\Client\Unit1.dfm=D:\Renato\Delphi\3Camadas\Client\src\View\View.Cadastro.dfm</Transaction>
+    <Transaction>2023/07/03 15:16:49.000.585,=D:\Renato\Delphi\3Camadas\Client\src\View\View.Principal.pas</Transaction>
+    <Transaction>2023/07/10 08:00:15.000.739,=D:\Renato\Delphi\3Camadas\Uteis\App.Util.pas</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="..\..\3Camadas"/>
+    <File Path="..\Uteis"/>
+    <File Path="..\Uteis\App.Util.pas"/>
+    <File Path="src"/>
+    <File Path="src\Controller"/>
+    <File Path="src\Controller\Controller.Conexao.pas"/>
+    <File Path="src\Controller\Controller.Conexao.dfm"/>
+    <File Path="src\Controller\Controller.Conexao.Interfaces.pas"/>
+    <File Path="src\View"/>
+    <File Path="src\View\View.Principal.pas"/>
+    <File Path="src\View\View.Principal.dfm"/>
+    <File Path="src\View\View.Cadastro.pas"/>
+    <File Path="src\View\View.Cadastro.dfm"/>
+  </ProjectSortOrder>
+</BorlandProject>

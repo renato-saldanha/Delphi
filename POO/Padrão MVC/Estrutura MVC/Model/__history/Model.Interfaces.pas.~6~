@@ -1,0 +1,17 @@
+unit Model.Interfaces;
+
+interface
+
+uses
+  Model.Validacao.Interfaces;
+
+type
+  IModel = interface
+    ['{46A80D68-6CA7-4C89-91C8-C8BEFC8BA69C}']
+    function Validacao: IModelValidacao;
+//    function Servicos: IModelServicos;
+  end;
+
+implementation
+
+end.

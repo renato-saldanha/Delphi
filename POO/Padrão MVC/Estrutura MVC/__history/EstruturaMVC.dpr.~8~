@@ -1,0 +1,28 @@
+program EstruturaMVC;
+
+uses
+  Vcl.Forms,
+  View.Principal in 'View\View.Principal.pas' {Form2},
+  Model.NFe.Interfaces in 'Model\Nfe\Model.NFe.Interfaces.pas',
+  Model.NFe in 'Model\Nfe\Model.NFe.pas',
+  Controller.Interfaces in 'Controller\Controller.Interfaces.pas',
+  Controller in 'Controller\Controller.pas',
+  Model.CEP.Interfaces in 'Model\CEP\Model.CEP.Interfaces.pas',
+  Model.CEP in 'Model\CEP\Model.CEP.pas',
+  Model.Validacao.Interfaces in 'Model\Validacao\Model.Validacao.Interfaces.pas',
+  Model.Validacao in 'Model\Validacao\Model.Validacao.pas',
+  Model.Conexao.Interfaces in 'Model\Conexao\Model.Conexao.Interfaces.pas',
+  Model.Conexao in 'Model\Conexao\Model.Conexao.pas',
+  Model.Servicos.Interfaces in 'Model\Servicos\Model.Servicos.Interfaces.pas',
+  Model.Servicos in 'Model\Servicos\Model.Servicos.pas',
+  Model.Component.Interfaces in 'Model\Component\Model.Component.Interfaces.pas',
+  Model.Component in 'Model\Component\Model.Component.pas';
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm2, Form2);
+  Application.Run;
+end.

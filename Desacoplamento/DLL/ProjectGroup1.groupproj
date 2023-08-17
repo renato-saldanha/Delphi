@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{085119F4-B873-4CA2-8D45-E675F775EECD}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Calc.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Project5.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Calc">
+        <MSBuild Projects="Calc.dproj"/>
+    </Target>
+    <Target Name="Calc:Clean">
+        <MSBuild Projects="Calc.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Calc:Make">
+        <MSBuild Projects="Calc.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Project5">
+        <MSBuild Projects="Project5.dproj"/>
+    </Target>
+    <Target Name="Project5:Clean">
+        <MSBuild Projects="Project5.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Project5:Make">
+        <MSBuild Projects="Project5.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Calc;Project5"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Calc:Clean;Project5:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Calc:Make;Project5:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

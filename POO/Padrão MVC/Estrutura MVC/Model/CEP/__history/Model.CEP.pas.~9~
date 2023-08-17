@@ -1,0 +1,67 @@
+unit Model.CEP;
+
+interface
+
+uses
+  Model.CEP.Interfaces, Model.Validacao.Interfaces, Vcl.StdCtrls,
+  System.SysUtils;
+  type TModelCEP = class(TInterfacedObject, IModelCEP)
+  private
+  public
+    class function New: IModelCEP;
+    constructor Create;
+    destructor Destroy; override;
+
+    function Consultar: IModelCEP;
+    function CEPValido(AValue: TCustomEdit): IModelCEP;
+  end;
+
+implementation
+
+{ TModelCEP }
+
+function TModelCEP.Consultar: IModelCEP;
+begin
+  Result := Self;
+end;
+
+constructor TModelCEP.Create;
+begin
+
+end;
+
+destructor TModelCEP.Destroy;
+begin
+
+  inherited;
+end;
+
+class function TModelCEP.New: IModelCEP;
+begin
+
+end;
+
+function TModelCEP.CEPValido(AValue: TCustomEdit): IModelCEP;
+var
+  I: Integer;
+  LCEPContatenado: String;
+begin
+  Result            := Self;
+  LCEPContatenado   := '';
+
+  NotNull(AValue);
+  for I := 1 to Length(AValue.Text) do
+  begin
+    if AValue.Text[I] in ['0'..'9'] then
+      LCEPContatenado := LCEPContatenado + AValue.Text[I];
+    if Length(LCEPContatenado) <> 8 then
+    begin
+      AValue.SetFocus;
+      raise Exception.Create('CEP inválido.')
+    end
+    else
+      AValue.Text := Copy(LCEPContatenado, 1, 2) + '.' + Copy(LCEPContatenado, 3, 3) + '-' + Copy(LCEPContatenado, 6, 3);
+  end;
+end;
+
+end.

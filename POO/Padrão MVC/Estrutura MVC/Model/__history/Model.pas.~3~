@@ -1,0 +1,45 @@
+unit Model;
+
+interface
+
+uses
+  Model.Interfaces, Model.Validacao.Interfaces;
+
+type
+  TModel = class(TInterfacedObject, IModel)
+  private
+    FValidacao: IModelValidacao;
+  public
+    class function New: IModel;
+    constructor Create;
+    destructor Destroy; override;
+
+    function Validacao: IModelValidacao;
+  end;
+
+implementation
+
+{ TModel }
+
+constructor TModel.Create;
+begin
+
+end;
+
+destructor TModel.Destroy;
+begin
+
+  inherited;
+end;
+
+class function TModel.New: IModel;
+begin
+  Result := Self.Create;
+end;
+
+function TModel.Validacao: IModelValidacao;
+begin
+
+end;
+
+end.

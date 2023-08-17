@@ -1,0 +1,42 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 441
+  ClientWidth = 624
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 15
+  object BtnEmitir: TButton
+    Left = 40
+    Top = 32
+    Width = 75
+    Height = 25
+    Caption = 'BtnEmitir'
+    TabOrder = 0
+    OnClick = BtnEmitirClick
+  end
+  object BtnCOnsutlar: TButton
+    Left = 40
+    Top = 63
+    Width = 75
+    Height = 25
+    Caption = 'BtnCOnsultar'
+    TabOrder = 1
+    OnClick = BtnCOnsutlarClick
+  end
+  object EdtCEP: TMaskEdit
+    Left = 136
+    Top = 34
+    Width = 118
+    Height = 23
+    EditMask = '99\.999\-999;1;_'
+    MaxLength = 10
+    TabOrder = 2
+    Text = '  .   -   '
+  end
+end

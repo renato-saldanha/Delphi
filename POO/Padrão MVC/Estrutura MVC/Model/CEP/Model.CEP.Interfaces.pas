@@ -1,0 +1,17 @@
+unit Model.CEP.Interfaces;
+
+interface
+
+uses
+  Vcl.StdCtrls;
+
+type
+  IModelCEP = interface
+    ['{32158A20-DBB4-4C67-94EE-3E86D2201564}']
+    function Consultar: IModelCEP;
+    function CEPValido(AValue: TCustomEdit): IModelCEP;
+  end;
+
+implementation
+
+end.

@@ -1,0 +1,57 @@
+unit Form.Principal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls, Vcl.Buttons;
+
+type
+  TFormPrincipal = class(TForm)
+    PnlContainer: TPanel;
+    PnlTitulo: TPanel;
+    PnlBotoes: TPanel;
+    PnlConteudos: TPanel;
+    PnlOperacoes: TPanel;
+    ImgItem: TImage;
+    Panel2: TPanel;
+    Shape1: TShape;
+    SpeedButton1: TSpeedButton;
+    Panel1: TPanel;
+    Shape2: TShape;
+    SpeedButton2: TSpeedButton;
+    Panel3: TPanel;
+    Shape3: TShape;
+    SpeedButton3: TSpeedButton;
+    Panel4: TPanel;
+    Shape4: TShape;
+    SpeedButton4: TSpeedButton;
+    Panel5: TPanel;
+    Shape5: TShape;
+    SpeedButton5: TSpeedButton;
+    Panel6: TPanel;
+    Shape6: TShape;
+    SpeedButton6: TSpeedButton;
+    Panel7: TPanel;
+    Shape7: TShape;
+    SpeedButton7: TSpeedButton;
+    procedure SpeedButton1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FormPrincipal: TFormPrincipal;
+
+implementation
+
+{$R *.dfm}
+
+procedure TFormPrincipal.SpeedButton1Click(Sender: TObject);
+begin
+ShowMessage('ae')
+end;
+
+end.

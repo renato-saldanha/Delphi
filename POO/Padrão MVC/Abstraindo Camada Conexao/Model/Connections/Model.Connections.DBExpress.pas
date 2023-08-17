@@ -3,7 +3,7 @@ unit Model.Connections.DBExpress;
 interface
 
 uses
-  Model.Connections.Interfaces, Data.SqlExpr, Datasnap.Provider,
+  Model.Connections.Interfaces, Data.SqlExpr, Datasnap.Provider,  Data.DBXFirebird,
   Datasnap.DBClient, Data.DB, System.Classes, Vcl.DBCtrls, Vcl.DBGrids,
   System.SysUtils;
 
@@ -34,6 +34,9 @@ type
   end;
 
 implementation
+
+var
+  FModelConnectionDBExpress: IModelConnectionsGeneric;
 
 
 { TModelConnectionsFireDac }
@@ -71,9 +74,7 @@ begin
   FDataSetProvider.Exported       := True;
   FDataSetProvider.Options        := [poAllowCommandText, poUseQuoteChar];
   FClientDataSet                  := TClientDataSet.Create(FConnection);
-  FClientDataSet.SetProvider(FDataSetProvider);
   FDataSource                     := TDataSource.Create(FConnection);
-  FDataSource.DataSet             := FClientDataSet;
 end;
 
 destructor TModelConnectionDBExpress.Destroy;
@@ -82,14 +83,16 @@ begin
   FreeAndNil(FConnection);
 end;
 
+class function TModelConnectionDBExpress.New: IModelConnectionsGeneric;
+begin
+  if not Assigned(FModelConnectionDBExpress) then
+    FModelConnectionDBExpress := Self.Create;
+  Result := FModelConnectionDBExpress;
+end;
+
 function TModelConnectionDBExpress.GetDataSet: TDataSet;
 begin
   Result := FClientDataSet;
-end;
-
-class function TModelConnectionDBExpress.New: IModelConnectionsGeneric;
-begin
-  Result := Self.Create;
 end;
 
 function TModelConnectionDBExpress.Open: IModelConnectionsGeneric;
@@ -103,6 +106,7 @@ begin
   Result:= Self;
   FClientDataSet.Close;
   FClientDataSet.CommandText := AValue;
+  FClientDataSet.SetProvider(FDataSetProvider);
   FClientDataSet.Open;
 end;
 
@@ -129,6 +133,8 @@ end;
 function TModelConnectionDBExpress.DBGrid(const ADBGrid: TDBGrid): IModelConnectionsGeneric;
 begin
   Result := Self;
+  FClientDataSet.SetProvider(FDataSetProvider);
+  FDataSource.DataSet             := FClientDataSet;
   ADBGrid.DataSource := FDataSource;
 end;
 

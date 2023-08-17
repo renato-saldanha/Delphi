@@ -1,0 +1,73 @@
+unit Controller.Animal;
+
+interface
+
+uses
+  System.JSON, DataSet.Serialize, SysUtils, StrUtils,
+  Horse, Services.Animal;
+
+procedure Registry;
+procedure InserirAnimal(Req: THorseRequest; Res: THorseResponse; Next: TProc);
+procedure GetAnimais(Req: THorseRequest; Res: THorseResponse; Next: TProc);
+procedure getAnimalByDescricao(Req: THorseRequest; Res: THorseResponse; Next: TProc);
+
+implementation
+
+
+procedure InserirAnimal(Req: THorseRequest; Res: THorseResponse; Next: TProc);
+var
+  LService: TServiceAnimal;
+begin
+  LService := TServiceAnimal.Create(nil);
+
+  try
+    Res
+      .Send<TJSONObject>(LService.Inserir(Req.Body<TJSONObject>).ToJSONObject())
+      .Status(THTTPStatus.Created);
+  finally
+    LService.Free;
+  end;
+end;
+
+procedure GetAnimais(Req: THorseRequest; Res: THorseResponse; Next: TProc);
+var
+  LService: TServiceAnimal;
+begin
+  LService := TServiceAnimal.Create(nil);
+
+  try
+    Res
+      .Send<TJSONArray>(LService.GetAnimais().ToJSONArray)
+      .Status(THTTPStatus.OK);
+  finally
+    LService.Free;
+  end;
+
+end;
+
+procedure getAnimalByDescricao(Req: THorseRequest; Res: THorseResponse; Next: TProc);
+var
+  LService: TServiceAnimal;
+  LDescricao: String;
+begin
+  LService := TServiceAnimal.Create(nil);
+
+  try
+    LDescricao := Req.Params.Items['name'];
+    Res
+      .Send<TJSONObject>(LService.getAnimalByDescricao(LDescricao).ToJSONObject)
+      .Status(THTTPStatus.OK);
+  finally
+    LService.Free;
+  end;
+
+end;
+
+procedure Registry;
+begin
+  THorse.Post('/animais', InserirAnimal);
+  THorse.Get('/getAnimais', GetAnimais);
+  THorse.Get('/getAnimalByDescricao/:name',  getAnimalByDescricao);
+end;
+
+end.

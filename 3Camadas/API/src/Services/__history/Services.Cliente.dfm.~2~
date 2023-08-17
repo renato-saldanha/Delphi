@@ -1,0 +1,9 @@
+inherited ServiceCliente: TServiceCliente
+  object QryCliente: TFDQuery
+    Connection = DBConnection
+    SQL.Strings = (
+      'select * from clients')
+    Left = 152
+    Top = 96
+  end
+end

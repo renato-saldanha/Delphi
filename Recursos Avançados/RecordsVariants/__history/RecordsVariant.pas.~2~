@@ -1,0 +1,52 @@
+
+unit RecordsVariant;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs;
+
+type
+  TCargo = (cAjudanteCozinha, cGerente, cAuxiliarLimepza);
+  TSetor = (sCozinha, sGerencial, sLimpeza);
+  TFuncionario = record
+    FCodigo: Integer;
+    FNome: String;
+    case Cargo: TCargo of
+      cGerente          : (ACargaHoraria: Double; ASetor: TSetor; AAtribuiFunção: Boolean);
+      cAjudanteCozinha  : (CargaHoraria: Double; FSetor: TSetor);
+      cAuxiliarLimepza  : (ACarga: Double; Setor: TSetor);
+  end;
+
+  TForm2 = class(TForm)
+  private
+    { Private declarations }
+    function GetFuncionario: TFuncionario;
+  public
+    { Public declarations }
+  end;
+
+var
+  Form2: TForm2;
+
+implementation
+
+{$R *.dfm}
+
+{ TForm2 }
+
+function TForm2.GetFuncionario: TFuncionario;
+var
+  LFuncionario: TFuncionario;
+begin
+  LFuncionario.FCodigo        := 1;
+  LFuncionario.FNome          := 'Renato';
+  LFuncionario.Cargo          := cGerente;
+  LFuncionario.ACargaHoraria  := 8.4 ;
+  LFuncionario.Setor          := sGerencial;
+  LFuncionario.AAtribuiFunção := True;
+  //Os 2 primeiros atributos podem ser acessados por qualquer nome colocado em qualquer um dos 3 cargos
+end;
+
+end.

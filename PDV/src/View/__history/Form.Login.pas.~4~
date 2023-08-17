@@ -1,0 +1,51 @@
+unit Form.Login;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls, Vcl.Imaging.pngimage, Vcl.Buttons;
+
+type
+  TFormLogin = class(TForm)
+    PnlPrincipal: TPanel;
+    PnlLogin: TPanel;
+    PnlUsuario: TPanel;
+    Shape1: TShape;
+    EdtUsuario: TEdit;
+    PnlSenha: TPanel;
+    Shape2: TShape;
+    EdtSenha: TEdit;
+    ImgInicial: TImage;
+    PnlBotoes: TPanel;
+    PnlSair: TPanel;
+    Shape3: TShape;
+    SpbSair: TSpeedButton;
+    PnlEntrar: TPanel;
+    Shape4: TShape;
+    SpbEntrar: TSpeedButton;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+    class procedure AbrirTela;
+  end;
+
+var
+  FormLogin: TFormLogin;
+
+implementation
+
+{$R *.dfm}
+
+class procedure TFormLogin.AbrirTela;
+begin
+  Try
+    Application.CreateForm(TFormLogin, FormLogin);
+    FormLogin.ShowModal;
+  finally
+    FreeAndNil(FormLogin);
+  End;
+end;
+
+end.

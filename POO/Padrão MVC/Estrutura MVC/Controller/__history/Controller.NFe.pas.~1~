@@ -1,0 +1,12 @@
+unit Controller.NFe;
+
+interface
+
+uses
+  Controller.NFe;
+type
+  TControllerNFe = class(TInterfacedObject, IControllerNFe)
+  end;
+implementation
+
+end.

@@ -1,0 +1,10 @@
+unit Controller.NFe.Interfaces;
+
+interface
+type
+  IControllerNFe = interface
+    ['{1BFE9284-9C29-4B01-889F-B5A95703BAC7}']
+  end;
+implementation
+
+end.

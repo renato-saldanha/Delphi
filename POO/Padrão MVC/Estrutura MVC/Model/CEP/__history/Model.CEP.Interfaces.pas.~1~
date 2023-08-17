@@ -1,0 +1,7 @@
+unit Model.CEP.Interfaces;
+
+interface
+
+implementation
+
+end.

@@ -1,0 +1,51 @@
+unit Principal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, JSON;
+
+type
+  TForm2 = class(TForm)
+    Btn1: TButton;
+    Memo1: TMemo;
+    procedure Btn1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form2: TForm2;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm2.Btn1Click(Sender: TObject);
+var
+  JSONPessoa: TJSONObject;
+  JSONReferencia: TJSONObject;
+
+begin
+  JSONPessoa := TJSONObject.Create;
+
+  try
+    JSONPessoa.AddPair('nome', 'Julio')
+      .AddPair('endereco', 'Rua X')
+      .AddPair('numero', TJSONNumber.Create(100));
+
+    JSONReferencia := TJSONObject.Create;
+    JSONReferencia.AddPair('telefone', '(65) 99245-9988');
+
+    JSONPessoa.AddPair('referencia', JSONReferencia);
+
+    memo1.Text := JSONPessoa.ToString;
+  except on E: Exception do
+    JSONPessoa.Free;
+  end;
+end;
+
+end.

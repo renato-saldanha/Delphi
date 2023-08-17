@@ -3,7 +3,7 @@ unit Model.Connections;
 interface
 
 uses
-  Model.Connections.Interfaces, Model.Connections.DBExpress, Model.Connections.FireDac;
+  Model.Connections.Interfaces, Model.Connections.DBExpress, Model.Connections.FireDac, Data.DBXFirebird;
 
 type
   TModelConnections = class(TInterfacedObject, IModelConnections)

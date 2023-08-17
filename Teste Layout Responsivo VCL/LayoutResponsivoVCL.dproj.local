@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2023/08/17 13:50:32.114,=C:\Users\renat\Documents\Embarcadero\Studio\Projects\Unit4.pas</Transaction>
+    <Transaction>2023/08/17 14:16:10.134,D:\Renato\Delphi\Teste Layout Responsivo VCL\Form.Principal.pas=C:\Users\renat\Documents\Embarcadero\Studio\Projects\Unit4.pas</Transaction>
+    <Transaction>2023/08/17 14:16:10.134,D:\Renato\Delphi\Teste Layout Responsivo VCL\Form.Principal.dfm=C:\Users\renat\Documents\Embarcadero\Studio\Projects\Unit4.dfm</Transaction>
+    <Transaction>2023/08/17 14:17:16.568,D:\Renato\Delphi\Teste Layout Responsivo VCL\TesteLaoytResponsivoVCL.dproj=C:\Users\renat\Documents\Embarcadero\Studio\Projects\Project5.dproj</Transaction>
+    <Transaction>2023/08/17 14:57:37.698,D:\Renato\Delphi\Teste Layout Responsivo VCL\LayotResponsivoVCL.dproj=D:\Renato\Delphi\Teste Layout Responsivo VCL\TesteLaoytResponsivoVCL.dproj</Transaction>
+    <Transaction>2023/08/17 14:57:51.740,D:\Renato\Delphi\Teste Layout Responsivo VCL\LayoutResponsivoVCL.dproj=D:\Renato\Delphi\Teste Layout Responsivo VCL\LayotResponsivoVCL.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

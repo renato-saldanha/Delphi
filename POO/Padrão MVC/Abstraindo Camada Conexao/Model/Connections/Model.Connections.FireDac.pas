@@ -40,6 +40,9 @@ implementation
 uses
   System.SysUtils;
 
+var
+  FModelConnectionFireDac : IModelConnectionsGeneric;
+
 { TModelConnectionsFireDac }
 
 function TModelConnectionFireDac.Connection: TCustomConnection;
@@ -81,14 +84,16 @@ begin
   FConnection.Free;
 end;
 
+class function TModelConnectionFireDac.New: IModelConnectionsGeneric;
+begin
+  if not Assigned(FModelConnectionFireDac) then
+    FModelConnectionFireDac := Self.Create;
+  Result := FModelConnectionFireDac;
+end;
+
 function TModelConnectionFireDac.GetDataSet: TDataSet;
 begin
   Result := FQry;
-end;
-
-class function TModelConnectionFireDac.New: IModelConnectionsGeneric;
-begin
-  Result := Self.Create;
 end;
 
 function TModelConnectionFireDac.Open: IModelConnectionsGeneric;

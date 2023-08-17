@@ -1,0 +1,13 @@
+unit Model.NFe.Interfaces;
+
+interface
+type
+  IModelNFe = interface
+    ['{9122E482-00BB-41C5-B4FC-562FB8C8E87D}']
+    function Emitir: IModelNFe;
+//    function &End: IController;
+  end;
+
+implementation
+
+end.

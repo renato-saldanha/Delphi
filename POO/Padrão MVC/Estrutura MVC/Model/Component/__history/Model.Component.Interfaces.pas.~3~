@@ -1,0 +1,17 @@
+unit Model.Component.Interfaces;
+
+interface
+
+uses
+  Controller.Interfaces;
+
+type
+  IModelComponent = interface
+    ['{3740B09B-6333-4C9C-91E7-DFA98F7E3ADE}']
+    function Component(): IModelComponent;
+    function &End: IController;
+  end;
+
+implementation
+
+end.

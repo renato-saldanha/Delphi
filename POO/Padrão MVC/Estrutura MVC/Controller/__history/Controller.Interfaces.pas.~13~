@@ -1,0 +1,18 @@
+unit Controller.Interfaces;
+
+interface
+
+uses
+  Model.NFe.Interfaces, Model.Validacao.Interfaces;
+
+type
+  IController = interface
+    ['{1BFE9284-9C29-4B01-889F-B5A95703BAC7}']
+    function NFe: IModelNFe;
+    function Validacao: IModelValidacao;
+//    function &End: IController;
+  end;
+
+implementation
+
+end.

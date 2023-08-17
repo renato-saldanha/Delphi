@@ -1,0 +1,55 @@
+unit View.Principal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Mask;
+
+type
+  TForm2 = class(TForm)
+    BtnEmitir: TButton;
+    BtnCOnsutlar: TButton;
+    EdtCEP: TMaskEdit;
+    procedure BtnEmitirClick(Sender: TObject);
+    procedure BtnCOnsutlarClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form2: TForm2;
+
+implementation
+
+uses
+  Controller, Controller.Interfaces;
+
+{$R *.dfm}
+
+procedure TForm2.BtnCOnsutlarClick(Sender: TObject);
+var
+  LController: IController;
+begin
+  try
+    LController := TController.New
+      .Validacao
+        .NotNull
+          .Component(EdtCEP)
+
+        .&End
+              .CEPValido;
+    LController.CEP.Consultar;
+  except on E: Exception do
+    ShowMessage(E.Message);
+  end;
+end;
+
+procedure TForm2.BtnEmitirClick(Sender: TObject);
+begin
+  TController.New.NFe.Emitir;
+end;
+
+end.

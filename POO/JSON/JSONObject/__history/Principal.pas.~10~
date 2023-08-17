@@ -1,0 +1,45 @@
+unit Principal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Model.Produto,
+  Model.Produto.Interfaces;
+
+type
+  TForm2 = class(TForm)
+    Button1: TButton;
+    Memo1: TMemo;
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form2: TForm2;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm2.Button1Click(Sender: TObject);
+var
+  LProduto : IModelProduto;
+  LProdutoItem: IModelProdutoItem;
+begin
+  LProduto            := TModelProduto.New;
+  LProduto
+    .Id(1)
+    .Descricao('Sal de Epson')
+    .Itens.Add(TModelProdutoItem.New
+                .Valor(145)
+                .Quantidade(2));
+  LProduto.Itens.Add(TModelProdutoItem.New
+                .Valor(385)
+                .Quantidade(47))
+end;
+
+end.

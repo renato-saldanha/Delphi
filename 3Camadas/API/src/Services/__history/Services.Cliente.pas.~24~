@@ -1,0 +1,97 @@
+unit Services.Cliente;
+
+interface
+
+uses
+  System.SysUtils, System.Classes, Provider.Conexao, FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Error,
+  FireDAC.UI.Intf, FireDAC.Phys.Intf, FireDAC.Stan.Def, FireDAC.Stan.Pool, FireDAC.Stan.Async, FireDAC.Phys,
+  FireDAC.Phys.SQLite, FireDAC.Phys.SQLiteDef, FireDAC.Stan.ExprFuncs, FireDAC.Phys.SQLiteWrapper.Stat,
+  FireDAC.ConsoleUI.Wait, Data.DB, FireDAC.Comp.Client, Data.FMTBcd, Data.SqlExpr, FireDAC.Stan.Param, FireDAC.DatS,
+  FireDAC.DApt.Intf, FireDAC.DApt, FireDAC.Comp.DataSet, FireDAC.VCLUI.Wait,
+
+  System.JSON, DataSet.Serialize, FireDAC.Phys.PG, FireDAC.Phys.PGDef;
+
+type
+  TServiceCliente = class(TConexao)
+    QryCliente: TFDQuery;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+    function Inserir(const AAnimal: TJSONObject): TFDQuery;
+    function Alterar(const AAnimal: TJSONObject): Boolean;
+    function Excluir(AID: String): Boolean;
+    function GetClientes(): TFDQuery;
+    function GetClienteByDescricao(AID: String): TFDQuery;
+  end;
+
+var
+  ServiceCliente: TServiceCliente;
+
+implementation
+
+uses
+  App.Util;
+
+{%CLASSGROUP 'System.Classes.TPersistent'}
+
+{$R *.dfm}
+
+{ TServiceAnimais }
+
+function TServiceCliente.Alterar(const AAnimal: TJSONObject): Boolean;
+begin
+  QryCliente.MergeFromJSONObject(AAnimal, False);
+  Result := QryCliente.Modified;
+end;
+
+function TServiceCliente.Excluir(AID: String): Boolean;
+begin
+  Result := QryCliente.ExecSQL('Delete from clientes where id = :id', [AID]) > 0;
+end;
+
+function TServiceCliente.GetClientes: TFDQuery;
+var
+  LStream : TMemoryStream;
+begin
+  try
+    LStream := TMemoryStream.Create;
+    QryCliente.Close;
+    QryCliente.Open;
+    QryCliente.Edit;
+    QryCliente.FieldDefList.SaveToStream(LStream);
+    LStream.Position := 0;
+    TMemoryStream(QryCliente.FieldByname('defs')).LoadFromStream(LStream);
+    TBlobField(QryCliente.FieldByname('defs')).LoadFromStream(LStream);
+    QryCliente.Post;
+    Result := QryCliente;
+  except on E: Exception do
+    raise Exception.Create(e.message);
+  end;
+end;
+
+function TServiceCliente.GetClienteByDescricao(AID: String): TFDQuery;
+begin
+  try
+    QryCliente.Close;
+    QryCliente.SQL.Add('where first_name = :id');
+    QryCliente.ParamByName('id').AsInteger := StrToInt(AID);
+    QryCliente.Open;
+    QryCliente.Edit;
+    QryCliente.FieldByname('defs').AsString := QryCliente.FieldDefs.ToString;
+    QryCliente.Post;
+    Result := QryCliente;
+  except on E: Exception do
+    raise Exception.Create(e.message);
+  end;
+end;
+
+function TServiceCliente.Inserir(const AAnimal: TJSONObject): TFDQuery;
+begin
+  QryCliente.SQL.Add('Where 1<>1');
+  QryCliente.Open;
+  QryCliente.LoadFromJSON(AAnimal, False);
+  Result := QryCliente;
+end;
+
+end.

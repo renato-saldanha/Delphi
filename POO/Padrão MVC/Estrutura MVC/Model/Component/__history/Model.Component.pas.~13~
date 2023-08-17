@@ -1,0 +1,21 @@
+unit Model.Component;
+
+interface
+
+uses
+  Model.Validacao.Interfaces, Controller.Interfaces;
+
+type
+  TModelComponent = class(TINterfacedObject, IModelValidacao)
+    private
+    public
+    class function New: IModelValidacao;
+    constructor Create;
+    destructor Destroy; override;
+
+    function Component(): IModelValidacao;
+    function &End: IController;
+  end;
+implementation
+
+end.

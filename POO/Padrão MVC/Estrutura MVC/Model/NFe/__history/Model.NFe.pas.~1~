@@ -1,0 +1,12 @@
+unit Model.NFe;
+
+interface
+
+uses
+  Model.NFe.Interfaces;
+type
+  TModelNFe = class(TInterfacedObject, IModelNFe)
+  end;
+implementation
+
+end.

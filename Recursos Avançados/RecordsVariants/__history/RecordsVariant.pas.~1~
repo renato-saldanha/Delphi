@@ -1,0 +1,38 @@
+
+unit RecordsVariant;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs;
+
+type
+  TCargo = (cAjudanteCozinha, cGerente, cAuxiliarLimepza);
+  TSetor = (sCozinha, sGerencial, sLimpeza);
+  TFuncionario = record
+    private
+    FCodigo: Integer;
+    FNome: String;
+    case Cargo: TCargo of
+      cGerente          : (ACargaHoraria: Double; ASetor: TSetor; AAtribuiFunção: Boolean);
+      cAjudanteCozinha  : (CargaHoraria: Double; FSetor: TSetor);
+      cAuxiliarLimepza  : (ACarga: Double; Setor: TSetor);
+    end;
+    public
+  end;
+  TForm2 = class(TForm)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form2: TForm2;
+
+implementation
+
+{$R *.dfm}
+
+end.

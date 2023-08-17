@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/05/31 11:38:52.000.006,=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2023/06/06 14:26:31.000.791,=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2023/06/12 09:13:09.000.849,D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Unit1.pas=D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Controller\Controller.NFe.pas</Transaction>
+    <Transaction>2023/06/12 09:17:38.000.445,=D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Unit1.pas</Transaction>
+    <Transaction>2023/06/12 09:22:40.000.939,D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Unit1.pas=D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Model\Validacao\Model.Validacao.Interfaces.pas</Transaction>
+    <Transaction>2023/06/12 09:28:18.000.597,=D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Unit1.pas</Transaction>
+    <Transaction>2023/06/12 09:28:31.000.544,D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Unit1.pas=D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Model\Validacao\Model.Validacao.pas</Transaction>
+    <Transaction>2023/06/12 09:40:11.000.652,=D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Unit1.pas</Transaction>
+    <Transaction>2023/06/12 09:40:30.000.732,D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Model\CEP\Model.CEP.Interfaces.pas=D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Unit1.pas</Transaction>
+    <Transaction>2023/06/12 09:40:35.000.944,=D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Unit1.pas</Transaction>
+    <Transaction>2023/06/12 09:40:43.000.576,D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Model\CEP\Model.CEP.pas=D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Unit1.pas</Transaction>
+    <Transaction>2023/06/12 10:06:58.000.587,=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2023/06/12 10:08:36.000.636,D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\View\View.Principal.pas=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2023/06/12 10:08:36.000.636,D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\View\View.Principal.dfm=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit2.dfm</Transaction>
+    <Transaction>2023/06/12 10:08:56.000.998,D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\EstruturaMVC.dproj=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Project3.dproj</Transaction>
+    <Transaction>2023/06/12 10:09:14.000.101,=D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Unit1.pas</Transaction>
+    <Transaction>2023/06/12 10:09:35.000.034,D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Unit1.pas=D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Model\Nfe\Model.NFe.Interfaces.pas</Transaction>
+    <Transaction>2023/06/12 10:10:12.000.579,=D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Unit1.pas</Transaction>
+    <Transaction>2023/06/12 10:11:00.000.475,D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Unit1.pas=D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Model\Nfe\Model.NFe.pas</Transaction>
+    <Transaction>2023/06/12 10:11:12.000.590,=D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Unit1.pas</Transaction>
+    <Transaction>2023/06/12 10:11:41.000.545,D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Unit1.pas=D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Controller\Controller.NFe.pas</Transaction>
+    <Transaction>2023/06/12 10:11:48.000.348,=D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Unit1.pas</Transaction>
+    <Transaction>2023/06/12 10:12:53.000.356,D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Controller\Controller.NFe.pas=D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Controller\Controller.NFe.Interfaces.pas</Transaction>
+    <Transaction>2023/06/15 09:17:20.000.325,=D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Unit1.pas</Transaction>
+    <Transaction>2023/06/15 09:17:23.000.346,=D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Unit2.pas</Transaction>
+    <Transaction>2023/06/15 09:17:56.000.635,D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Unit2.pas=D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Model\Model.Interfaces.pas</Transaction>
+    <Transaction>2023/06/15 09:18:03.000.175,D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Unit1.pas=D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Model\Model.pas</Transaction>
+    <Transaction>2023/06/15 09:22:53.000.637,D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Controller\Controller.Interfaces.pas=D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Controller\Controller.NFe.Interfaces.pas</Transaction>
+    <Transaction>2023/06/15 09:23:02.000.654,D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Controller\Controller.pas=D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Controller\Controller.NFe.pas</Transaction>
+    <Transaction>2023/06/15 09:36:17.226,=D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Unit1.pas</Transaction>
+    <Transaction>2023/06/15 09:37:13.090,D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Model\Component\Model.Component.Interfaces.pas=D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Unit1.pas</Transaction>
+    <Transaction>2023/06/15 09:38:28.000.604,=D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Unit1.pas</Transaction>
+    <Transaction>2023/06/15 09:38:56.000.473,D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Model\Conexao\Model.Conexao.Interfaces.pas=D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Unit1.pas</Transaction>
+    <Transaction>2023/06/15 09:39:31.000.672,=D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Unit1.pas</Transaction>
+    <Transaction>2023/06/15 09:39:46.000.350,D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Model\Conexao\Model.Conexao.pas=D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Unit1.pas</Transaction>
+    <Transaction>2023/06/15 09:42:08.000.421,=D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Unit1.pas</Transaction>
+    <Transaction>2023/06/15 09:43:24.000.051,D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Model\Servicos\Model.Servicos.Interfaces.pas=D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Unit1.pas</Transaction>
+    <Transaction>2023/06/15 09:43:31.000.825,=D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Unit1.pas</Transaction>
+    <Transaction>2023/06/15 09:45:10.000.998,D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Model\Servicos\Model.Servicos.pas=D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Unit1.pas</Transaction>
+    <Transaction>2023/06/15 09:48:17.000.337,=D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Unit1.pas</Transaction>
+    <Transaction>2023/06/15 09:49:28.000.283,=D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Unit2.pas</Transaction>
+    <Transaction>2023/06/15 09:51:00.000.536,D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Model\Component\Model.Component.pas=D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Unit2.pas</Transaction>
+    <Transaction>2023/06/15 09:51:12.000.702,D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Model\Component\Model.Component.Interfaces.pas=D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Unit1.pas</Transaction>
+    <Transaction>2023/06/15 10:01:14.000.991,D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Model\Model.Interfaces.pas=</Transaction>
+    <Transaction>2023/06/15 10:01:15.000.080,D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Model\Model.pas=</Transaction>
+    <Transaction>2023/06/15 10:06:24.000.385,=D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Model\Model.Interfaces.pas</Transaction>
+    <Transaction>2023/06/15 10:06:24.000.373,=D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Model\Model.pas</Transaction>
+    <Transaction>2023/06/15 10:07:04.000.068,D:\Renato\Delphi\POO\Padrão MVC\Estrutura MVC\Model\Component\Model.Component.Interfaces.pas=</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="Controller"/>
+    <File Path="Controller\Controller.Interfaces.pas"/>
+    <File Path="Controller\Controller.pas"/>
+    <File Path="Model"/>
+    <File Path="Model\CEP"/>
+    <File Path="Model\CEP\Model.CEP.Interfaces.pas"/>
+    <File Path="Model\CEP\Model.CEP.pas"/>
+    <File Path="Model\Component"/>
+    <File Path="Model\Component\Model.Component.pas"/>
+    <File Path="Model\Component\Model.Component.Interfaces.pas"/>
+    <File Path="Model\Conexao"/>
+    <File Path="Model\Conexao\Model.Conexao.Interfaces.pas"/>
+    <File Path="Model\Conexao\Model.Conexao.pas"/>
+    <File Path="Model\Nfe"/>
+    <File Path="Model\Nfe\Model.NFe.Interfaces.pas"/>
+    <File Path="Model\Nfe\Model.NFe.pas"/>
+    <File Path="Model\Servicos"/>
+    <File Path="Model\Servicos\Model.Servicos.Interfaces.pas"/>
+    <File Path="Model\Servicos\Model.Servicos.pas"/>
+    <File Path="Model\Validacao"/>
+    <File Path="Model\Validacao\Model.Validacao.Interfaces.pas"/>
+    <File Path="Model\Validacao\Model.Validacao.pas"/>
+    <File Path="Model\Model.pas"/>
+    <File Path="Model\Model.Interfaces.pas"/>
+    <File Path="View"/>
+    <File Path="View\View.Principal.pas"/>
+    <File Path="View\View.Principal.dfm"/>
+  </ProjectSortOrder>
+</BorlandProject>

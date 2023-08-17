@@ -1,0 +1,22 @@
+unit Model.Component;
+
+interface
+
+uses
+   Model.Component.Interfaces;
+
+type
+  TModelComponent<T: IInterface> = class(TINterfacedObject, IModelComponent<T>)
+  private
+
+  public
+    class function New: IModelComponent;
+    constructor Create;
+    destructor Destroy; override;
+
+    function Component(): IModelComponent;
+    function &End: IController;
+  end;
+implementation
+
+end.

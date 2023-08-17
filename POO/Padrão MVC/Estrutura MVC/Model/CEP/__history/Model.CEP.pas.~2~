@@ -1,0 +1,17 @@
+unit Model.CEP;
+
+interface
+
+uses
+  Model.CEP.Interfaces;
+  type TModelCEP = class(TInterfacedObject, IModelCEP)
+  private
+  public
+    class function New: IModelCEP;
+    constructor Create;
+    destructor Destroy; override;
+  end;
+
+implementation
+
+end.

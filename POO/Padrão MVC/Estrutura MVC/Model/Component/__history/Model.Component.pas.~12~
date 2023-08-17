@@ -1,0 +1,51 @@
+unit Model.Component;
+
+interface
+
+uses
+  Model.Validacao.Interfaces;
+
+type
+  TModelComponent= class(TINterfacedObject, IModelComponent)
+  private
+    [Weak]
+    FParent: T;
+  public
+    class function New(AParent: T): IModelComponent<T>;
+    constructor Create(AParent: T);
+    destructor Destroy; override;
+
+    function Component(): IModelComponent<T>;
+    function &End: T;
+  end;
+implementation
+
+{ TModelComponent<T> }
+
+function TModelComponent<T>.Component: IModelComponent<T>;
+begin
+
+end;
+
+constructor TModelComponent<T>.Create(AParent: T);
+begin
+  FParent := AParent;
+end;
+
+destructor TModelComponent<T>.Destroy;
+begin
+
+  inherited;
+end;
+
+function TModelComponent<T>.&End: T;
+begin
+  Result := FParent;
+end;
+
+class function TModelComponent<T>.New(AParent: T): IModelComponent<T>;
+begin
+  Result := Self.Create(AParent);
+end;
+
+end.

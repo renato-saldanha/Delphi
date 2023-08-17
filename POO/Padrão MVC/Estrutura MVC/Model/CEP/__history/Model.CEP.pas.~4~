@@ -1,0 +1,42 @@
+unit Model.CEP;
+
+interface
+
+uses
+  Model.CEP.Interfaces;
+  type TModelCEP = class(TInterfacedObject, IModelCEP)
+  private
+  public
+    class function New: IModelCEP;
+    constructor Create;
+    destructor Destroy; override;
+
+    function Consultar: IModelCEP;
+  end;
+
+implementation
+
+{ TModelCEP }
+
+function TModelCEP.Consultar: IModelCEP;
+begin
+  Result := Self;
+end;
+
+constructor TModelCEP.Create;
+begin
+
+end;
+
+destructor TModelCEP.Destroy;
+begin
+
+  inherited;
+end;
+
+class function TModelCEP.New: IModelCEP;
+begin
+
+end;
+
+end.

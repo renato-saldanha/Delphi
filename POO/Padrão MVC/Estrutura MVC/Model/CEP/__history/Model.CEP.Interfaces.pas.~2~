@@ -1,0 +1,10 @@
+unit Model.CEP.Interfaces;
+
+interface
+type
+  IModelCEP = interface
+    ['{32158A20-DBB4-4C67-94EE-3E86D2201564}']
+  end;
+implementation
+
+end.

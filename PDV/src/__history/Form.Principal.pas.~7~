@@ -1,0 +1,51 @@
+unit Form.Principal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls, Vcl.Buttons;
+
+type
+  TFormPrincipal = class(TForm)
+    PnlContainer: TPanel;
+    PnlTitulo: TPanel;
+    PnlBotoes: TPanel;
+    PnlConteudos: TPanel;
+    PnlOperacoes: TPanel;
+    ImgItem: TImage;
+    Panel1: TPanel;
+    Shape7: TShape;
+    SpeedButton2: TSpeedButton;
+    Panel2: TPanel;
+    Shape1: TShape;
+    SpeedButton1: TSpeedButton;
+    Panel3: TPanel;
+    Shape2: TShape;
+    SpeedButton3: TSpeedButton;
+    Panel4: TPanel;
+    Shape3: TShape;
+    SpeedButton4: TSpeedButton;
+    Panel5: TPanel;
+    Shape4: TShape;
+    SpeedButton5: TSpeedButton;
+    Panel6: TPanel;
+    Shape5: TShape;
+    SpeedButton6: TSpeedButton;
+    Panel7: TPanel;
+    Shape6: TShape;
+    SpeedButton7: TSpeedButton;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FormPrincipal: TFormPrincipal;
+
+implementation
+
+{$R *.dfm}
+
+end.

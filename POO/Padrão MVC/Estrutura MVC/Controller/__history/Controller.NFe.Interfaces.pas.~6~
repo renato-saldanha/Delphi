@@ -1,0 +1,17 @@
+unit Controller.NFe.Interfaces;
+
+interface
+
+uses
+  Model.NFe.Interfaces, Model.CEP.Interfaces, Model.Validacao.Interfaces;
+type
+  IControllerNFe = interface
+    ['{1BFE9284-9C29-4B01-889F-B5A95703BAC7}']
+    function NFe: IModelNFe;
+    function CEP: IModelCEP;
+    function Validacao: IModelValidacao;
+    function &End: IControllerNFe;
+  end;
+implementation
+
+end.

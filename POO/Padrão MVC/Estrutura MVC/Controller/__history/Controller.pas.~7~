@@ -1,0 +1,64 @@
+unit Controller;
+
+interface
+
+uses
+  Controller.Interfaces, Model.NFe.Interfaces, Model.Validacao.Interfaces;
+
+type
+  TController = class(TInterfacedObject, IController)
+  private
+  public
+    class function New: IController;
+    constructor Create;
+    destructor Destroy; override;
+
+    function NFe: IModelNFe;
+    function Validacao: IModelValidacao;
+    function &End: IController;
+  end;
+
+implementation
+
+uses
+  Model.Validacao, Model.NFe, Model.CEP;
+
+var
+    FController: IController;
+
+{ TControllerNFe }
+
+constructor TController.Create;
+begin
+
+end;
+
+destructor TController.Destroy;
+begin
+
+  inherited;
+end;
+
+class function TController.New: IController;
+begin
+  if not Assigned(FController) then
+    FController := Self.Create;
+  Result := FController;
+end;
+
+function TController.NFe: IModelNFe;
+begin
+  Result := TModelNFe.New;
+end;
+
+function TController.Validacao: IModelValidacao;
+begin
+  Result := TModelValidacao.New;
+end;
+
+function TController.&End: IController;
+begin
+  Result := Self;
+end;
+
+end.

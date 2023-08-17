@@ -1,0 +1,77 @@
+unit Model.Validacao;
+
+interface
+
+uses
+  Model.Validacao.Interfaces, Vcl.StdCtrls, Model.CEP.Interfaces,
+  System.SysUtils, System.Variants, Model.CEP;
+
+type
+  TModelValidacao = class(TInterfacedObject, IModelValidacao)
+  private
+    FEditValidacao: TCustomEdit;
+  public
+    class function New: IModelValidacao;
+    constructor Create;
+    destructor Destroy; override;
+
+    function NotNull: IModelValidacao;
+    function CEP: IModelValidacao;
+    function &End: IModelValidacao;
+
+    function Componente(AValue: TCustomEdit): IModelValidacao;
+  end;
+
+implementation
+
+{ TModelValidacao }
+
+constructor TModelValidacao.Create;
+begin
+
+end;
+
+destructor TModelValidacao.Destroy;
+begin
+
+  inherited;
+end;
+
+class function TModelValidacao.New: IModelValidacao;
+begin
+  Result := Self.Create;
+end;
+
+function TModelValidacao.&End: IModelValidacao;
+var
+  LValor: Variant;
+begin
+  Result := Self;
+
+  LValor := StringReplace(FEditValidacao.Text, '-', '', [rfReplaceAll]).Replace('.', '').Replace('_', '');
+  if (LValor = '')  or (LValor = null) then
+  begin
+    FEditValidacao.SetFocus;
+    raise Exception.Create('Campo ' + Copy(FEditValidacao.Name, 4, Length(FEditValidacao.Name) -1) + ' não pode ser nulo!');
+  end;
+
+  TModelCEP.New.CEPValido(FEditValidacao);
+end;
+
+function TModelValidacao.CEP: IModelValidacao;
+begin
+  Result := Self
+end;
+
+function TModelValidacao.NotNull: IModelValidacao;
+begin
+  Result := Self;
+end;
+
+function TModelValidacao.Componente(AValue: TCustomEdit): IModelValidacao;
+begin
+  FEditValidacao := AValue;
+end;
+
+
+end.

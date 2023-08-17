@@ -1,0 +1,26 @@
+unit Model.Validacao.Interfaces;
+
+interface
+
+uses
+  Vcl.StdCtrls, Model.CEP.Interfaces, Model.Component.Interfaces;
+
+type
+  IModelComponent = interface;
+
+  IModelValidacao = interface
+    ['{95F4B735-969A-411E-A6F2-A5136CDA8991}']
+    function NotNull: IModelComponente;
+    function CEP: IModelComponente;
+    function &End: IModelComponente;
+  end;
+
+  IModelComponent = interface
+    ['{3740B09B-6333-4C9C-91E7-DFA98F7E3ADE}']
+
+    // function &End: IController;
+  end;
+
+implementation
+
+end.

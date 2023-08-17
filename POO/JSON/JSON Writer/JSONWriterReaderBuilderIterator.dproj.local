@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/05/31 11:38:52.000.006,=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2023/06/06 14:26:31.000.791,=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2023/06/19 14:13:35.000.910,C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit2.pas=D:\Renato\Delphi\POO\JSON\JSON Writer\Principal.pas</Transaction>
+    <Transaction>2023/06/19 14:13:35.000.910,C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit2.dfm=D:\Renato\Delphi\POO\JSON\JSON Writer\Principal.dfm</Transaction>
+    <Transaction>2023/06/19 14:13:43.000.190,C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Project3.dproj=D:\Renato\Delphi\POO\JSON\JSON Writer\JSONWriter.dproj</Transaction>
+    <Transaction>2023/06/19 14:40:30.000.943,=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2023/06/19 15:06:38.000.773,=C:\Users\DESEN\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2023/06/21 09:29:00.876,D:\Renato\Delphi\POO\JSON\JSON Writer\JSONWriterReaderBuilderIterator.dproj=D:\Renato\Delphi\POO\JSON\JSON Writer\JSONWriter.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
