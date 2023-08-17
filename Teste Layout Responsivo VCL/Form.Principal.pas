@@ -100,7 +100,7 @@ begin
 //    LClientWidthDiferenca := ClientWidth - FClientWidthInicial;
 
   for var I := 0 to Pred(LCountPanel) do
-    if (TWinControl(AComponentPai).Controls[I].GetParentComponent is TWinControl) then
+    if (TWinControl(AComponentPai).Controls[I].GetParentComponent.Name = TWinControl(AComponentPai).Name) then
     begin
       if ClientWidth >= FClientWidthInicial then
       begin
