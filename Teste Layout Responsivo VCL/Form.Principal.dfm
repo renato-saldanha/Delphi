@@ -3,30 +3,29 @@ object Form4: TForm4
   Top = 0
   Caption = 'Form4'
   ClientHeight = 357
-  ClientWidth = 944
+  ClientWidth = 941
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
+  Position = poScreenCenter
+  PrintScale = poPrintToFit
   OnCreate = FormCreate
   OnResize = FormResize
   TextHeight = 15
   object PnlBotoes: TPanel
     Left = 0
     Top = 169
-    Width = 944
+    Width = 941
     Height = 94
     Align = alBottom
     BevelOuter = bvNone
     TabOrder = 0
-    ExplicitLeft = -323
-    ExplicitTop = 347
-    ExplicitWidth = 947
     object PnlCancelarOperacao: TPanel
       AlignWithMargins = True
-      Left = 2
+      Left = -1
       Top = 0
       Width = 156
       Height = 94
@@ -42,9 +41,6 @@ object Form4: TForm4
       Padding.Right = 3
       Padding.Bottom = 3
       TabOrder = 0
-      ExplicitLeft = 4
-      ExplicitTop = 1
-      ExplicitHeight = 92
       object Shape1: TShape
         Left = 3
         Top = 3
@@ -82,7 +78,7 @@ object Form4: TForm4
     end
     object PnlAbrirCaixa: TPanel
       AlignWithMargins = True
-      Left = 316
+      Left = 313
       Top = 0
       Width = 156
       Height = 94
@@ -98,9 +94,6 @@ object Form4: TForm4
       Padding.Right = 3
       Padding.Bottom = 3
       TabOrder = 1
-      ExplicitLeft = 318
-      ExplicitTop = 1
-      ExplicitHeight = 92
       object Shape3: TShape
         Left = 3
         Top = 3
@@ -138,7 +131,7 @@ object Form4: TForm4
     end
     object PnlCancelarItem: TPanel
       AlignWithMargins = True
-      Left = 630
+      Left = 627
       Top = 0
       Width = 156
       Height = 94
@@ -154,9 +147,6 @@ object Form4: TForm4
       Padding.Right = 3
       Padding.Bottom = 3
       TabOrder = 2
-      ExplicitLeft = 632
-      ExplicitTop = 1
-      ExplicitHeight = 92
       object Shape4: TShape
         Left = 3
         Top = 3
@@ -194,7 +184,7 @@ object Form4: TForm4
     end
     object PnlConsultarPreco: TPanel
       AlignWithMargins = True
-      Left = 159
+      Left = 156
       Top = 0
       Width = 156
       Height = 94
@@ -210,9 +200,6 @@ object Form4: TForm4
       Padding.Right = 3
       Padding.Bottom = 3
       TabOrder = 3
-      ExplicitLeft = 161
-      ExplicitTop = 1
-      ExplicitHeight = 92
       object Shape5: TShape
         Left = 3
         Top = 3
@@ -250,7 +237,7 @@ object Form4: TForm4
     end
     object PnlCancelarVenda: TPanel
       AlignWithMargins = True
-      Left = 473
+      Left = 470
       Top = 0
       Width = 156
       Height = 94
@@ -266,9 +253,6 @@ object Form4: TForm4
       Padding.Right = 3
       Padding.Bottom = 3
       TabOrder = 4
-      ExplicitLeft = 475
-      ExplicitTop = 1
-      ExplicitHeight = 92
       object Shape6: TShape
         Left = 3
         Top = 3
@@ -306,7 +290,7 @@ object Form4: TForm4
     end
     object PnlMaisFuncoes: TPanel
       AlignWithMargins = True
-      Left = 787
+      Left = 784
       Top = 0
       Width = 156
       Height = 94
@@ -322,9 +306,6 @@ object Form4: TForm4
       Padding.Right = 3
       Padding.Bottom = 3
       TabOrder = 5
-      ExplicitLeft = 789
-      ExplicitTop = 1
-      ExplicitHeight = 92
       object Shape7: TShape
         Left = 3
         Top = 3
@@ -364,17 +345,14 @@ object Form4: TForm4
   object Panel1: TPanel
     Left = 0
     Top = 263
-    Width = 944
+    Width = 941
     Height = 94
     Align = alBottom
     BevelOuter = bvNone
     TabOrder = 1
-    ExplicitLeft = -323
-    ExplicitTop = 347
-    ExplicitWidth = 947
     object Panel2: TPanel
       AlignWithMargins = True
-      Left = 86
+      Left = 83
       Top = 0
       Width = 77
       Height = 94
@@ -390,7 +368,6 @@ object Form4: TForm4
       Padding.Right = 3
       Padding.Bottom = 3
       TabOrder = 0
-      ExplicitLeft = 92
       object Shape2: TShape
         Left = 3
         Top = 3
@@ -428,7 +405,7 @@ object Form4: TForm4
     end
     object Panel3: TPanel
       AlignWithMargins = True
-      Left = 398
+      Left = 395
       Top = 0
       Width = 77
       Height = 94
@@ -444,7 +421,6 @@ object Form4: TForm4
       Padding.Right = 3
       Padding.Bottom = 3
       TabOrder = 1
-      ExplicitLeft = 401
       object Shape8: TShape
         Left = 3
         Top = 3
@@ -482,7 +458,7 @@ object Form4: TForm4
     end
     object Panel4: TPanel
       AlignWithMargins = True
-      Left = 710
+      Left = 707
       Top = 0
       Width = 77
       Height = 94
@@ -498,7 +474,6 @@ object Form4: TForm4
       Padding.Right = 3
       Padding.Bottom = 3
       TabOrder = 2
-      ExplicitLeft = 711
       object Shape9: TShape
         Left = 3
         Top = 3
@@ -536,7 +511,7 @@ object Form4: TForm4
     end
     object Panel5: TPanel
       AlignWithMargins = True
-      Left = 164
+      Left = 161
       Top = 0
       Width = 77
       Height = 94
@@ -552,7 +527,6 @@ object Form4: TForm4
       Padding.Right = 3
       Padding.Bottom = 3
       TabOrder = 3
-      ExplicitLeft = 167
       object Shape10: TShape
         Left = 3
         Top = 3
@@ -590,7 +564,7 @@ object Form4: TForm4
     end
     object Panel6: TPanel
       AlignWithMargins = True
-      Left = 476
+      Left = 473
       Top = 0
       Width = 77
       Height = 94
@@ -606,7 +580,6 @@ object Form4: TForm4
       Padding.Right = 3
       Padding.Bottom = 3
       TabOrder = 4
-      ExplicitLeft = 477
       object Shape11: TShape
         Left = 3
         Top = 3
@@ -644,7 +617,7 @@ object Form4: TForm4
     end
     object Panel7: TPanel
       AlignWithMargins = True
-      Left = 866
+      Left = 863
       Top = 0
       Width = 77
       Height = 94
@@ -697,7 +670,7 @@ object Form4: TForm4
     end
     object Panel8: TPanel
       AlignWithMargins = True
-      Left = 8
+      Left = 5
       Top = 0
       Width = 77
       Height = 94
@@ -713,7 +686,6 @@ object Form4: TForm4
       Padding.Right = 3
       Padding.Bottom = 3
       TabOrder = 6
-      ExplicitLeft = 9
       object Shape13: TShape
         Left = 3
         Top = 3
@@ -751,7 +723,7 @@ object Form4: TForm4
     end
     object Panel9: TPanel
       AlignWithMargins = True
-      Left = 242
+      Left = 239
       Top = 0
       Width = 77
       Height = 94
@@ -796,15 +768,13 @@ object Form4: TForm4
         Font.Name = 'Segoe UI'
         Font.Style = []
         ParentFont = False
-        ExplicitLeft = -117
-        ExplicitTop = -3
-        ExplicitWidth = 1094
-        ExplicitHeight = 86
+        ExplicitLeft = 2
+        ExplicitTop = 6
       end
     end
     object Panel10: TPanel
       AlignWithMargins = True
-      Left = 632
+      Left = 629
       Top = 0
       Width = 77
       Height = 94
@@ -820,7 +790,6 @@ object Form4: TForm4
       Padding.Right = 3
       Padding.Bottom = 3
       TabOrder = 8
-      ExplicitLeft = 635
       object Shape15: TShape
         Left = 3
         Top = 3
@@ -858,7 +827,7 @@ object Form4: TForm4
     end
     object Panel11: TPanel
       AlignWithMargins = True
-      Left = 320
+      Left = 317
       Top = 0
       Width = 77
       Height = 94
@@ -874,7 +843,6 @@ object Form4: TForm4
       Padding.Right = 3
       Padding.Bottom = 3
       TabOrder = 9
-      ExplicitLeft = 326
       object Shape16: TShape
         Left = 3
         Top = 3
@@ -912,7 +880,7 @@ object Form4: TForm4
     end
     object Panel12: TPanel
       AlignWithMargins = True
-      Left = 554
+      Left = 551
       Top = 0
       Width = 77
       Height = 94
@@ -928,7 +896,6 @@ object Form4: TForm4
       Padding.Right = 3
       Padding.Bottom = 3
       TabOrder = 10
-      ExplicitLeft = 557
       object Shape17: TShape
         Left = 3
         Top = 3
@@ -966,7 +933,7 @@ object Form4: TForm4
     end
     object Panel13: TPanel
       AlignWithMargins = True
-      Left = 788
+      Left = 785
       Top = 0
       Width = 77
       Height = 94
@@ -982,7 +949,6 @@ object Form4: TForm4
       Padding.Right = 3
       Padding.Bottom = 3
       TabOrder = 11
-      ExplicitLeft = 789
       object Shape18: TShape
         Left = 3
         Top = 3
@@ -1022,13 +988,13 @@ object Form4: TForm4
   object PnlEdits: TPanel
     Left = 0
     Top = 96
-    Width = 944
+    Width = 941
     Height = 73
     Align = alBottom
     TabOrder = 2
     object Edit1: TEdit
       AlignWithMargins = True
-      Left = 840
+      Left = 837
       Top = 11
       Width = 100
       Height = 51
@@ -1038,11 +1004,11 @@ object Form4: TForm4
       Align = alRight
       TabOrder = 0
       Text = 'Edit1'
-      ExplicitLeft = 786
+      ExplicitHeight = 23
     end
     object Edit2: TEdit
       AlignWithMargins = True
-      Left = 10
+      Left = 7
       Top = 11
       Width = 134
       Height = 51
@@ -1053,11 +1019,11 @@ object Form4: TForm4
       Align = alRight
       TabOrder = 1
       Text = 'Edit1'
-      ExplicitLeft = 6
+      ExplicitHeight = 23
     end
     object Edit3: TEdit
       AlignWithMargins = True
-      Left = 146
+      Left = 143
       Top = 11
       Width = 154
       Height = 51
@@ -1068,12 +1034,11 @@ object Form4: TForm4
       Align = alRight
       TabOrder = 2
       Text = 'Edit1'
-      ExplicitLeft = 789
-      ExplicitTop = 12
+      ExplicitHeight = 23
     end
     object Edit4: TEdit
       AlignWithMargins = True
-      Left = 302
+      Left = 299
       Top = 11
       Width = 174
       Height = 51
@@ -1084,11 +1049,11 @@ object Form4: TForm4
       Align = alRight
       TabOrder = 3
       Text = 'Edit1'
-      ExplicitLeft = 318
+      ExplicitHeight = 23
     end
     object Edit5: TEdit
       AlignWithMargins = True
-      Left = 478
+      Left = 475
       Top = 11
       Width = 154
       Height = 51
@@ -1099,12 +1064,11 @@ object Form4: TForm4
       Align = alRight
       TabOrder = 4
       Text = 'Edit1'
-      ExplicitLeft = 789
-      ExplicitTop = 12
+      ExplicitHeight = 23
     end
     object Edit6: TEdit
       AlignWithMargins = True
-      Left = 634
+      Left = 631
       Top = 11
       Width = 204
       Height = 51
@@ -1115,7 +1079,117 @@ object Form4: TForm4
       Align = alRight
       TabOrder = 5
       Text = 'Edit1'
-      ExplicitLeft = 684
+      ExplicitHeight = 23
+    end
+  end
+  object FlowPanel1: TFlowPanel
+    Left = 0
+    Top = 0
+    Width = 941
+    Height = 94
+    Align = alTop
+    Caption = 'FlowPanel1'
+    TabOrder = 3
+    object Edit7: TEdit
+      AlignWithMargins = True
+      Left = 2
+      Top = 11
+      Width = 100
+      Height = 51
+      Margins.Left = 1
+      Margins.Top = 10
+      Margins.Bottom = 10
+      Align = alRight
+      TabOrder = 0
+      Text = 'Edit1'
+      ExplicitLeft = 4
+      ExplicitTop = 4
+      ExplicitHeight = 23
+    end
+    object Edit8: TEdit
+      AlignWithMargins = True
+      Left = 107
+      Top = 11
+      Width = 134
+      Height = 51
+      Margins.Left = 2
+      Margins.Top = 10
+      Margins.Right = 1
+      Margins.Bottom = 10
+      Align = alRight
+      TabOrder = 1
+      Text = 'Edit1'
+      ExplicitLeft = 108
+      ExplicitTop = 4
+      ExplicitHeight = 23
+    end
+    object Edit9: TEdit
+      AlignWithMargins = True
+      Left = 243
+      Top = 11
+      Width = 154
+      Height = 51
+      Margins.Left = 1
+      Margins.Top = 10
+      Margins.Right = 1
+      Margins.Bottom = 10
+      Align = alRight
+      TabOrder = 2
+      Text = 'Edit1'
+      ExplicitLeft = 245
+      ExplicitTop = 4
+      ExplicitHeight = 23
+    end
+    object Edit10: TEdit
+      AlignWithMargins = True
+      Left = 399
+      Top = 11
+      Width = 174
+      Height = 51
+      Margins.Left = 1
+      Margins.Top = 10
+      Margins.Right = 1
+      Margins.Bottom = 10
+      Align = alRight
+      TabOrder = 3
+      Text = 'Edit1'
+      ExplicitLeft = 401
+      ExplicitTop = 4
+      ExplicitHeight = 23
+    end
+    object Edit11: TEdit
+      AlignWithMargins = True
+      Left = 575
+      Top = 11
+      Width = 154
+      Height = 51
+      Margins.Left = 1
+      Margins.Top = 10
+      Margins.Right = 1
+      Margins.Bottom = 10
+      Align = alRight
+      TabOrder = 4
+      Text = 'Edit1'
+      ExplicitLeft = 577
+      ExplicitTop = 4
+      ExplicitHeight = 23
+    end
+    object Edit12: TEdit
+      AlignWithMargins = True
+      Left = 731
+      Top = 11
+      Width = 204
+      Height = 51
+      Margins.Left = 1
+      Margins.Top = 10
+      Margins.Right = 1
+      Margins.Bottom = 10
+      Align = alRight
+      TabOrder = 5
+      Text = 'Edit1'
+      ExplicitLeft = 733
+      ExplicitTop = 4
+      ExplicitHeight = 23
     end
   end
 end
