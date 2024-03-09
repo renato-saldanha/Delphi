@@ -32,7 +32,7 @@ type
 
 implementation
 
-uses DMDados, BibVariavel, BibPesquisa, App.Util, App.Enums,
+uses DMDados, App.Util, App.Enums,
   Model.ClienteBackup;
 
 { TBackupOperacoes }
@@ -58,7 +58,7 @@ begin
   try
     if (StrToIntDef(aCodigo.Text, 0) > 0) then
     begin
-      aCodigo.Text := TUtils.CompletarZeros(aCodigo.Text, 6);
+      aCodigo.Text := Format('%6.6d', [aCodigo.Text]);
       DataModuleDados.DBConnection.Connected := True;
       DataModuleDados.QryGeral.Close;
       DataModuleDados.QryGeral.SQL.Clear;
@@ -73,10 +73,9 @@ begin
       DataModuleDados.QryGeral.SQL.Add(' where c.codigo = :cod_cliente                                                   ' );
       DataModuleDados.QryGeral.ParamByName('cod_cliente').AsInteger := StrToInt(aCodigo.Text);
       DataModuleDados.QryGeral.Open;
-      TBindForm.BindDataSetToForm(DataModuleDados.QryGeral, aForm);
     end;
   except on E: Exception do
-    TMessageDialog.Error('Não foi possível filtrar o Nome do Cliente.' + sLineBreak + E.Message);
+    ShowMessage('Não foi possível filtrar o Nome do Cliente.' + sLineBreak + E.Message);
   end;
 end;
 
@@ -103,24 +102,13 @@ begin
     DataModuleDados.QryConsClienteBackup.Open;
   except
     on E: Exception do
-      TMessageDialog.Error('Erro ao carregar a lista de ClientesBackup.' + sLineBreak + E.Message);
+     ShowMessage('Erro ao carregar a lista de ClientesBackup.' + sLineBreak + E.Message);
   end;
 end;
 
 function TBackupOperacoes.PesquisarCliente(aEdtCodCliente: TCustomEdit): iBackupOperacoes;
 begin
-  Pesquisa2(
-    'Clientes',
-    'CLIENTES',
-    ['clientes.codigo', 'clientes.nome', 'clientes.fantasia', 'clientes.ativo'],
-    ['Codigo', 'Nome', 'Fantasia', 'Ativo'],
-    '',
-    'clientes.ativo = ''S'' ',
-    ['clientes.nome', 'clientes.fantasia'],
-    ['CODIGO'],
-    [aEdtCodCliente],
-    ''
-  );
+ //
 end;
 
 function TBackupOperacoes.SincronizarListaClientesBackup: iBackupOperacoes;
@@ -158,14 +146,14 @@ begin
     DataModuleDados.DBConnection.Commit;
     DataModuleDados.QryConsClienteBackup.EnableControls;
     DataModuleDados.QryConsClienteBackup.Close;
-    TMessageDialog.Info('Registros sincronizados!');
+    ShowMessage('Registros sincronizados!');
   except
     on E: Exception do
     begin
       DataModuleDados.DBConnection.Rollback;
       DataModuleDados.QrySincClienteBackupArquivo.Cancel;
       DataModuleDados.QryConsClienteBackup.Cancel;
-      TMessageDialog.Error('Erro ao carregar a lista de ClientesBackup.' + sLineBreak + E.Message);
+      ShowMessage('Erro ao carregar a lista de ClientesBackup.' + sLineBreak + E.Message);
     end;
   end;
 end;
@@ -192,16 +180,16 @@ begin
       raise Exception.Create('Não foi possível Gravar os dados de ClienteBackupArquivo');
 
     DataModuleDados.DBConnection.Commit;
-    TMessageDialog.Info('Resgistros salvos!');
+    ShowMessage('Resgistros salvos!');
   except
     on E: EPropertyError do
-      TMessageDialog.Error(E.Message);
+      ShowMessage(E.Message);
     on E: Exception do
     begin
       DataModuleDados.QryCadClienteBackup.Cancel;
       DataModuleDados.QryCadClienteBackupArquivo.Cancel;
       DataModuleDados.DBConnection.Rollback;
-      TMessageDialog.Error(E.Message);
+      ShowMessage(E.Message);
     end;
 
   end;
@@ -223,11 +211,11 @@ begin
         DataModuleDados.DBConnection.Rollback;
         raise Exception.Create('Não foi possível Inativar os dados de ClienteBackup');
       end;
-      TMessageDialog.Info('Inativado com sucesso!');
+      ShowMessage('Inativado com sucesso!');
       DataModuleDados.DBConnection.Commit;
     end;
   except on E: Exception do
-    TMessageDialog.Error('Não foi possível Inativar o Cliente!' + sLineBreak + E.Message);
+    ShowMessage('Não foi possível Inativar o Cliente!' + sLineBreak + E.Message);
   end;
 end;
 
@@ -262,7 +250,8 @@ begin
       FParent.Parametros.DisplayTotalGeral()(FParent.Parametros.TotalGeral);
     end;
   except on E: Exception do
-    TMessageDialog.Error('Ocorreu um erro ao Calcular os Totais!' + sLineBreak + E.Message);
+    ShowMessage
+    ('Ocorreu um erro ao Calcular os Totais!' + sLineBreak + E.Message);
   end;
 end;
 
@@ -332,7 +321,7 @@ begin
     end;
   except
     On E: Exception do
-      TMessageDialog.Error('Não foi possível carregar os bancos na pasta selecionada!' + sLineBreak + E.Message);
+      ShowMessage('Não foi possível carregar os bancos na pasta selecionada!' + sLineBreak + E.Message);
   end;
 end;
 
@@ -354,7 +343,7 @@ end;
 function TBackupOperacoes.DesabilitarBancoDoConsultor: iBackupOperacoes;
 begin
   try
-    if TMessageDialog.Question('Deseja realmente remover o registro do monitoramento?') then
+    if MessageDlg('Deseja realmente remover o registro do monitoramento?', mtInformation , [mbyes, mbNo], 0) = mrYes then
     begin
       DataModuleDados.QryCadClienteBackupArquivo.Edit;
       DataModuleDados.QryCadClienteBackupArquivo.FieldByName('monitorar_arquivo').AsString := 'N';
@@ -362,10 +351,10 @@ begin
 
       if (DataModuleDados.QryCadClienteBackupArquivo.ApplyUpdates(-1) > 0) then
         Abort;
-      TMessageDialog.Info('Registro inativado!');
+      ShowMessage('Registro inativado!');
     end;
   except on E: Exception do
-    TMessageDialog.Error('Não foi possível remover o registro do monitoramento!' + sLineBreak + E.Message);
+    ShowMessage('Não foi possível remover o registro do monitoramento!' + sLineBreak + E.Message);
   end;
 end;
 

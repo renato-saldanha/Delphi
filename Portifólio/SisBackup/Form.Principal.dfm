@@ -1,7 +1,7 @@
 object FormPrincipal: TFormPrincipal
   Left = 0
   Top = 0
-  Caption = 'SisBackup'
+  Caption = 'GerBkp - Gerenciador de backups'
   ClientHeight = 589
   ClientWidth = 917
   Color = clBtnFace

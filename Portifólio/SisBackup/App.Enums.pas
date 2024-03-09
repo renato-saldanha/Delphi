@@ -2,8 +2,6 @@ unit App.Enums;
 
 interface
 
-uses
-  Fontdata.Utils;
 
 type
   [Enumeration(TEnumType.etString, ', S, N', 'Todos, Ativo, Inativo')]

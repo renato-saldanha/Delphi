@@ -94,9 +94,9 @@ end;
 
 procedure TFormPrincipal.FormShow(Sender: TObject);
 begin
-  TUtilsEnum.ListDescriptions<TLimiteDiasPesquisa>(CbxLimiteDias.Items);
-  TUtilsEnum.ListDescriptions<TLimiteTamanhoPesquisa>(CbxLimiteTamanho.Items);
-  TUtilsEnum.ListDescriptions<TAtivo>(CbxAtivo.Items);
+//  TUtilsEnum.ListDescriptions<TLimiteDiasPesquisa>(CbxLimiteDias.Items);
+//  TUtilsEnum.ListDescriptions<TLimiteTamanhoPesquisa>(CbxLimiteTamanho.Items);
+//  TUtilsEnum.ListDescriptions<TAtivo>(CbxAtivo.Items);
   LimparCampos(Self, True);
 end;
 

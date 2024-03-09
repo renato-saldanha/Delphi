@@ -329,8 +329,12 @@ begin
       Exit;
     aDBGrid.DataSource.Dataset.FieldByName('ativo').ReadOnly := False;
     aDBGrid.DataSource.Dataset.Edit;
-    aDBGrid.DataSource.Dataset.FieldByName('ativo').AsString :=
-      TUtils.IIF<String>(aDBGrid.DataSource.Dataset.FieldByName('ativo').AsString = 'S', 'N', 'S');
+
+    if aDBGrid.DataSource.Dataset.FieldByName('ativo').AsString = 'S' then
+      aDBGrid.DataSource.Dataset.FieldByName('ativo').AsString := 'N'
+    else
+      aDBGrid.DataSource.Dataset.FieldByName('ativo').AsString := 'S';
+
     aDBGrid.DataSource.Dataset.Post;
     aDBGrid.DataSource.Dataset.FieldByName('ativo').ReadOnly := True;
   end;
@@ -364,7 +368,7 @@ var
   LValorColuna: String;
 begin
   LColumnIndex := ColumnIndexByName(aDBGrid, aName);
-  LValorColuna := TUtils.CompletarZeros(aDBGrid.DataSource.DataSet.FieldByName(aName).AsString, 2);
+  LValorColuna := Format('%2.2d', [aDBGrid.DataSource.DataSet.FieldByName(aName).AsString]);
   Result := aDBGrid.Columns[LColumnIndex].PickList.IndexOf(LValorColuna);
 end;
 
@@ -380,7 +384,7 @@ begin
     aPorta      := LArquivoIni.ReadInteger('Conexao', 'Porta', aPorta);
     aBancoDados := LArquivoIni.ReadString('Conexao', 'BancoDados', aBancoDados);
     aUsuario    := LArquivoIni.ReadString('Conexao', 'Usuario', aUsuario);
-    aSenha      := TUtils.DecryptPasswordDB(LArquivoIni.ReadString('Conexao', 'Senha', TUtils.EncryptPasswordDB(aSenha)));
+    aSenha      := '123';
   finally
     LArquivoIni.Free;
   end;

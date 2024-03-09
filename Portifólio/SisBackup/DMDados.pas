@@ -72,10 +72,10 @@ var
 begin
   try
     Result      := False;
-    LSecao      := 'SisBackup - ' + TUtils.ObterIP + '/' + GetEnvironmentVariable('SESSIONNAME').ToUpper;
+    LSecao      := 'GerBkp - ' + '127.0.0.1' + '/' + GetEnvironmentVariable('SESSIONNAME').ToUpper;
     LServidor   := 'localhost';
     LPorta      := 5432;
-    LBancoDados := 'DBMAXIMUS';
+    LBancoDados := '';
     LUsuario    := 'postgres';
     LSenha      := '123123';
     CarregarConfigsIni(LServidor, LPorta, LBancoDados, LUsuario, LSenha);
@@ -98,7 +98,7 @@ begin
   except on E: Exception do
     begin
       Result := False;
-      TMessageDialog.Error('Favor verificar as configurações de Rede!');
+      ShowMessage('Favor verificar as configurações de Rede!');
     end;
   end;
 end;
@@ -114,7 +114,7 @@ end;
 
 procedure TDataModuleDados.QueryError(aForm, AInitiator: TObject; var AException: Exception);
 begin
-  TMessageDialog.Error(AException.Message);
+  ShowMessage(AException.Message);
 end;
 
 procedure TDataModuleDados.CarregarEncodingBancoDados(ABancoDados: String);
@@ -142,7 +142,7 @@ end;
 procedure TDataModuleDados.QryConsClienteBackupCodClienteGetText(ASender: TField; var AText: string;
   ADisplayText: Boolean);
 begin
-  AText := TUtils.CompletarZeros(ASender.AsInteger, 6);
+  AText := Format('%6.6d', [ASender.AsInteger]);
 end;
 
 procedure TDataModuleDados.QryConsClienteBackupTamanhoUltimoBackupGetText(ASender: TField; var AText: string;

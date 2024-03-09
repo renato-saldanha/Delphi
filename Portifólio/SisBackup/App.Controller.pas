@@ -3,7 +3,7 @@ unit App.Controller;
 interface
 
 uses
-   App.Enums, Vcl.Dialogs, Fontdata.BindForm, Vcl.Forms, Vcl.StdCtrls, System.SysUtils,
+   App.Enums, Vcl.Dialogs,  Vcl.Forms, Vcl.StdCtrls, System.SysUtils,
    App.Interfaces,
    App.Operacoes,
    App.Parametros;
@@ -23,9 +23,6 @@ type
   end;
 
 implementation
-
-uses
-  Fontdata.Utils;
 
 { TBackupController }
 

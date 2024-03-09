@@ -4,7 +4,7 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Mask, Vcl.ExtCtrls, Vcl.Buttons, Vcl.StdCtrls, FileCtrl, RxToolEdit,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Mask, Vcl.ExtCtrls, Vcl.Buttons, Vcl.StdCtrls, FileCtrl,
   DMDados, App.Enums, App.Interfaces, App.Operacoes,
   Model.ClienteBackup, App.Controller, Data.DB, Vcl.Grids, Vcl.DBGrids, Vcl.DBCGrids, Vcl.DBCtrls, Vcl.ComCtrls,
   Vcl.Menus;
@@ -158,8 +158,7 @@ end;
 procedure TFormCadastroBackupCliente.DbgArquivosDrawColumnCell(Sender: TObject; const Rect: TRect; DataCol: Integer;
   Column: TColumn; State: TGridDrawState);
 begin
-  TUtilsVCL.ZebrarDBGrid(DbgArquivos, Rect, DataCol, Column, State);
-  SetCorDBInativado(DbgArquivos, Rect, DataCol, Column, State);
+    SetCorDBInativado(DbgArquivos, Rect, DataCol, Column, State);
   InserirDBCheckBoxNoGrid(dbgArquivos, Rect, Column);
 end;
 
